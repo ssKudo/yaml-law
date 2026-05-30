@@ -11,5 +11,6 @@ division: null
 article_num: "41_2"
 article_title: "第四十一条の二"
 article_caption: "（適用区域）"
-description: ""
+description: "建築基準法第三章（集団規定：道路規制、用途地域、容積率、建ぺい率、高さ制限など）の各規定（災害危険区域等の第8節を除く）が、都市計画区域および準都市計画区域内に限って適用されることを明記した条文。"
+keywords: ["適用区域", "都市計画区域", "準都市計画区域", "集団規定"]
 text_path: "../texts/article_041_2.txt"

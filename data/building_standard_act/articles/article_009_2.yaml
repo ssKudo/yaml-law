@@ -11,5 +11,6 @@ division: null
 article_num: "9_2"
 article_title: "第九条の二"
 article_caption: "（建築監視員）"
-description: ""
+description: "特定行政庁が自治体職員から任命する「建築監視員」について、違反建築物に対する緊急時の工事停止命令や使用禁止・制限命令の権限を代行できる旨を定めた条文。"
+keywords: ["建築監視員", "特定行政庁", "権限代行", "緊急命令"]
 text_path: "../texts/article_009_2.txt"

@@ -11,5 +11,6 @@ division: null
 article_num: "12"
 article_title: "第十二条"
 article_caption: "（報告、検査等）"
-description: ""
+description: "特定建築物および昇降機等の建築設備について、所有者・管理者が有資格者（建築士や建築物調査員等）による定期調査・検査を行い、その結果を特定行政庁に報告する義務（定期報告制度）、ならびに立入検査権限を定めた条文。"
+keywords: ["定期報告", "特定建築物", "建築設備", "立入検査", "有資格者", "報告義務"]
 text_path: "../texts/article_012.txt"

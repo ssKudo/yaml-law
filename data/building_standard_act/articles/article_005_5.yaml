@@ -11,5 +11,6 @@ division: null
 article_num: "5_5"
 article_title: "第五条の五"
 article_caption: "（構造計算適合判定資格者検定事務を行う者の指定等）"
-description: ""
+description: "国土交通大臣が指定する「指定構造計算適合判定資格者検定機関」に、構造計算適合判定資格者検定の実施に関する事務を行わせるための指定手続きや受検手数料の準用規定について定めた条文。"
+keywords: ["指定構造計算適合判定資格者検定機関", "検定事務", "委託", "受検手数料", "準用"]
 text_path: "../texts/article_005_5.txt"

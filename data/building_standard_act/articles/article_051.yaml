@@ -11,5 +11,6 @@ division: null
 article_num: "51"
 article_title: "第五十一条"
 article_caption: "（卸売市場等の用途に供する特殊建築物の位置）"
-description: ""
+description: "都市計画区域内において、卸売市場、火葬場、汚物処理場、ごみ焼却場等の周辺環境に影響を及ぼす施設の位置指定義務、および特定行政庁による例外許可手続きを定めた条文。"
+keywords: ["特殊建築物の位置", "卸売市場", "火葬場", "汚物処理場", "ごみ焼却場", "都市計画", "敷地位置", "特定行政庁の許可"]
 text_path: "../texts/article_051.txt"

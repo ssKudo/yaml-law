@@ -11,5 +11,6 @@ division: null
 article_num: "33"
 article_title: "第三十三条"
 article_caption: "（避雷設備）"
-description: ""
+description: "高さ20メートルを超える建築物について、落雷による火災や破損を防ぐために、有効な避雷設備を設置することを原則として義務付けた条文。"
+keywords: ["避雷設備", "高さ20m超", "避雷針", "落雷対策"]
 text_path: "../texts/article_033.txt"

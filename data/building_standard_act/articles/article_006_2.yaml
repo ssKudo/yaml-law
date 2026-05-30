@@ -11,5 +11,6 @@ division: null
 article_num: "6_2"
 article_title: "第六条の二"
 article_caption: "（国土交通大臣等の指定を受けた者による確認）"
-description: ""
+description: "指定確認検査機関（国土交通大臣や都道府県知事が指定した民間機関）が実施する建築確認の手続きと、その確認済証の効力、特定行政庁への報告義務等について定めた条文。"
+keywords: ["指定確認検査機関", "民間確認", "確認済証", "確認審査報告書", "特定行政庁", "効力喪失"]
 text_path: "../texts/article_006_2.txt"

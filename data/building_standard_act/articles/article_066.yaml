@@ -11,5 +11,6 @@ division: null
 article_num: "66"
 article_title: "第六十六条"
 article_caption: "（第三十八条の準用）"
-description: ""
+description: "建築物が防火地域、準防火地域、またはそれら以外の区域の内外にわたって位置する場合において、建築物全体に対して最も厳しい防火規定を適用する原則と、その例外（防火壁による区画など）を定めた条文。"
+keywords: ["区域の内外にわたる場合", "防火地域", "準防火地域", "最も厳しい制限", "防火壁区画"]
 text_path: "../texts/article_066.txt"

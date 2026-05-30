@@ -11,5 +11,6 @@ division: null
 article_num: "67"
 article_title: "第六十七条"
 article_caption: "（特定防災街区整備地区）"
-description: ""
+description: "特定防災街区整備地区（密集市街地内など）において、火災発生時の延焼を防ぐための建築物の間口率の制限、高さ制限、および主要部分の耐火・準耐火構造化義務について定めた条文。"
+keywords: ["特定防災街区整備地区", "延焼防止", "間口率", "高さ制限", "耐火構造"]
 text_path: "../texts/article_067.txt"

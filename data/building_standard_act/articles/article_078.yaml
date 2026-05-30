@@ -11,5 +11,6 @@ division: null
 article_num: "78"
 article_title: "第七十八条"
 article_caption: "（建築審査会）"
-description: ""
+description: "市町村および都道府県に設置される「建築審査会」の設置目的について、特定行政庁の許可・処分に対する同意や審査請求の裁決、重要事項の調査審議、行政機関への建議等を規定した条文。"
+keywords: ["建築審査会", "審査請求の裁決", "特定行政庁の同意", "重要事項の調査審議", "建議"]
 text_path: "../texts/article_078.txt"

@@ -11,5 +11,6 @@ division: null
 article_num: "34"
 article_title: "第三十四条"
 article_caption: "（昇降機）"
-description: ""
+description: "建築物のエレベーターやエスカレーター（昇降機）の構造上の安全確保および昇降路の防火区画、ならびに高さ31メートルを超える建築物に対する非常用エレベーターの設置義務を定めた条文。"
+keywords: ["エレベーター", "昇降機", "非常用エレベーター", "高さ31m超", "昇降路の防火区画"]
 text_path: "../texts/article_034.txt"

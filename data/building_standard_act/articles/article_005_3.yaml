@@ -11,5 +11,6 @@ division: null
 article_num: "5_3"
 article_title: "第五条の三"
 article_caption: "（受検手数料）"
-description: ""
+description: "建築基準適合判定資格者検定の受検手数料の納付義務および、指定検定機関に納められた手数料が当該機関の収入となることを定めた条文。"
+keywords: ["受検手数料", "指定検定機関", "手数料納付", "実費勘案"]
 text_path: "../texts/article_005_3.txt"

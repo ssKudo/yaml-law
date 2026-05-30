@@ -11,5 +11,6 @@ division: null
 article_num: "40"
 article_title: "第四十条"
 article_caption: "（地方公共団体の条例による制限の附加）"
-description: ""
+description: "地方公共団体がその地方特有の気候・風土、または特殊建築物の用途・規模に照らし、国の定める基準（第二章）のみでは安全や防火・衛生の目的を達成しがたい場合に、条例で追加的な制限（単体規定の付加）を設けることができることを規定した条文。"
+keywords: ["条例による付加制限", "気候風土", "単体規定の付加", "地方公共団体"]
 text_path: "../texts/article_040.txt"

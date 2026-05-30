@@ -11,5 +11,6 @@ division: null
 article_num: "53"
 article_title: "第五十三条"
 article_caption: "（建蔽率）"
-description: ""
+description: "建築物の建築面積の敷地面積に対する割合（建蔽率）の限度、防火地域内にある耐火建築物や角地等に対する建蔽率の緩和規定、および除外要件を定めた条文。"
+keywords: ["建蔽率", "建築面積", "敷地面積", "防火地域", "準防火地域", "耐火建築物", "角地緩和", "建蔽率の除外"]
 text_path: "../texts/article_053.txt"

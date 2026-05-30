@@ -11,5 +11,6 @@ division: null
 article_num: "19"
 article_title: "第十九条"
 article_caption: "（敷地の衛生及び安全）"
-description: ""
+description: "建築物の敷地の地盤面高さの確保（道路や周囲の土地より高くする義務）、湿潤地や災害危険地における衛生・安全措置（盛土等）、排水施設の設置、がけ崩れ防止のための擁壁設置等を定めた条文。"
+keywords: ["敷地の安全性", "地盤面", "排水施設", "がけ崩れ", "擁壁設置", "盛土"]
 text_path: "../texts/article_019.txt"

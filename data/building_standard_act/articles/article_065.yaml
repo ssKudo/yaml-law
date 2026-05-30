@@ -11,5 +11,6 @@ division: null
 article_num: "65"
 article_title: "第六十五条"
 article_caption: "（建築物が防火地域又は準防火地域の内外にわたる場合の措置）"
-description: ""
+description: "防火地域または準防火地域内にある耐火建築物等の外壁が、隣地境界線に接して設けることができる特例（民法の後退制限の適用除外）について定めた条文。"
+keywords: ["隣地境界線", "外壁接置", "耐火建築物", "民法特例", "防火地域", "準防火地域"]
 text_path: "../texts/article_065.txt"

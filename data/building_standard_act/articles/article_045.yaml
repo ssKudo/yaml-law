@@ -11,5 +11,6 @@ division: null
 article_num: "45"
 article_title: "第四十五条"
 article_caption: "（私道の変更又は廃止の制限）"
-description: ""
+description: "特定行政庁が、私道の変更や廃止によってその私道に接する建築物敷地が接道義務（43条）に抵触することになる場合、その私道の変更・廃止を禁止または制限できる権限を定めた条文。"
+keywords: ["私道変更制限", "私道廃止禁止", "接道義務の維持", "特定行政庁の命令"]
 text_path: "../texts/article_045.txt"

@@ -11,5 +11,6 @@ division: null
 article_num: "9_4"
 article_title: "第九条の四"
 article_caption: "（保安上危険な建築物等の所有者等に対する指導及び助言）"
-description: ""
+description: "既存不適格建築物において劣化や損傷が進み、そのまま放置すれば保安上危険・衛生上有害となるおそれがある場合、特定行政庁が所有者や管理者等に対して修繕や維持保全の指導・助言を行える旨を定めた条文。"
+keywords: ["指導及び助言", "劣化建築物", "保安上危険", "既存不適格", "維持保全"]
 text_path: "../texts/article_009_4.txt"

@@ -1,4 +1,4 @@
-generated_at: "2026-05-30T05:57:21+00:00"
+generated_at: "2026-05-30T06:56:30+00:00"
 link_count: "2246"
 kind_counts:
   same_law_article_range_reference: "264"
@@ -7,8 +7,8 @@ kind_counts:
   short_law_article_reference: "426"
 source_article_count: "469"
 target_article_count: "447"
-links_path: "data/links/article_links.yaml"
-referenced_by_path: "data/links/referenced_by.yaml"
-scope_links_path: "data/links/scope_links.yaml"
+links_path: "data\\links\\article_links.yaml"
+referenced_by_path: "data\\links\\referenced_by.yaml"
+scope_links_path: "data\\links\\scope_links.yaml"
 scope_link_count: "138"
 note: "Article links are direct article-to-article edges. Scope links point to chapter/section ranges and should be expanded only when needed to control RAG context size. Context-dependent references such as 同条 and 同項 are not resolved."

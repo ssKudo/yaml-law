@@ -11,5 +11,6 @@ division: null
 article_num: "6"
 article_title: "第六条"
 article_caption: "（建築物の建築等に関する申請及び確認）"
-description: ""
+description: "建築物を建築、大規模の修繕・模様替をしようとする場合の着手前の確認申請手続き、建築主事等による確認済証の交付義務、審査期間、および確認済証交付前の工事着手禁止を定めた条文。"
+keywords: ["建築確認", "確認申請", "確認済証", "建築主事", "審査期間", "着手前確認", "規模規定"]
 text_path: "../texts/article_006.txt"
