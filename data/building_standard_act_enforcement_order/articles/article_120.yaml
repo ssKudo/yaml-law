@@ -11,5 +11,6 @@ division: null
 article_num: "120"
 article_title: "第百二十条"
 article_caption: "（直通階段の設置）"
-description: ""
+description: "避難階以外の各居室から避難階・地上に通ずる直通階段までの最小歩行距離（30メートル〜50メートル等）、および居室等の内装の準不燃仕上げによる歩行距離緩和措置を定めた条文。"
+keywords: ["歩行距離", "直通階段", "避難歩行距離", "内装仕上げ緩和", "重複区間"]
 text_path: "../texts/article_120.txt"

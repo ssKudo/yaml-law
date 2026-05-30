@@ -11,5 +11,6 @@ division: null
 article_num: "44"
 article_title: "第四十四条"
 article_caption: "（はり等の横架材）"
-description: ""
+description: "梁や桁などの横架材について、曲げ応力が最大となりやすい中央部付近の下側に対する、構造上支障を及ぼす欠込みを禁止した条文。"
+keywords: ["横架材", "梁", "桁", "欠込み禁止", "断面減少防止"]
 text_path: "../texts/article_044.txt"

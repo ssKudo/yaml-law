@@ -11,5 +11,6 @@ division: null
 article_num: "129_10"
 article_title: "第百二十九条の十"
 article_caption: "（エレベーターの安全装置）"
-description: ""
+description: "エレベーターの安全装置の構造基準として、制動装置（非常止め）、かごの上部挟まれ防止、地震時緊急停止着床、かご内と外部の非常通話連絡、および停電時予備照明の設置義務などを定めた条文。"
+keywords: ["エレベーター安全装置", "制動装置", "挟まれ防止", "地震感知着床", "非常通話装置", "予備照明"]
 text_path: "../texts/article_129_10.txt"

@@ -11,5 +11,6 @@ division: null
 article_num: "77"
 article_title: "第七十七条"
 article_caption: "（柱の構造）"
-description: ""
+description: "RC造の柱の構造基準として、主筋本数（4本以上）、帯筋（フープ）の径・間隔、最小帯筋比（0.2%以上）、柱の最小小径、および主筋の最小断面積比（0.8%以上）を定めた条文。"
+keywords: ["柱の構造", "主筋", "帯筋", "帯筋比", "フープ", "柱の小径"]
 text_path: "../texts/article_077.txt"

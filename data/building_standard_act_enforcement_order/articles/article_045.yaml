@@ -11,5 +11,6 @@ division: null
 article_num: "45"
 article_title: "第四十五条"
 article_caption: "（筋かい）"
-description: ""
+description: "木造建築物の耐震・耐風性能を高めるための「筋かい」について、引張用・圧縮用の寸法、接合部の金物緊結、及び筋かいへの欠込み禁止等を定めた条文。"
+keywords: ["筋かい", "引張筋かい", "圧縮筋かい", "金物緊結", "欠込み禁止"]
 text_path: "../texts/article_045.txt"

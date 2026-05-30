@@ -11,5 +11,6 @@ division: null
 article_num: "114"
 article_title: "第百十四条"
 article_caption: "（建築物の界壁、間仕切壁及び隔壁）"
-description: ""
+description: "長屋や共同住宅の各戸の「界壁」、学校・病院等の「防火上主要な間仕切壁」、および木造屋根の「小屋裏隔壁」について、準耐火構造とすることや小屋裏・天井裏への到達などの設置基準を定めた条文。"
+keywords: ["界壁", "間仕切壁", "小屋裏隔壁", "長屋・共同住宅", "準耐火構造", "小屋裏達"]
 text_path: "../texts/article_114.txt"

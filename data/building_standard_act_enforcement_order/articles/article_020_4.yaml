@@ -11,5 +11,6 @@ division: null
 article_num: "20_4"
 article_title: "第二十条の四"
 article_caption: "（著しく衛生上有害な物質）"
-description: ""
+description: "建築基準法で規制される「著しく衛生上有害な物質」として、石綿（アスベスト）を指定した条文。"
+keywords: ["衛生上有害な物質", "石綿", "アスベスト", "建築材料制限"]
 text_path: "../texts/article_020_4.txt"

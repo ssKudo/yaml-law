@@ -11,5 +11,6 @@ division: null
 article_num: "59_2"
 article_title: "第五十九条の二"
 article_caption: "（補強を要する組積造）"
-description: ""
+description: "高さ13メートル又は軒の高さが9メートルを超える組積造建築物について、鉄筋、鉄骨又はRC等による構造補強を義務付けた条文。"
+keywords: ["補強組積造", "高さ13メートル超", "軒高9メートル超", "鉄筋補強", "鉄骨補強"]
 text_path: "../texts/article_059_2.txt"

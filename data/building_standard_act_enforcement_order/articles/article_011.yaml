@@ -11,5 +11,6 @@ division: null
 article_num: "11"
 article_title: "第十一条"
 article_caption: "（工事を終えたときに中間検査を申請しなければならない工程）"
-description: ""
+description: "建築工事における中間検査の申請を行うべき政令指定の「特定工程」として、二階の床及びそれを支持する梁の配筋工事を指定した条文。"
+keywords: ["中間検査", "特定工程", "配筋工事", "二階の床", "梁の鉄筋"]
 text_path: "../texts/article_011.txt"

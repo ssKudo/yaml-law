@@ -11,5 +11,6 @@ division: null
 article_num: "135_2"
 article_title: "第百三十五条の二"
 article_caption: "（道路面と敷地の地盤面に高低差がある場合）"
-description: ""
+description: "敷地と道路又は隣地との地盤面に高低差がある場合（高低差が1mを超える場合等）における、高さ制限を適用するための平均地盤面や基準となる高低差の算定方法を定めた条文。"
+keywords: ["地盤面高低差", "平均地盤面", "高さ制限算定", "高低差1メートル超"]
 text_path: "../texts/article_135_2.txt"

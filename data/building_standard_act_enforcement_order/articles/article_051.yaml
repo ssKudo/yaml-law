@@ -11,5 +11,6 @@ division: null
 article_num: "51"
 article_title: "第五十一条"
 article_caption: "（適用の範囲）"
-description: ""
+description: "れんが造、石造、コンクリートブロック造などの組積造建築物の構造規定について、その適用範囲や小規模建築物等における除外基準を定めた条文。"
+keywords: ["組積造", "適用範囲", "れんが造", "石造", "コンクリートブロック造", "適用除外"]
 text_path: "../texts/article_051.txt"

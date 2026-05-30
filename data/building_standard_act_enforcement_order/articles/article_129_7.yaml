@@ -11,5 +11,6 @@ division: null
 article_num: "129_7"
 article_title: "第百二十九条の七"
 article_caption: "（エレベーターの昇降路の構造）"
-description: ""
+description: "エレベーターの昇降路について、接触防止用の壁・囲い、難燃材料の使用、停止位置以外の出入口における落下防止用の施錠装置の設置、かごと昇降路壁とのクリアランス（すき間寸法）、及び突出物の原則禁止を定めた条文。"
+keywords: ["昇降路の構造", "落下防止施錠装置", "床先クリアランス", "突出物禁止", "難燃材料"]
 text_path: "../texts/article_129_7.txt"

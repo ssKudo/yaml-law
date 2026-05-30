@@ -11,5 +11,6 @@ division: null
 article_num: "69"
 article_title: "第六十九条"
 article_caption: "（斜材、壁等の配置）"
-description: ""
+description: "鉄骨造の軸組、床組等において、水平力に抵抗するための斜材（ブレース）や鉄筋コンクリート壁等を釣り合い良く配置すべき原則を定めた条文。"
+keywords: ["ブレース", "斜材", "RC壁", "水平力抵抗", "バランス配置"]
 text_path: "../texts/article_069.txt"

@@ -11,5 +11,6 @@ division: null
 article_num: "109_3"
 article_title: "第百九条の三"
 article_caption: "（主要構造部を準耐火構造とした建築物と同等の耐火性能を有する建築物の技術的基準）"
-description: ""
+description: "木造3階建て共同住宅等において求められる、主要構造部を準耐火構造とした建築物と同等の耐火性能を有する「準耐火同等建築物」の壁・柱・床・屋根の具体的な構造要件を定めた条文。"
+keywords: ["準耐火同等建築物", "耐火性能と同等", "木造3階建て", "内装仕上げ", "防火構造"]
 text_path: "../texts/article_109_3.txt"

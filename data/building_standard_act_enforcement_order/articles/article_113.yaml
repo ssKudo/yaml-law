@@ -11,5 +11,6 @@ division: null
 article_num: "113"
 article_title: "第百十三条"
 article_caption: "（木造等の建築物の防火壁及び防火床）"
-description: ""
+description: "木造等の大規模建築物に義務付けられる「防火壁」及び「防火床」の構造基準として、耐火構造、他構造倒壊時の自立性、開口部制限（幅・高さ2.5メートル以下かつ特定防火設備設置）などを定めた条文。"
+keywords: ["防火壁", "防火床", "耐火構造", "自立性", "開口部制限", "特定防火設備"]
 text_path: "../texts/article_113.txt"

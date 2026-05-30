@@ -11,5 +11,6 @@ division: null
 article_num: "2"
 article_title: "第二条"
 article_caption: "（面積、高さ等の算定方法）"
-description: ""
+description: "敷地面積、建築面積、床面積、延べ面積、築造面積、建築物の高さ、軒の高さ、階数といった各種面積や高さ、階数の技術的な算定方法および緩和措置を詳細に規定した条文。"
+keywords: ["算定方法", "敷地面積", "建築面積", "床面積", "延べ面積", "建築物の高さ", "軒の高さ", "階数"]
 text_path: "../texts/article_002.txt"

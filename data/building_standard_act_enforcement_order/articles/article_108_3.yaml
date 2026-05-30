@@ -11,5 +11,6 @@ division: null
 article_num: "108_3"
 article_title: "第百八条の三"
 article_caption: "（主要構造部のうち防火上及び避難上支障がない部分）"
-description: ""
+description: "耐火建築物において、床や壁、防火設備による有効な区画、または避難動線上の安全確保状況を考慮して、耐火性能等の適用が不要となる「防火・避難上支障がない主要構造部」の範囲を定めた条文。"
+keywords: ["主要構造部", "適用除外", "防火避難上支障なし", "防火設備区画"]
 text_path: "../texts/article_108_3.txt"

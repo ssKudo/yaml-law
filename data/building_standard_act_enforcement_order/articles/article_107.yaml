@@ -11,5 +11,6 @@ division: null
 article_num: "107"
 article_title: "第百七条"
 article_caption: "（耐火性能に関する技術的基準）"
-description: ""
+description: "主要構造部等に求められる「耐火性能」について、加熱に対する構造耐力保持時間、および非加熱面の温度上昇制限や亀裂防止などの技術的基準を定めた条文。"
+keywords: ["耐火性能", "耐火構造", "加熱時間", "可燃物燃焼温度", "非加熱面温度"]
 text_path: "../texts/article_107.txt"

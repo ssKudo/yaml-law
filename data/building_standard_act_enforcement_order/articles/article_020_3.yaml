@@ -11,5 +11,6 @@ division: null
 article_num: "20_3"
 article_title: "第二十条の三"
 article_caption: "（火を使用する室に設けなければならない換気設備等）"
-description: ""
+description: "台所など火を使用する室（火気使用室）に設置すべき換気設備の要件、給排気口・煙突・排気フードの構造、および酸素濃度維持に係る大臣認定基準を定めた条文。"
+keywords: ["火気使用室", "換気設備", "調理室", "給排気口", "排気フード", "煙突"]
 text_path: "../texts/article_020_3.txt"

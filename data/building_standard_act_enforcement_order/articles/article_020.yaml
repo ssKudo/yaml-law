@@ -11,5 +11,6 @@ division: null
 article_num: "20"
 article_title: "第二十条"
 article_caption: "（有効面積の算定方法）"
-description: ""
+description: "居室の窓等の開口部の採光有効面積を算出するため、隣地境界線や他の建物との距離等から計算する「採光補正係数」の算定式及び用途地域別の基準を定めた条文。"
+keywords: ["採光補正係数", "有効面積算定", "採光関係比率", "隣地境界線", "用途地域区分"]
 text_path: "../texts/article_020.txt"

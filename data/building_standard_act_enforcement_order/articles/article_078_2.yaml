@@ -11,5 +11,6 @@ division: null
 article_num: "78_2"
 article_title: "第七十八条の二"
 article_caption: "（耐力壁）"
-description: ""
+description: "RC造の耐力壁の最小厚さ（12センチメートル以上）、開口部周囲の補強筋、鉄筋の間隔（30〜50センチメートル以下）、および柱・梁との確実な接合を定めた条文。"
+keywords: ["耐力壁", "壁厚", "開口部補強", "配筋間隔", "接合部", "壁式構造"]
 text_path: "../texts/article_078_2.txt"

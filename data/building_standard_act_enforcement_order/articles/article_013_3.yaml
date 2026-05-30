@@ -11,5 +11,6 @@ division: null
 article_num: "13_3"
 article_title: "第十三条の三"
 article_caption: null
-description: ""
+description: "所有者・管理者が維持保全計画を作成すべき、特定の用途及び一定規模（床面積等）を満たす特殊建築物や事務所建築物の基準を定めた条文。"
+keywords: ["維持保全計画", "特殊建築物", "事務所等", "床面積要件", "階数要件"]
 text_path: "../texts/article_013_3.txt"

@@ -11,5 +11,6 @@ division: null
 article_num: "37"
 article_title: "第三十七条"
 article_caption: "（構造部材の耐久）"
-description: ""
+description: "構造主要部に特に腐食、腐朽、摩損のおそれがある場合に必要となる、防腐・防錆・防虫・摩損防止のための材料選択や塗装などの保護措置義務を定めた条文。"
+keywords: ["耐久措置", "防腐処理", "さび止め", "防蟻", "構造部材"]
 text_path: "../texts/article_037.txt"

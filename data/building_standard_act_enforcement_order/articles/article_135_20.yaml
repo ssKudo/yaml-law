@@ -11,5 +11,6 @@ division: null
 article_num: "135_20"
 article_title: "第百三十五条の二十"
 article_caption: "（耐火建築物と同等以上の延焼防止性能を有する建築物等）"
-description: ""
+description: "外壁の後退距離を一定以上確保した場合（セットバックした場合）に、前面道路高さ制限（道路斜線制限）や隣地高さ制限（隣地斜線制限）の適用を緩和する具体的な算定方法を定めた条文。"
+keywords: ["外壁の後退", "セットバック緩和", "前面道路高さ制限", "隣地高さ制限", "斜線制限緩和"]
 text_path: "../texts/article_135_20.txt"

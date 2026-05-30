@@ -11,5 +11,6 @@ division: null
 article_num: "117"
 article_title: "第百十七条"
 article_caption: "（適用の範囲）"
-description: ""
+description: "避難施設等に関する技術的基準（第5章第2節）が適用される特殊建築物、3階建て以上、無窓居室設置階、または1000平米超の建築物の範囲、および耐火床壁区画による別棟みなしを定めた条文。"
+keywords: ["避難規定適用範囲", "別棟みなし", "特殊建築物", "3階建て以上", "無窓居室階"]
 text_path: "../texts/article_117.txt"

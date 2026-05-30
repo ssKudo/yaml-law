@@ -11,5 +11,6 @@ division: null
 article_num: "22_2"
 article_title: "第二十二条の二"
 article_caption: "（地階における住宅等の居室の技術的基準）"
-description: ""
+description: "住宅等の居室を地階に設ける場合の防湿・換気技術的基準として、からぼり等の開口部設置、換気・除湿設備の整備、および土壌接面部の防水層等の構造基準を定めた条文。"
+keywords: ["地階の居室", "防湿措置", "からぼり", "防水層", "換気設備"]
 text_path: "../texts/article_022_2.txt"

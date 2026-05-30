@@ -11,5 +11,6 @@ division: null
 article_num: "78"
 article_title: "第七十八条"
 article_caption: "（はりの構造）"
-description: ""
+description: "RC造の梁（はり）を複筋梁（引張・圧縮の両側に主筋を配置）とすること、および剪断補強のためのあばら筋（スターラップ）の配置間隔を定めた条文。"
+keywords: ["はりの構造", "複筋ばり", "あばら筋", "スターラップ", "剪断補強"]
 text_path: "../texts/article_078.txt"

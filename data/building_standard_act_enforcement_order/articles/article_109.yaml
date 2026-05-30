@@ -11,5 +11,6 @@ division: null
 article_num: "109"
 article_title: "第百九条"
 article_caption: "（防火戸その他の防火設備）"
-description: ""
+description: "防火地域の内外や大規模建築物の外壁開口部に設けるべき防火設備（防火戸、ドレンチャーなど）の範囲、および一定の袖壁・塀を防火設備とみなす基準を定めた条文。"
+keywords: ["防火設備", "防火戸", "ドレンチャー", "延焼のおそれのある部分", "外壁開口部", "袖壁"]
 text_path: "../texts/article_109.txt"

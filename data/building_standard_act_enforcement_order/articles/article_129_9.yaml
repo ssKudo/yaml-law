@@ -11,5 +11,6 @@ division: null
 article_num: "129_9"
 article_title: "第百二十九条の九"
 article_caption: "（エレベーターの機械室）"
-description: ""
+description: "エレベーターの機械室について、必要最小床面積（昇降路投影面積の2倍以上）、定格速度に応じた天井高、換気設備、出入口の鋼製戸及び施錠装置、階段の寸法（けあげ・踏面）と手すりの設置基準を定めた条文。"
+keywords: ["機械室", "床面積要件", "天井高", "換気設備", "鋼製戸", "階段手すり"]
 text_path: "../texts/article_129_9.txt"

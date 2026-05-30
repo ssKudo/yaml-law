@@ -11,5 +11,6 @@ division: null
 article_num: "112"
 article_title: "第百十二条"
 article_caption: "（防火区画）"
-description: ""
+description: "延べ面積1500平方メートル超等の建築物における面積区画（1500/1000/500平米ごと）、高層階の100平米区画、竪穴区画、異種用途区画等の「防火区画」の設置基準、特定防火設備要件、および管・ダクトの貫通措置について詳細に定めた条文。"
+keywords: ["防火区画", "面積区画", "竪穴区画", "特定防火設備", "配管貫通", "遮煙性能"]
 text_path: "../texts/article_112.txt"

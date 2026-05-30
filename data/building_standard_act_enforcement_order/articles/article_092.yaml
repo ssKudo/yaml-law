@@ -11,5 +11,6 @@ division: null
 article_num: "92"
 article_title: "第九十二条"
 article_caption: "（溶接）"
-description: ""
+description: "鋼部材の溶接継手部（突き合わせ溶接、すみ肉溶接など）ののど断面に許容される長期及び短期の「許容応力度」の基準値を定めた条文。"
+keywords: ["溶接の許容応力度", "のど断面", "突き合わせ溶接", "すみ肉溶接", "溶接部"]
 text_path: "../texts/article_092.txt"

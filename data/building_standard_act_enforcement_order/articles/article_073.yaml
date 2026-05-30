@@ -11,5 +11,6 @@ division: null
 article_num: "73"
 article_title: "第七十三条"
 article_caption: "（鉄筋の継手及び定着）"
-description: ""
+description: "RC造の鉄筋末端の折り曲げ（フック）義務、主筋・耐力壁鉄筋の継手重ね長さ（径の25倍・40倍以上等の基準）、および梁鉄筋の柱への定着長さを規定した条文。"
+keywords: ["鉄筋継手", "定着長さ", "フック", "重ね継手", "異形鉄筋"]
 text_path: "../texts/article_073.txt"

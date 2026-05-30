@@ -11,5 +11,6 @@ division: null
 article_num: "66"
 article_title: "第六十六条"
 article_caption: "（柱の脚部）"
-description: ""
+description: "鉄骨柱の脚部をアンカーボルト等によってコンクリート基礎に緊結する基本ルール、およびピン接合（滑節構造）の場合の例外を定めた条文。"
+keywords: ["柱の脚部", "アンカーボルト", "基礎緊結", "滑節構造", "ピン接合"]
 text_path: "../texts/article_066.txt"

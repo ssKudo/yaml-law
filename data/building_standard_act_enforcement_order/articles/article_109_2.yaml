@@ -11,5 +11,6 @@ division: null
 article_num: "109_2"
 article_title: "第百九条の二"
 article_caption: "（遮炎性能に関する技術的基準）"
-description: ""
+description: "延焼防止用の防火設備について、通常の火災の火熱に対して加熱開始後20分間、非加熱面に火炎を出さないとする「遮炎性能」の技術的基準を定めた条文。"
+keywords: ["遮炎性能", "防火設備", "20分間遮炎", "延焼防止", "火炎非貫通"]
 text_path: "../texts/article_109_2.txt"

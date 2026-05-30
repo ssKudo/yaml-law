@@ -11,5 +11,6 @@ division: null
 article_num: "121"
 article_title: "第百二十一条"
 article_caption: "（二以上の直通階段を設ける場合）"
-description: ""
+description: "劇場、店舗、共同住宅、六階以上の階などにおいて、二方向避難を確保するために二以上の直通階段の設置を義務付ける階の規模・用途、および階段重複区間の制限を定めた条文。"
+keywords: ["二以上の直通階段", "二方向避難", "床面積要件", "重複区間", "三階以下例外"]
 text_path: "../texts/article_121.txt"

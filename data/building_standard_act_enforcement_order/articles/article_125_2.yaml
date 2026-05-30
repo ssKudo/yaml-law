@@ -11,5 +11,6 @@ division: null
 article_num: "125_2"
 article_title: "第百二十五条の二"
 article_caption: "（屋外への出口等の施錠装置の構造等）"
-description: ""
+description: "屋外への避難用出口や非常口等に設ける扉の施錠装置について、非常時に屋内から鍵なしで速やかに解錠できるサムターン等の構造要件、および解錠方法の表示義務を定めた条文。"
+keywords: ["施錠装置", "非常口解錠", "鍵なし解錠", "サムターン", "解錠方法表示"]
 text_path: "../texts/article_125_2.txt"

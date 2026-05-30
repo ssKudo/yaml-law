@@ -11,5 +11,6 @@ division: null
 article_num: "138"
 article_title: "第百三十八条"
 article_caption: "（工作物の指定等）"
-description: ""
+description: "法第88条第1項等に基づき、建築基準法の規定が準用される「指定工作物」（高さ6m超の煙突、高さ15m超の鉄塔、高さ4m超の広告塔、高さ2m超の擁壁、観覧車等の遊戯施設など）の範囲を定めた条文。"
+keywords: ["工作物の指定", "指定工作物", "確認申請", "煙突", "広告塔", "擁壁", "遊戯施設"]
 text_path: "../texts/article_138.txt"

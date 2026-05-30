@@ -11,5 +11,6 @@ division: null
 article_num: "33"
 article_title: "第三十三条"
 article_caption: "（漏水検査）"
-description: ""
+description: "改良便槽、し尿浄化槽、及び合併処理浄化槽の設置時に義務付けられている、満水状態にして24時間以上漏水がないことを確認する漏水検査について定めた条文。"
+keywords: ["漏水検査", "満水試験", "改良便槽", "浄化槽", "24時間"]
 text_path: "../texts/article_033.txt"

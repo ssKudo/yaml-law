@@ -11,5 +11,6 @@ division: null
 article_num: "109_8"
 article_title: "第百九条の八"
 article_caption: "（別の建築物とみなすことができる部分）"
-description: ""
+description: "大規模建築物の一部を別の建築物（別棟）とみなして防火壁等の設置制限を適用できる「火熱遮断壁等」の構造耐力、遮熱、遮炎、自立性等の技術的基準を定めた条文。"
+keywords: ["火熱遮断壁等", "別棟みなし", "火災継続予測時間", "自立構造保持", "遮熱遮炎"]
 text_path: "../texts/article_109_8.txt"

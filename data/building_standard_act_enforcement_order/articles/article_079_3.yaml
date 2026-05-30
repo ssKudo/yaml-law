@@ -11,5 +11,6 @@ division: null
 article_num: "79_3"
 article_title: "第七十九条の三"
 article_caption: "（鉄骨のかぶり厚さ）"
-description: ""
+description: "鉄骨鉄筋コンクリート（SRC）造における、鉄骨に対する最小コンクリートかぶり厚さ（5センチメートル以上）及び緩和要件を定めた条文。"
+keywords: ["鉄骨かぶり", "かぶり厚さ", "SRC造", "防錆措置"]
 text_path: "../texts/article_079_3.txt"

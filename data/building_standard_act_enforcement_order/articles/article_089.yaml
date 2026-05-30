@@ -11,5 +11,6 @@ division: null
 article_num: "89"
 article_title: "第八十九条"
 article_caption: "（木材）"
-description: ""
+description: "構造用木材について、繊維方向の長期及び短期の「許容応力度」基準値テーブル、ならびに積雪時・常時湿潤状態に応じた補正係数を定めた条文。"
+keywords: ["木材の許容応力度", "繊維方向", "長期応力", "短期応力", "常時湿潤"]
 text_path: "../texts/article_089.txt"

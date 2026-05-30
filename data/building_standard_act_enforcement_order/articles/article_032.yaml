@@ -11,5 +11,6 @@ division: null
 article_num: "32"
 article_title: "第三十二条"
 article_caption: "（法第三十一条第二項等の規定に基づく汚物処理性能に関する技術的基準）"
-description: ""
+description: "し尿浄化槽及び合併処理浄化槽の処理性能に関する技術的基準として、生物化学的酸素要求量（BOD）の除去率や放流水の大腸菌数、地域特性に応じた特別基準を定めた条文。"
+keywords: ["浄化槽性能", "し尿浄化槽", "合併処理浄化槽", "BOD除去率", "大腸菌数基準", "排水基準"]
 text_path: "../texts/article_032.txt"

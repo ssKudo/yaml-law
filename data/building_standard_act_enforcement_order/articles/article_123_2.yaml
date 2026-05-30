@@ -11,5 +11,6 @@ division: null
 article_num: "123_2"
 article_title: "第百二十三条の二"
 article_caption: "（共同住宅の住戸の床面積の算定等）"
-description: ""
+description: "メゾネット型（複層階）の共同住宅の住戸において、直通階段までの歩行距離や階段構造等の適用にあたり、出入口のない階を出入口のある階にあるものとみなす特例を定めた条文。"
+keywords: ["メゾネット住戸", "歩行距離特例", "共同住宅", "避難設計", "出入口階みなし"]
 text_path: "../texts/article_123_2.txt"

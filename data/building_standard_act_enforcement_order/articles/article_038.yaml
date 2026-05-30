@@ -11,5 +11,6 @@ division: null
 article_num: "38"
 article_title: "第三十八条"
 article_caption: "（基礎）"
-description: ""
+description: "建築物の基礎の構造原則、異種基礎の併用禁止、大規模建築物等の基礎を良好な支持地盤へ到達させる義務、および地盤状況に応じた大臣指定構造要件を定めた条文。"
+keywords: ["基礎構造", "異種基礎併用禁止", "支持地盤", "木ぐい", "基礎杭安全"]
 text_path: "../texts/article_038.txt"

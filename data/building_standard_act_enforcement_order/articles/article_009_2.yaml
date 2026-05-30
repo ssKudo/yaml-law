@@ -11,5 +11,6 @@ division: null
 article_num: "9_2"
 article_title: "第九条の二"
 article_caption: "（特定増改築構造計算基準）"
-description: ""
+description: "法第六条の三第一項に規定する「特定増改築構造計算基準」の定義として、許容応力度等計算などにより確かめられるべき安全性の基準を定めた条文。"
+keywords: ["特定増改築構造計算基準", "安全性確認", "構造計算方法", "建築審査"]
 text_path: "../texts/article_009_2.txt"

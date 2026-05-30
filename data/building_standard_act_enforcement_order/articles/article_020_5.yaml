@@ -11,5 +11,6 @@ division: null
 article_num: "20_5"
 article_title: "第二十条の五"
 article_caption: "（居室内において衛生上の支障を生ずるおそれがある物質）"
-description: ""
+description: "建築物室内において衛生上の支障を生ずるおそれがある化学物質として、「クロルピリホス」及び「ホルムアルデヒド」を指定した条文。"
+keywords: ["化学物質規制", "シックハウス", "クロルピリホス", "ホルムアルデヒド", "室内環境"]
 text_path: "../texts/article_020_5.txt"

@@ -11,5 +11,6 @@ division: null
 article_num: "129_6"
 article_title: "第百二十九条の六"
 article_caption: "（エレベーターのかごの構造）"
-description: ""
+description: "エレベーターのかごの安全構造基準として、人・物の衝撃に対する強度、難燃材料の使用、昇降路壁との接触防止用の壁・囲い・出入口戸の設置、非常救出口の設置、標識（用途、積載量、定員）の掲示義務を定めた条文。"
+keywords: ["かごの構造", "難燃材料", "非常救出口", "最大定員標識", "衝撃安全"]
 text_path: "../texts/article_129_6.txt"
