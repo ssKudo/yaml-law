@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yaml-law | RAG向け建築基準法・施行令構造化データセット</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* Design System & Custom Properties */
+    :root {
+      --bg-dark: #0a0f1d;
+      --bg-card: rgba(22, 34, 63, 0.4);
+      --bg-card-hover: rgba(30, 47, 85, 0.6);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(0, 242, 254, 0.3);
+      
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      
+      --primary: #00f2fe;
+      --secondary: #4facfe;
+      --accent: #7f00ff;
+      --glow-cyan: rgba(0, 242, 254, 0.15);
+      --glow-purple: rgba(127, 0, 255, 0.15);
+      
+      --font-heading: 'Outfit', 'Inter', sans-serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-mono: 'Fira Code', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Background Gradients */
+    .bg-glow-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .glow-1 {
+      position: absolute;
+      top: -10%;
+      left: -10%;
+      width: 60%;
+      height: 60%;
+      background: radial-gradient(circle, var(--glow-cyan) 0%, transparent 70%);
+      filter: blur(80px);
+    }
+
+    .glow-2 {
+      position: absolute;
+      top: 20%;
+      right: -10%;
+      width: 50%;
+      height: 60%;
+      background: radial-gradient(circle, var(--glow-purple) 0%, transparent 70%);
+      filter: blur(80px);
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* Header / Nav */
+    header {
+      padding: 2rem 0;
+      border-bottom: 1px solid var(--border-color);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .btn-github {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 0.5rem 1.2rem;
+      border-radius: 9999px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn-github:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--primary);
+      box-shadow: 0 0 15px var(--glow-cyan);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 8rem 0 5rem 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(0, 242, 254, 0.1);
+      border: 1px solid rgba(0, 242, 254, 0.3);
+      color: var(--primary);
+      padding: 0.3rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      letter-spacing: 0.5px;
+      animation: pulse 3s infinite alternate;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 0 5px rgba(0, 242, 254, 0.1); }
+      100% { transform: scale(1.03); box-shadow: 0 0 15px rgba(0, 242, 254, 0.3); }
+    }
+
+    .hero h1 {
+      font-family: var(--font-heading);
+      font-size: 4rem;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, #ffffff 30%, #a5b4fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -1.5px;
+    }
+
+    .hero p.lead {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      max-width: 800px;
+      margin: 0 auto 3rem auto;
+      font-weight: 400;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+      border: none;
+      color: white;
+      padding: 0.8rem 2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(79, 172, 254, 0.3);
+      text-decoration: none;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(79, 172, 254, 0.5);
+    }
+
+    /* Terminal Clone block */
+    .clone-command-container {
+      max-width: 500px;
+      margin: 0 auto;
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 0.8rem 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .clone-text {
+      color: #38bdf8;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .btn-copy {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 0.2rem;
+      transition: color 0.2s ease;
+    }
+
+    .btn-copy:hover {
+      color: var(--primary);
+    }
+
+    /* Section Styles */
+    section {
+      padding: 6rem 0;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-title h2 {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      letter-spacing: -0.5px;
+    }
+
+    .section-title p {
+      color: var(--text-muted);
+      font-size: 1.1rem lead;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Compare Grid (Before / After) */
+    .compare-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .compare-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+    }
+
+    .compare-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2.5rem;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .compare-card:hover {
+      border-color: rgba(255, 255, 255, 0.15);
+      background: var(--bg-card-hover);
+    }
+
+    .compare-card.better {
+      border-color: rgba(0, 242, 254, 0.2);
+    }
+
+    .compare-card.better:hover {
+      border-color: var(--primary);
+      box-shadow: 0 0 30px rgba(0, 242, 254, 0.05);
+    }
+
+    .compare-card h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .compare-card ul {
+      list-style: none;
+      margin-top: 1.5rem;
+    }
+
+    .compare-card li {
+      margin-bottom: 0.8rem;
+      color: var(--text-muted);
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .compare-card li::before {
+      content: "✕";
+      position: absolute;
+      left: 0;
+      color: #ef4444;
+      font-weight: bold;
+    }
+
+    .compare-card.better li::before {
+      content: "✓";
+      color: var(--primary);
+    }
+
+    .compare-card li strong {
+      color: var(--text-main);
+    }
+
+    /* Interactive Code Showcase */
+    .showcase-container {
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .showcase-header {
+      background: rgba(30, 41, 59, 0.5);
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .showcase-dots {
+      display: flex;
+      gap: 0.4rem;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 9999px;
+      background: rgba(255,255,255,0.2);
+    }
+
+    .dot.red { background: #ef4444; }
+    .dot.yellow { background: #f59e0b; }
+    .dot.green { background: #10b981; }
+
+    .showcase-tabs {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .tab-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+      font-family: var(--font-mono);
+    }
+
+    .tab-btn:hover {
+      color: var(--text-main);
+      background: rgba(255,255,255,0.05);
+    }
+
+    .tab-btn.active {
+      color: var(--primary);
+      background: rgba(0, 242, 254, 0.1);
+      border: 1px solid rgba(0, 242, 254, 0.2);
+    }
+
+    .code-body {
+      padding: 1.5rem;
+      overflow-x: auto;
+      max-height: 400px;
+      min-height: 300px;
+    }
+
+    .code-body pre {
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      color: #e2e8f0;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+
+    /* Interactive Link Graph Explorer Simulator */
+    .graph-sim-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    @media (max-width: 900px) {
+      .graph-sim-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .graph-nodes-container {
+      background: rgba(15, 23, 42, 0.4);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2rem;
+      min-height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5rem;
+      position: relative;
+    }
+
+    .sim-node {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .sim-node::after {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .sim-node:hover {
+      transform: translateX(5px);
+      border-color: var(--primary);
+    }
+
+    .sim-node.active {
+      border-color: transparent;
+      box-shadow: 0 0 20px rgba(0, 242, 254, 0.2);
+    }
+
+    .sim-node.active::after {
+      opacity: 1;
+    }
+
+    .sim-node.linked {
+      border-color: var(--secondary);
+      box-shadow: 0 0 15px rgba(79, 172, 254, 0.15);
+      animation: linkPulse 2s infinite alternate;
+    }
+
+    @keyframes linkPulse {
+      0% { border-color: rgba(79, 172, 254, 0.4); }
+      100% { border-color: var(--secondary); }
+    }
+
+    .node-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .node-tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      background: rgba(255,255,255,0.08);
+      color: var(--text-muted);
+    }
+
+    .sim-node.active .node-tag {
+      background: rgba(255,255,255,0.2);
+      color: white;
+    }
+
+    .graph-desc-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2.5rem;
+      min-height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .graph-desc-panel h4 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .graph-desc-panel p {
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .link-details {
+      background: rgba(10, 15, 29, 0.6);
+      border-radius: 8px;
+      padding: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      border: 1px solid var(--border-color);
+      display: none;
+    }
+
+    .link-details.active {
+      display: block;
+    }
+
+    /* SVG Link Drawer Layer */
+    .svg-lines {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Key Features / Stats Section */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    @media (max-width: 800px) {
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2.5rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--border-hover);
+      box-shadow: 0 10px 30px rgba(0, 242, 254, 0.05);
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+      color: var(--primary);
+    }
+
+    .feature-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .feature-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Python Quick Start Code styling */
+    .quick-start-code {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Footer */
+    footer {
+      padding: 4rem 0;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      margin-bottom: 1rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Glow -->
+  <div class="bg-glow-container">
+    <div class="glow-1"></div>
+    <div class="glow-2"></div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary);">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        yaml-law
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">特徴</a></li>
+          <li><a href="#playground">データ比較</a></li>
+          <li><a href="#graph-simulator">リンクグラフ</a></li>
+          <li><a href="#quickstart">使い方</a></li>
+        </ul>
+      </nav>
+      <a href="https://github.com/ssKudo/yaml-law" class="btn-github" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </svg>
+        GitHub
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="badge">BUILDING REGULATION DATASET FOR RAG</div>
+      <h1>RAGに最適化された<br>建築基準法・施行令データセット</h1>
+      <p class="lead">e-Gov法令APIの複雑なXMLを、AIが扱いやすい「軽量メタデータYAML」「本文TXT」「条文参照リンクグラフ」に再構築。ハルシネーションを防ぐ正確なコンテキスト展開を可能にします。</p>
+      
+      <div class="hero-buttons">
+        <a href="#quickstart" class="btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          クイックスタート
+        </a>
+        <a href="#playground" class="btn-github">データ構造を見る</a>
+      </div>
+
+      <div class="clone-command-container">
+        <span class="clone-text">git clone https://github.com/ssKudo/yaml-law.git</span>
+        <button class="btn-copy" onclick="copyCloneCommand(this)" title="コピー">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>RAG開発における3つの強み</h2>
+        <p>単なるテキスト抽出ではない、LLM検索エンジンのための高度な設計。</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📁</div>
+          <h3>条文単位のクリアな分割</h3>
+          <p>巨大な法律テキストを1条文ごとにYAMLとTXTのペアに分解。不要な文脈ノイズを排除し、精緻な埋め込みベクトルを生成できます。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>高速な二段階スキャン</h3>
+          <p>本文を含まない軽量なYAMLメタデータを走査。対象外の条文を事前に除外し、LLMのトークン消費と検索コストを抑えます。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h3>リンクグラフの事前構築</h3>
+          <p>「前条」「法第〇条」といった条文間の参照関係を解決済み。ユーザーの質問に関連する周辺条文を自動的に芋づる式に展開可能です。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Playground / Data Compare Section -->
+  <section id="playground">
+    <div class="container">
+      <div class="section-title">
+        <h2>法令データのパースと構造化</h2>
+        <p>e-Gov Law APIから取得したオリジナルのXMLから、RAGフレンドリーな構造への変換例です。</p>
+      </div>
+
+      <div class="compare-grid">
+        <!-- Raw / XML -->
+        <div class="compare-card">
+          <h3>
+            <span style="color: #ef4444;">●</span>
+            e-Gov 生XML (変換前)
+          </h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+            ネストが深く、機械的なチャンク分割では関係性や見出し情報が欠落しやすい構造。
+          </p>
+          <div class="showcase-container">
+            <div class="showcase-header">
+              <div class="showcase-dots">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+              </div>
+              <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">article_001.xml</div>
+            </div>
+            <div class="code-body">
+              <pre><code class="xml">&lt;!-- e-Gov Law XML --&gt;
+&lt;Article Num="1"&gt;
+  &lt;ArticleTitle&gt;第一条&lt;/ArticleTitle&gt;
+  &lt;ArticleCaption&gt;（目的）&lt;/ArticleCaption&gt;
+  &lt;Paragraph Num="1"&gt;
+    &lt;ParagraphNum/&gt;
+    &lt;ParagraphSentence&gt;
+      &lt;Sentence&gt;この法律は、建築物の敷地、構造、設備及び用途に関する最低の基準を定めて、国民の生命、健康及び財産の保護を図り、もつて公共の福祉の増進に資することを目的とする。&lt;/Sentence&gt;
+    &lt;/ParagraphSentence&gt;
+  &lt;/Paragraph&gt;
+&lt;/Article&gt;</code></pre>
+            </div>
+          </div>
+          <ul>
+            <li>タグ情報が多くトークンが無駄になる</li>
+            <li>条文同士の参照リンクがテキストに埋もれて解決できない</li>
+          </ul>
+        </div>
+
+        <!-- Structured / YAML-TXT -->
+        <div class="compare-card better">
+          <h3>
+            <span style="color: var(--primary);">●</span>
+            本データセット (変換後)
+          </h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+            メタデータ、本文、リンクエッジに役割を分離。タブを切り替えて構成を確認できます。
+          </p>
+          <div class="showcase-container">
+            <div class="showcase-header">
+              <div class="showcase-tabs">
+                <button class="tab-btn active" onclick="switchTab('yaml')">Metadata (YAML)</button>
+                <button class="tab-btn" onclick="switchTab('text')">Body (TXT)</button>
+                <button class="tab-btn" onclick="switchTab('links')">Link Graph (YAML)</button>
+              </div>
+            </div>
+            <div class="code-body">
+              <pre><code id="structured-code-block" style="color: #38bdf8;">law_id: "325AC0000000201"
+law_title: "建築基準法"
+law_num: "昭和二十五年法律第二百一号"
+part: "本則"
+chapter: "第一章 総則"
+article_num: "1"
+article_title: "第一条"
+article_caption: "（目的）"
+description: "国民の生命、健康、財産を保護するため、建築物の敷地・構造・設備・用途に関する最低基準を定めた法律。"
+text_path: "../texts/article_001.txt"</code></pre>
+            </div>
+          </div>
+          <ul>
+            <li><strong>高速スキャン</strong>: 軽量YAMLでインデックス走査が可能</li>
+            <li><strong>本文の切り出し</strong>: `text_path` から本文のみをクリーンにロード</li>
+            <li><strong>関係性の自動拡張</strong>: リンクグラフを介して他の条文と接続</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Link Graph Explorer Simulator -->
+  <section id="graph-simulator">
+    <div class="container">
+      <div class="section-title">
+        <h2>リンクグラフ動作シミュレーター</h2>
+        <p>RAGシステムがユーザーの質問文から関係性の高い法令を「芋づる式（グラフ接続）」に展開して、LLMの回答精度を向上させるプロセスを体験できます。</p>
+      </div>
+
+      <div class="graph-sim-grid">
+        <!-- Visual Node list -->
+        <div class="graph-nodes-container" id="graph-nodes-container">
+          <!-- SVG line layers -->
+          <svg class="svg-lines" id="svg-connections">
+            <!-- Dynamically generated lines go here -->
+          </svg>
+
+          <!-- Nodes -->
+          <div class="sim-node" id="node-ac-6" onclick="selectNode('ac-6')">
+            <div>
+              <div class="node-title">建築基準法 第6条</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">（建築物の建築等に関する申請及び確認）</div>
+            </div>
+            <span class="node-tag">起点（選択中）</span>
+          </div>
+
+          <div class="sim-node" id="node-ac-6-2" onclick="selectNode('ac-6-2')">
+            <div>
+              <div class="node-title">建築基準法 第6条の2</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">（指定確認検査機関による確認）</div>
+            </div>
+            <span class="node-tag" id="tag-ac-6-2">同一法令内参照</span>
+          </div>
+
+          <div class="sim-node" id="node-co-146" onclick="selectNode('node-co-146')">
+            <div>
+              <div class="node-title">施行令 第146条</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">（確認申請を要しない建築物）</div>
+            </div>
+            <span class="node-tag" id="tag-co-146">他法令（令）からの参照</span>
+          </div>
+        </div>
+
+        <!-- Desc panel -->
+        <div class="graph-desc-panel">
+          <div>
+            <h4 id="sim-title">建築基準法 第6条 の参照リンク</h4>
+            <p id="sim-text">第6条は「確認申請」に関する極めて重要な起点条文です。ここには、同一法内の「指定確認検査機関への委託（第6条の2）」や、施行令にある「確認申請を要しない例外要件（施行令第146条）」への強いリンクエッジが結ばれています。</p>
+          </div>
+          
+          <div>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem; font-weight: bold;">
+              RAGプロンプトへの自動展開イメージ:
+            </p>
+            <div class="link-details active" id="sim-prompt-box">
+{
+  "query": "確認申請の手続き方法について教えて",
+  "retrieved_nodes": [
+    "建築基準法 第6条" (スコア上位)
+  ],
+  "graph_expanded_nodes": [
+    "建築基準法 第6条の2" (関連度: 高),
+    "建築基準法施行令 第146条" (関連度: 高)
+  ]
+}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Start Section -->
+  <section id="quickstart">
+    <div class="container">
+      <div class="section-title">
+        <h2>RAGシステムでの利用方法</h2>
+        <p>本データセットを活用して、メタデータから本文を動的にロードし、関係条文を展開するPythonの実装例です。</p>
+      </div>
+
+      <div class="quick-start-code">
+        <div class="showcase-container">
+          <div class="showcase-header">
+            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">rag_agent.py</span>
+            <button class="btn-copy" onclick="copyPythonCode(this)" title="コピー">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="code-body" style="max-height: 500px;">
+            <pre><code class="python" style="color: #a5b4fc;">import yaml
+from pathlib import Path
+
+# 1. 指定した条文メタデータ(YAML)をロード
+article_path = Path("data/building_standard_act/articles/article_006.yaml")
+with open(article_path, "r", encoding="utf-8") as f:
+    meta = yaml.safe_load(f)
+
+print(f"スキャン対象: {meta['law_title']} - {meta['article_title']} ({meta['article_caption']})")
+
+# 2. メタデータのパスから、本文テキスト(TXT)を動的に読み込む
+text_file = article_path.parent / meta["text_path"]
+with open(text_file, "r", encoding="utf-8") as f:
+    body_text = f.read()
+
+# 3. リンクグラフから被参照・参照条文を取得
+# (例: data/links/article_links.yaml から該当IDのエッジを検索)
+linked_articles = [
+    "data/building_standard_act/articles/article_006_2.yaml",
+    "data/building_standard_act_enforcement_order/articles/article_146.yaml"
+]
+
+# 4. 周辺情報をロードしてLLMのプロンプトに統合
+context = [body_text]
+for link in linked_articles:
+    with open(Path(link).parent / meta["text_path"], "r", encoding="utf-8") as f:
+        context.append(f.read())
+
+print("LLMへ送る統合コンテキストの準備が完了しました。")</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="#about">特徴</a>
+        <a href="#playground">データ構造</a>
+        <a href="#graph-simulator">リンクグラフ</a>
+        <a href="https://github.com/ssKudo/yaml-law" target="_blank">GitHubリポジトリ</a>
+      </div>
+      <p>© 2026 ssKudo. Built with GPT-5.5-Middle & Gemini 3.5 Flash.</p>
+      <p style="font-size: 0.8rem; color: rgba(255,255,255,0.3)">
+        本データセットの法令データは、デジタル庁e-Gov法令APIより取得・加工したものです。
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Tab switching logic for the Playground code block
+    const tabData = {
+      yaml: `law_id: "325AC0000000201"
+law_title: "建築基準法"
+law_num: "昭和二十五年法律第二百一号"
+part: "本則"
+chapter: "第一章 総則"
+article_num: "1"
+article_title: "第一条"
+article_caption: "（目的）"
+description: "国民の生命、健康、財産を保護するため、建築物の敷地・構造・設備・用途に関する最低基準を定めた法律。"
+text_path: "../texts/article_001.txt"`,
+      text: `（目的）
+第一条
+この法律は、建築物の敷地、構造、設備及び用途に関する最低の基準を定めて、国民の生命、健康及び財産の保護を図り、もつて公共の福祉の増進に資することを目的とする。`,
+      links: `# links/article_links.yaml
+- source: "325CO0000000338:article_146"  # 施行令 第146条
+  target: "325AC0000000201:article_006"  # 基準法 第6条
+  type: "short_law_article_reference"
+- source: "325AC0000000201:article_006_2" # 基準法 第6条の2
+  target: "325AC0000000201:article_006"   # 基準法 第6条
+  type: "same_law_article_reference"`
+    };
+
+    function switchTab(tabName) {
+      // Toggle button states
+      const buttons = document.querySelectorAll('.showcase-tabs .tab-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      
+      const event = window.event;
+      if(event && event.target) {
+        event.target.classList.add('active');
+      } else {
+        // Find by name
+        const match = Array.from(buttons).find(b => b.textContent.includes(tabName === 'yaml' ? 'Metadata' : tabName === 'text' ? 'Body' : 'Link'));
+        if(match) match.classList.add('active');
+      }
+
+      // Change code content
+      const block = document.getElementById('structured-code-block');
+      block.textContent = tabData[tabName];
+      
+      // Color scheme adjustments
+      if (tabName === 'yaml') {
+        block.style.color = '#38bdf8'; // cyan-light
+      } else if (tabName === 'text') {
+        block.style.color = '#f8fafc'; // white
+      } else {
+        block.style.color = '#c084fc'; // purple-light
+      }
+    }
+
+    // Node Simulator Logic
+    const nodeDetails = {
+      'ac-6': {
+        title: "建築基準法 第6条 の参照関係",
+        text: "第6条（建築物の建築等に関する申請及び確認）は、建築プロセスにおける起点となる非常に重要な条文です。ここには、建築主が申請を行う『指定確認検査機関（法第6条の2）』や、そもそも確認申請の手続きをしなくても良い範囲を規定する『確認申請を要しない建築物（施行令第146条）』など、RAG検索において同時に参照すべき重要な法・令の条文が網羅的に接続されています。",
+        prompt: `{
+  "query": "確認申請の手続き方法について教えて",
+  "retrieved_nodes": [
+    "建築基準法 第6条" (スコア上位)
+  ],
+  "graph_expanded_nodes": [
+    "建築基準法 第6条の2" (同一法令内リンク),
+    "建築基準法施行令 第146条" (他法令参照リンク)
+  ]
+}`
+      },
+      'ac-6-2': {
+        title: "建築基準法 第6条の2 の参照関係",
+        text: "第6条の2（指定確認検査機関による確認）は、民間の検査機関に確認申請を委託できる制度を定めています。この条文は法第6条の制度の一部であるため、6条と相互に参照関係が結ばれています。RAGで『確認申請の窓口』について質問された場合、6条の役所手続きだけでなく、6条の2の民間代行手続きも同時にLLMに提供することで、より正確なアドバイスが可能になります。",
+        prompt: `{
+  "query": "確認検査は役所じゃないとだめ？",
+  "retrieved_nodes": [
+    "建築基準法 第6条の2" (スコア上位)
+  ],
+  "graph_expanded_nodes": [
+    "建築基準法 第6条" (相互リンク関係)
+  ]
+}`
+      },
+      'node-co-146': {
+        title: "建築基準法施行令 第146条 の参照関係",
+        text: "施行令 第146条は、確認申請の手続きを省略できる小規模な建築物等の例外条件を定義しています。これは、法第6条における手続き義務の範囲を狭めるための実務情報です。リンクグラフには、この『施行令第146条』から『親法である建築基準法第6条』への参照接続が登録されているため、ユーザーの『確認申請がいらない場合は？』という疑問に対して、例外要件の施行令と、本体手続きの法律の双方を漏れなくロードできます。",
+        prompt: `{
+  "query": "確認申請を省略できる例外はある？",
+  "retrieved_nodes": [
+    "建築基準法施行令 第146条" (スコア上位)
+  ],
+  "graph_expanded_nodes": [
+    "建築基準法 第6条" (親法へのリンク)
+  ]
+}`
+      }
+    };
+
+    function selectNode(nodeId) {
+      // Clear states
+      document.querySelectorAll('.sim-node').forEach(node => {
+        node.classList.remove('active', 'linked');
+        node.querySelector('.node-tag').textContent = '接続条文';
+      });
+
+      const selected = document.getElementById(nodeId === 'ac-6' ? 'node-ac-6' : nodeId === 'ac-6-2' ? 'node-ac-6-2' : 'node-co-146');
+      selected.classList.add('active');
+      selected.querySelector('.node-tag').textContent = '起点（選択中）';
+
+      // Set linked nodes based on selection
+      if (nodeId === 'ac-6') {
+        const link1 = document.getElementById('node-ac-6-2');
+        const link2 = document.getElementById('node-co-146');
+        link1.classList.add('linked');
+        link2.classList.add('linked');
+        document.getElementById('tag-ac-6-2').textContent = '同一法内リンク';
+        document.getElementById('tag-co-146').textContent = '施行令リンク';
+      } else if (nodeId === 'ac-6-2') {
+        const link = document.getElementById('node-ac-6');
+        link.classList.add('linked');
+        link.querySelector('.node-tag').textContent = '親条文へのリンク';
+      } else {
+        const link = document.getElementById('node-ac-6');
+        link.classList.add('linked');
+        link.querySelector('.node-tag').textContent = '親法へのリンク';
+      }
+
+      // Update desc panels
+      const key = nodeId === 'ac-6' ? 'ac-6' : nodeId === 'ac-6-2' ? 'ac-6-2' : 'node-co-146';
+      document.getElementById('sim-title').textContent = nodeDetails[key].title;
+      document.getElementById('sim-text').textContent = nodeDetails[key].text;
+      document.getElementById('sim-prompt-box').textContent = nodeDetails[key].prompt;
+    }
+
+    // Helper functions
+    function copyCloneCommand(btn) {
+      navigator.clipboard.writeText("git clone https://github.com/ssKudo/yaml-law.git");
+      const originalSvg = btn.innerHTML;
+      btn.innerHTML = `<span style="font-family: var(--font-body); font-size: 0.8rem; color: var(--primary);">Copied!</span>`;
+      setTimeout(() => {
+        btn.innerHTML = originalSvg;
+      }, 2000);
+    }
+
+    function copyPythonCode(btn) {
+      const code = `import yaml
+from pathlib import Path
+
+# 1. 指定した条文メタデータ(YAML)をロード
+article_path = Path("data/building_standard_act/articles/article_006.yaml")
+with open(article_path, "r", encoding="utf-8") as f:
+    meta = yaml.safe_load(f)
+
+print(f"スキャン対象: {meta['law_title']} - {meta['article_title']} ({meta['article_caption']})")
+
+# 2. メタデータのパスから、本文テキスト(TXT)を動的に読み込む
+text_file = article_path.parent / meta["text_path"]
+with open(text_file, "r", encoding="utf-8") as f:
+    body_text = f.read()
+
+# 3. リンクグラフから被参照・参照条文を取得
+# (例: data/links/article_links.yaml から該当IDのエッジを検索)
+linked_articles = [
+    "data/building_standard_act/articles/article_006_2.yaml",
+    "data/building_standard_act_enforcement_order/articles/article_146.yaml"
+]
+
+# 4. 周辺情報をロードしてLLMのプロンプトに統合
+context = [body_text]
+for link in linked_articles:
+    with open(Path(link).parent / meta["text_path"], "r", encoding="utf-8") as f:
+        context.append(f.read())
+
+print("LLMへ送る統合コンテキストの準備が完了しました。")`;
+      
+      navigator.clipboard.writeText(code);
+      const originalSvg = btn.innerHTML;
+      btn.innerHTML = `<span style="font-family: var(--font-body); font-size: 0.8rem; color: var(--primary); font-weight: 500;">Copied!</span>`;
+      setTimeout(() => {
+        btn.innerHTML = originalSvg;
+      }, 2000);
+    }
+
+    // Default select
+    window.onload = function() {
+      selectNode('ac-6');
+    };
+  </script>
+</body>
+</html>
