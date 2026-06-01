@@ -1,2 +1,6 @@
 __pycache__/
 *.py[cod]
+
+# Personal Notes / Private Experiments
+private/
+private_notes/
