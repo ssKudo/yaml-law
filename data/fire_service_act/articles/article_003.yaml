@@ -11,6 +11,6 @@ division: null
 article_num: "3"
 article_title: "第三条"
 article_caption: null
-description: ""
-keywords: []
+description: "消防長や消防署長等が、火災予防に危険な行為の禁止や、消火・避難に支障となる物件の除去などの必要な措置を命じる権限、および所有者不明時の措置や代執行について定めている。"
+keywords: ["予防措置命令", "危険行為の禁止", "物件の除去", "代執行", "消防長", "消防署長"]
 text_path: "../texts/article_003.txt"

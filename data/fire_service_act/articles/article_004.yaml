@@ -11,6 +11,6 @@ division: null
 article_num: "4"
 article_title: "第四条"
 article_caption: null
-description: ""
-keywords: []
+description: "消防長や消防署長が火災予防のために行う、関係者への資料提出命令や関係場所への立入検査、質問権限、および立入時の制限や秘密保持義務について定めている。"
+keywords: ["立入検査", "質問権", "資料提出命令", "関係場所", "住居の立ち入り", "秘密保持"]
 text_path: "../texts/article_004.txt"

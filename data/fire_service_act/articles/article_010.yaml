@@ -11,6 +11,6 @@ division: null
 article_num: "10"
 article_title: "第十条"
 article_caption: null
-description: ""
-keywords: []
+description: "指定数量以上の危険物は製造所、貯蔵所、取扱所以外で貯蔵・取り扱うことを禁止し、一定期間の仮貯蔵の承認制度、および危険物の取扱い・施設の技術上の基準を定めている。"
+keywords: ["危険物", "指定数量以上", "製造所等", "仮貯蔵", "仮取扱い", "技術上の基準"]
 text_path: "../texts/article_010.txt"

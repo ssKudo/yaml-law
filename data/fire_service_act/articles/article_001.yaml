@@ -11,6 +11,6 @@ division: null
 article_num: "1"
 article_title: "第一条"
 article_caption: null
-description: ""
-keywords: []
+description: "消防法において、火災の予防や鎮圧、災害被害の軽減、救急搬送などを通じて国民の生命や財産を保護し、社会の安寧秩序と公共の福祉の増進を図るという目的を定めている。"
+keywords: ["目的", "火災予防", "生命保護", "災害軽減", "傷病者搬送", "公共の福祉"]
 text_path: "../texts/article_001.txt"

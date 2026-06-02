@@ -11,6 +11,6 @@ division: null
 article_num: "25"
 article_title: "第二十五条"
 article_caption: null
-description: ""
-keywords: []
+description: "火災発生時に消防隊が到着するまでの間、関係者等が消火や延焼防止、人命救助を行う義務と周囲の協力、および消防職員が現場で関係者に情報提供を求める権限を定めている。"
+keywords: ["消火義務", "延焼防止", "人命救助", "協力義務", "情報提供", "消防隊到着前"]
 text_path: "../texts/article_025.txt"

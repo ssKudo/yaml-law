@@ -11,6 +11,6 @@ division: null
 article_num: "5"
 article_title: "第五条"
 article_caption: null
-description: ""
-keywords: []
+description: "消防長や消防署長が、防火対象物の位置や構造などが火災予防上危険であると認める場合に、関係者に対して改修や移転、工事の停止などの必要な措置を命じる権限を定めている。"
+keywords: ["改修命令", "移転命令", "除去命令", "防火対象物", "公示"]
 text_path: "../texts/article_005.txt"

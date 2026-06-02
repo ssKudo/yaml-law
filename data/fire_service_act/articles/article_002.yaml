@@ -11,6 +11,6 @@ division: null
 article_num: "2"
 article_title: "第二条"
 article_caption: null
-description: ""
-keywords: []
+description: "消防法の適用において基礎となる、防火対象物、消防対象物、関係者、危険物、消防隊、救急業務などの重要用語の定義を定めている。"
+keywords: ["用語の定義", "防火対象物", "消防対象物", "関係者", "危険物", "消防隊", "救急業務"]
 text_path: "../texts/article_002.txt"

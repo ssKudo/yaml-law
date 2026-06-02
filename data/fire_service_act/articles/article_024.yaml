@@ -11,6 +11,6 @@ division: null
 article_num: "24"
 article_title: "第二十四条"
 article_caption: null
-description: ""
-keywords: []
+description: "火災を発見した者は遅滞なく消防署等に通報しなければならない義務と、その通報が迅速に伝わるよう周囲の人々が協力すべき義務を定めている。"
+keywords: ["火災発見", "通報義務", "消防署", "迅速通報", "協力義務"]
 text_path: "../texts/article_024.txt"
