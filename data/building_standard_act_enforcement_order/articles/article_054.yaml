@@ -11,5 +11,6 @@ division: null
 article_num: "54"
 article_title: "第五十四条"
 article_caption: "（壁の長さ）"
-description: ""
+description: "組積造の壁について、構造強度を確保するために壁の長さを原則10メートル以下と制限することを定めた条文。"
+keywords: ["壁の長さ", "組積造", "10メートル以下", "構造制限"]
 text_path: "../texts/article_054.txt"

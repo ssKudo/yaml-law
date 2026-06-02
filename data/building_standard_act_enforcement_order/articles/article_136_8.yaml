@@ -11,5 +11,6 @@ division: null
 article_num: "136_8"
 article_title: "第百三十六条の八"
 article_caption: "（火災の防止）"
-description: ""
+description: "工事現場における火気の使用、溶接・溶断作業、吸い殻の処理について、周囲の可燃物への引火や火災の発生を防止するために講ずべき消火器の設置等の安全措置を定めた条文。"
+keywords: ["火災の防止", "火気使用制限", "溶接作業", "消火器設置", "工事現場引火防止"]
 text_path: "../texts/article_136_8.txt"

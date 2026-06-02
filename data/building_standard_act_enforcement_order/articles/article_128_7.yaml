@@ -11,5 +11,6 @@ division: null
 article_num: "128_7"
 article_title: "第百二十八条の七"
 article_caption: "（避難上の安全の検証を行う区画部分に対する基準の適用）"
-description: ""
+description: "一定の防火区画等で区画された建築物部分について、区画避難安全検証法（避難時間と煙降下時間の比較）により安全性が確かめられた場合に排煙や内装制限等の規定を免除する特例を定めた条文。"
+keywords: ["区画避難安全性能", "区画避難安全検証法", "排煙免除", "内装制限免除", "煙降下時間"]
 text_path: "../texts/article_128_7.txt"

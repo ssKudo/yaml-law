@@ -11,5 +11,6 @@ division: null
 article_num: "125"
 article_title: "第百二十五条"
 article_caption: "（屋外への出口）"
-description: ""
+description: "避難階における、階段又は居室から屋外出口までの歩行距離制限、および物品販売店舗等における屋外出口の合計必要幅の算定割合を定めた条文。"
+keywords: ["屋外への出口", "避難階", "歩行距離", "出口幅", "店舗出口"]
 text_path: "../texts/article_125.txt"

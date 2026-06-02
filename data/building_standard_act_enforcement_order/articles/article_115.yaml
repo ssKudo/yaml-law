@@ -11,5 +11,6 @@ division: null
 article_num: "115"
 article_title: "第百十五条"
 article_caption: "（建築物に設ける煙突）"
-description: ""
+description: "建築物に設ける煙突の構造基準として、屋上突出部の高さ（60cm以上）、可燃材料との離隔距離（15cm以上）、陶管等の差し込み、およびボイラー用煙突の寸法基準などを定めた条文。"
+keywords: ["煙突の構造", "屋上突出部", "可燃物離隔", "ボイラー用煙突", "防腐防錆"]
 text_path: "../texts/article_115.txt"

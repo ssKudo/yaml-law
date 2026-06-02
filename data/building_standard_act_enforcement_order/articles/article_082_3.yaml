@@ -11,5 +11,6 @@ division: null
 article_num: "82_3"
 article_title: "第八十二条の三"
 article_caption: "（保有水平耐力）"
-description: ""
+description: "保有水平耐力計算において、地震力に対する建築物地上部各階の保有水平耐力が、必要保有水平耐力（DS等に基づく計算値）以上であることを確かめる基準を定めた条文。"
+keywords: ["保有水平耐力", "必要保有水平耐力", "耐力検証", "地震力"]
 text_path: "../texts/article_082_3.txt"

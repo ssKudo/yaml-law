@@ -11,5 +11,6 @@ division: null
 article_num: "59"
 article_title: "第五十九条"
 article_caption: "（鉄骨組積造である壁）"
-description: ""
+description: "鉄骨の軸組と組積造とを併用する「鉄骨組積造」の壁において、組積部と鉄骨部を金物で緊結する構造的な一体化基準を定めた条文。"
+keywords: ["鉄骨組積造", "金物緊結", "ボルト", "かすがい", "構造一体化"]
 text_path: "../texts/article_059.txt"

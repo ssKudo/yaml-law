@@ -11,5 +11,6 @@ division: null
 article_num: "108_4"
 article_title: "第百八条の四"
 article_caption: "（耐火建築物の特定主要構造部に関する技術的基準）"
-description: ""
+description: "耐火建築物の主要な柱・梁などの「特定主要構造部」に求める技術的基準、耐火性能検証法・防火区画検証法による検証プロセス、および耐火構造とみなす特例措置を定めた条文。"
+keywords: ["特定主要構造部", "耐火性能検証法", "防火区画検証法", "耐火構造みなし", "火災継続時間"]
 text_path: "../texts/article_108_4.txt"

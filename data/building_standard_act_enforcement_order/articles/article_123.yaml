@@ -11,5 +11,6 @@ division: null
 article_num: "123"
 article_title: "第百二十三条"
 article_caption: "（避難階段及び特別避難階段の構造）"
-description: ""
+description: "屋内外の「避難階段」、および付室・バルコニーを経由する「特別避難階段」の構造について、耐火壁、不燃仕上げ、採光照明、防火戸、直通構造などの詳細な技術的基準を定めた条文。"
+keywords: ["避難階段の構造", "特別避難階段", "付室", "バルコニー", "耐火構造", "防火戸"]
 text_path: "../texts/article_123.txt"

@@ -11,5 +11,6 @@ division: null
 article_num: "70"
 article_title: "第七十条"
 article_caption: "（柱の防火被覆）"
-description: ""
+description: "地階を除く階数が3以上の鉄骨造建築物において、火災による主要な柱の耐力低下・早期倒壊を防ぐため、柱に一定の防火被覆（30分間）を施す要件を定めた条文。"
+keywords: ["柱の防火被覆", "3階建て以上", "耐力低下防止", "倒壊防止", "30分間耐火"]
 text_path: "../texts/article_070.txt"

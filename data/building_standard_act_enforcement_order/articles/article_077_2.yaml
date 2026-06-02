@@ -11,5 +11,6 @@ division: null
 article_num: "77_2"
 article_title: "第七十七条の二"
 article_caption: "（床版の構造）"
-description: ""
+description: "RC造の床版（スラブ）の最小厚さ（8センチメートル以上）、短辺長に対する厚さ割合、最大モーメント部における鉄筋間隔、およびプレキャスト床版の接合緊結を定めた条文。"
+keywords: ["床版の構造", "スラブ厚さ", "鉄筋間隔", "プレキャスト床版", "接合部"]
 text_path: "../texts/article_077_2.txt"

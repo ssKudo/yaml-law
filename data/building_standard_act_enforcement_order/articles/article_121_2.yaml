@@ -11,5 +11,6 @@ division: null
 article_num: "121_2"
 article_title: "第百二十一条の二"
 article_caption: "（屋外階段の構造）"
-description: ""
+description: "避難用に設ける屋外階段について、火災時の延焼や経年劣化による崩壊を防ぐため、原則として木造とすることを禁止した条文。"
+keywords: ["屋外階段", "木造禁止", "避難階段", "防腐措置"]
 text_path: "../texts/article_121_2.txt"

@@ -11,5 +11,6 @@ division: null
 article_num: "128"
 article_title: "第百二十八条"
 article_caption: "（敷地内の通路）"
-description: ""
+description: "屋外避難階段や避難出口から、公道や避難用の広場等の空地まで安全に避難できるよう、敷地内に設ける通路の必要最小幅員（1.5メートル又は90センチメートル以上）を定めた条文。"
+keywords: ["敷地内通路", "通路幅員", "屋外避難階段", "公道避難"]
 text_path: "../texts/article_128.txt"

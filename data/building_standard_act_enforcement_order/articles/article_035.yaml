@@ -11,5 +11,6 @@ division: null
 article_num: "35"
 article_title: "第三十五条"
 article_caption: "（合併処理浄化槽の構造）"
-description: ""
+description: "公共下水道以外の放流先を持つ合併処理浄化槽の構造基準、及びそれが汚物処理性能基準に適合する場合の法適合みなし規定を定めた条文。"
+keywords: ["合併処理浄化槽", "放流基準", "大臣認定構造", "法適合みなし"]
 text_path: "../texts/article_035.txt"

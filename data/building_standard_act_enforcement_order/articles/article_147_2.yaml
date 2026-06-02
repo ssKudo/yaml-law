@@ -11,5 +11,6 @@ division: null
 article_num: "147_2"
 article_title: "第百四十七条の二"
 article_caption: "（工事中における安全上の措置等に関する計画の届出を要する建築物）"
-description: ""
+description: "建築設備の所有者・管理者に対する、設備の適切な維持保全（定期検査等）義務、及び保守・点検図書の保存義務を定めた条文。"
+keywords: ["設備の維持保全", "図書の保存", "定期検査", "保守管理"]
 text_path: "../texts/article_147_2.txt"

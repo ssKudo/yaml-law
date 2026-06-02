@@ -11,5 +11,6 @@ division: null
 article_num: "95"
 article_title: "第九十五条"
 article_caption: "（木材）"
-description: ""
+description: "限界耐力計算等の耐力評価に用いる、構造用木材（繊維方向）の基準「材料強度」数値、及び積雪時の補正係数を定めた条文。"
+keywords: ["木材の材料強度", "材料強度基準値", "積雪時補正", "限界耐力計算"]
 text_path: "../texts/article_095.txt"

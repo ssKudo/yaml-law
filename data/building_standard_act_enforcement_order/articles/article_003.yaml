@@ -11,5 +11,6 @@ division: null
 article_num: "3"
 article_title: "第三条"
 article_caption: "（建築基準適合判定資格者検定の基準）"
-description: ""
+description: "建築基準適合判定資格者検定の実施基準として、建築物の確認審査を行うために必要な法令や技術的知識に関する検定であることを定めた条文。"
+keywords: ["適合判定資格者検定", "検定基準", "確認審査", "知識要件"]
 text_path: "../texts/article_003.txt"

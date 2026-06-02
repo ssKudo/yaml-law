@@ -11,5 +11,6 @@ division: null
 article_num: "79_4"
 article_title: "第七十九条の四"
 article_caption: "（鉄骨鉄筋コンクリート造に対する第五節及び第六節の規定の準用）"
-description: ""
+description: "鉄骨鉄筋コンクリート（SRC）造において、鉄骨造及び鉄筋コンクリート造の構造規定を準用するルールと、読み替え規定を定めた条文。"
+keywords: ["準用規定", "SRC造", "鉄骨造規定準用", "RC造規定準用", "読み替え"]
 text_path: "../texts/article_079_4.txt"

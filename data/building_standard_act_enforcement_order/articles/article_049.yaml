@@ -11,5 +11,6 @@ division: null
 article_num: "49"
 article_title: "第四十九条"
 article_caption: "（外壁内部等の防腐措置等）"
-description: ""
+description: "木造の外壁内部等の防腐・防湿として、モルタル下地の防水紙設置、および地面から1m以内の柱・筋かい・土台に対する有効な防腐・防蟻（しろあり）措置を義務付けた条文。"
+keywords: ["防腐措置", "防蟻措置", "防水紙", "外壁下地", "しろあり対策", "地面から1メートル"]
 text_path: "../texts/article_049.txt"

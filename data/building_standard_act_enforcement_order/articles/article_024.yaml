@@ -11,5 +11,6 @@ division: null
 article_num: "24"
 article_title: "第二十四条"
 article_caption: "（踊場の位置及び踏幅）"
-description: ""
+description: "階段の高さが一定（3メートルまたは4メートル）を超える場合に設けなければならない踊場の位置、および直階段の踊場の最小踏幅（1.2メートル以上）を定めた条文。"
+keywords: ["踊場の位置", "踊場の踏幅", "階段踊場", "高さ制限", "直階段"]
 text_path: "../texts/article_024.txt"

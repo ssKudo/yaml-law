@@ -11,5 +11,6 @@ division: null
 article_num: "144"
 article_title: "第百四十四条"
 article_caption: "（遊戯施設）"
-description: ""
+description: "給水・排水設備等の工作物に関して、建築物の建築設備等に関する構造・安全・衛生規定（配管の腐食防止や貫通措置など）を準用する規定を定めた条文。"
+keywords: ["給水設備等の準用", "配管設備", "構造耐力", "衛生基準", "準用規定"]
 text_path: "../texts/article_144.txt"

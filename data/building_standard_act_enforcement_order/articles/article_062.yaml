@@ -11,5 +11,6 @@ division: null
 article_num: "62"
 article_title: "第六十二条"
 article_caption: "（構造耐力上主要な部分等のささえ）"
-description: ""
+description: "組積造の主要構造部や高さ2メートルを超える組積造の壁について、荷重による変形・崩壊を防ぐため木造の構造部分で支えることを禁止した条文。"
+keywords: ["構造支持制限", "木造支え禁止", "組積造壁", "異種構造接続"]
 text_path: "../texts/article_062.txt"

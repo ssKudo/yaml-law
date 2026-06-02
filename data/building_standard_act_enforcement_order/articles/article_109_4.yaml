@@ -11,5 +11,6 @@ division: null
 article_num: "109_4"
 article_title: "第百九条の四"
 article_caption: "（法第二十一条第一項の政令で定める部分）"
-description: ""
+description: "延べ面積が一定を超える大規模木造等の耐火・準耐火化が義務付けられる部分として、主要構造部のうち自重や積載荷重等の垂直荷重を支える柱や梁などの部分を指定した条文。"
+keywords: ["荷重支持部分", "主要構造部", "垂直荷重", "大規模建築物"]
 text_path: "../texts/article_109_4.txt"

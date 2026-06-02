@@ -11,5 +11,6 @@ division: null
 article_num: "130_6"
 article_title: "第百三十条の六"
 article_caption: "（第二種中高層住居専用地域内に建築することができる工場）"
-description: ""
+description: "第一種中高層住居専用地域、第二種中高層住居専用地域、第一種住居地域、又は第二種住居地域内に建築することができる工場の範囲（出力制限0.75kW以下、パン屋・米穀店等、その他安全上支障がないもの）を定めた条文。"
+keywords: ["中高層住居専用地域", "住居地域", "工場建築制限", "原動機出力", "食品製造業"]
 text_path: "../texts/article_130_6.txt"

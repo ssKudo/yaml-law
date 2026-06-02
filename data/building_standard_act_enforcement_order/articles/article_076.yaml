@@ -11,5 +11,6 @@ division: null
 article_num: "76"
 article_title: "第七十六条"
 article_caption: "（型わく及び支柱の除去）"
-description: ""
+description: "構造主要部に用いるコンクリートのせき板（型枠）及び支柱（サポート）の脱型・取外し時期について、所要強度確保等の技術的基準を定めた条文。"
+keywords: ["型わく除去", "支柱取り外し", "脱型強度", "せき板"]
 text_path: "../texts/article_076.txt"

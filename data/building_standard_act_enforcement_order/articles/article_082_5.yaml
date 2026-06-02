@@ -11,5 +11,6 @@ division: null
 article_num: "82_5"
 article_title: "第八十二条の五"
 article_caption: null
-description: ""
+description: "積雪・暴風・地震時の耐力・変位の検証手順、損傷限界・安全限界の周期計算、および土砂災害特別警戒区域（レッドゾーン）内の衝撃力計算を含む「限界耐力計算」の定義と基準を定めた条文。"
+keywords: ["限界耐力計算", "損傷限界変位", "安全限界変位", "加速度", "レッドゾーン計算"]
 text_path: "../texts/article_082_5.txt"

@@ -11,5 +11,6 @@ division: null
 article_num: "129_2_3"
 article_title: "第百二十九条の二の三"
 article_caption: null
-description: ""
+description: "建築設備等の構造耐力や安全性を確保するため、昇降機の適用の技術的基準、屋上に突出する水槽や煙突などの風圧・地震に対する構造計算基準を定めた条文。"
+keywords: ["技術的基準", "昇降機", "屋上水槽", "煙突の構造計算", "構造耐力"]
 text_path: "../texts/article_129_2_3.txt"

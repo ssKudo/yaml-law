@@ -11,5 +11,6 @@ division: null
 article_num: "88"
 article_title: "第八十八条"
 article_caption: "（地震力）"
-description: ""
+description: "地上部及び地下部における設計用「地震力」の算定について、固定・積載荷重、地震層せん断力係数（振動特性等から算出）、及び標準せん断力係数（原則0.2以上）を規定した条文。"
+keywords: ["地震力", "せん断力係数", "標準せん断力係数", "地下の震度", "多雪区域地震力"]
 text_path: "../texts/article_088.txt"

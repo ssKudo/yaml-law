@@ -11,5 +11,6 @@ division: null
 article_num: "130_9"
 article_title: "第百三十条の九"
 article_caption: "（危険物の貯蔵又は処理に供する建築物）"
-description: ""
+description: "準工業地域、商業地域、工業地域等の用途地域内において、建築物内で製造又は貯蔵できる危険物の数量、及び危険物の種類（火薬類、液化石油ガス、ガソリン等）に応じた制限基準を定めた条文。"
+keywords: ["危険物の貯蔵量", "用途地域制限", "準工業地域", "商業地域", "工業地域", "危険物数量"]
 text_path: "../texts/article_130_9.txt"

@@ -11,5 +11,6 @@ division: null
 article_num: "81"
 article_title: "第八十一条"
 article_caption: null
-description: ""
+description: "建築基準法第二十条の区分（高さ31メートル超等）に応じ、建築物の安全性確認に適用するべき構造計算（保有水平耐力計算、許容応力度計算等）の選択基準を定めた条文。"
+keywords: ["構造計算基準", "許容応力度等計算", "保有水平耐力計算", "限界耐力計算", "高さ31メートル"]
 text_path: "../texts/article_081.txt"

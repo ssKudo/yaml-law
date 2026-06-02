@@ -11,5 +11,6 @@ division: null
 article_num: "62_4"
 article_title: "第六十二条の四"
 article_caption: "（耐力壁）"
-description: ""
+description: "補強コンクリートブロック造の耐力壁について、囲まれた投影面積（60平方メートル以下）、壁の長さの合計、壁厚、縦横の鉄筋配置・定着長さ等の仕様規定を定めた条文。"
+keywords: ["耐力壁", "ブロック造", "壁の厚さ", "鉄筋配置", "定着長さ", "壁量"]
 text_path: "../texts/article_062_4.txt"

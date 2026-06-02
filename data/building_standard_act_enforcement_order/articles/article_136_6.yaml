@@ -11,5 +11,6 @@ division: null
 article_num: "136_6"
 article_title: "第百三十六条の六"
 article_caption: "（建て方）"
-description: ""
+description: "建築物の建て方（鉄骨や木造の建方工事）において、構造フレームが倒壊しないよう、仮ボルトの適切な締結や仮支柱、仮筋違いの設置による安全確保措置を定めた条文。"
+keywords: ["建て方", "仮筋違い", "仮ボルト", "倒壊防止", "鉄骨工事建方"]
 text_path: "../texts/article_136_6.txt"

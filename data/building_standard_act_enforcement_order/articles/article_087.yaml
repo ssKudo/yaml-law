@@ -11,5 +11,6 @@ division: null
 article_num: "87"
 article_title: "第八十七条"
 article_caption: "（風圧力）"
-description: ""
+description: "建築物に作用する「風圧力」について、速度圧（設計風速から算出）及び風力係数（風洞試験等から算出）を用いた計算式と、近接物遮蔽による低減規定を定めた条文。"
+keywords: ["風圧力", "速度圧", "風力係数", "風のさえぎり", "風荷重"]
 text_path: "../texts/article_087.txt"

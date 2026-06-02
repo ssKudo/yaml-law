@@ -11,5 +11,6 @@ division: null
 article_num: "92_2"
 article_title: "第九十二条の二"
 article_caption: "（高力ボルト接合）"
-description: ""
+description: "高力ボルト摩擦接合部におけるボルト軸断面の長期及び短期の「許容せん断応力度」基準値、および引張・せん断応力が共存する場合の計算式を定めた条文。"
+keywords: ["高力ボルト摩擦接合", "許容せん断応力度", "複合応力", "軸断面"]
 text_path: "../texts/article_092_2.txt"

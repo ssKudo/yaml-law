@@ -11,5 +11,6 @@ division: null
 article_num: "36_3"
 article_title: "第三十六条の三"
 article_caption: "（構造設計の原則）"
-description: ""
+description: "建築物の構造設計における基本原則として、荷重・地震力等に対する一様な安全性、耐震バランスの確保、剛性・靭性の確保などの全体計画要件を定めた条文。"
+keywords: ["構造設計原則", "耐震バランス", "剛性", "靭性", "荷重伝達"]
 text_path: "../texts/article_036_3.txt"

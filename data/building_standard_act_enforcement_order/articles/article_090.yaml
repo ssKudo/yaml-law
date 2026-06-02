@@ -11,5 +11,6 @@ division: null
 article_num: "90"
 article_title: "第九十条"
 article_caption: "（鋼材等）"
-description: ""
+description: "鋼材、ステンレス鋼、アルミニウム、ボルト、高力ボルト、リベットなどの各種金属構造材料における長期及び短期の「許容応力度」を定めた条文。"
+keywords: ["鋼材の許容応力度", "アルミニウム合金", "許容引張応力", "許容せん断応力"]
 text_path: "../texts/article_090.txt"

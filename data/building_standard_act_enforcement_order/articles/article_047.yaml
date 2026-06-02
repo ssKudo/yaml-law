@@ -11,5 +11,6 @@ division: null
 article_num: "47"
 article_title: "第四十七条"
 article_caption: "（構造耐力上主要な部分である継手又は仕口）"
-description: ""
+description: "木造の構造主要部における部材の「継手」や「仕口」について、ボルトやかすがい等の金物緊結、柱接合部の局部応力に対する補強、ボルト座金使用義務などを定めた条文。"
+keywords: ["継手", "仕口", "金物緊結", "座金", "局部応力補強"]
 text_path: "../texts/article_047.txt"

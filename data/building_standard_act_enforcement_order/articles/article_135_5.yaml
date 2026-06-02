@@ -11,5 +11,6 @@ division: null
 article_num: "135_5"
 article_title: "第百三十五条の五"
 article_caption: "（天空率）"
-description: ""
+description: "日影による中高層建築物の高さの制限（日影規制）について、対象外（緩和対象）となる建築物の範囲、高低差による緩和、及び敷地周囲に水面・線路敷地・道路等がある場合の日影時間の算定緩和を定めた条文。"
+keywords: ["日影規制", "日影時間算定", "適用除外範囲", "高低差緩和", "道路・水面加算"]
 text_path: "../texts/article_135_5.txt"

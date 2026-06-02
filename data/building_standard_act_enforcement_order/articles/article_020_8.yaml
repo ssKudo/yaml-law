@@ -11,5 +11,6 @@ division: null
 article_num: "20_8"
 article_title: "第二十条の八"
 article_caption: "（居室を有する建築物の換気設備についてのホルムアルデヒドに関する技術的基準）"
-description: ""
+description: "ホルムアルデヒド対策のための換気設備（機械換気設備等）の必要有効換気量の計算式、構造方法、および適用の除外基準を規定した条文。"
+keywords: ["ホルムアルデヒド対策", "機械換気設備", "必要有効換気量", "換気構造"]
 text_path: "../texts/article_020_8.txt"

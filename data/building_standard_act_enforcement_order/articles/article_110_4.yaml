@@ -11,5 +11,6 @@ division: null
 article_num: "110_4"
 article_title: "第百十条の四"
 article_caption: "（警報設備を設けた場合に耐火建築物等とすることを要しないこととなる用途）"
-description: ""
+description: "適切な感知・報知を行う警報設備を設置した場合に、法第27条第1項第1号の耐火建築物等の適用対象外（緩和対象）となる特殊建築物の用途（病院、ホテル、共同住宅等）を指定した条文。"
+keywords: ["警報設備緩和", "耐火義務緩和", "共同住宅", "病院", "ホテル", "児童福祉施設"]
 text_path: "../texts/article_110_4.txt"

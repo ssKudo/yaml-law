@@ -11,5 +11,6 @@ division: null
 article_num: "133"
 article_title: "第百三十三条"
 article_caption: null
-description: ""
+description: "道路幅員の境界線が前面道路の反対側の境界線から後退した位置（法第42条第2項の2項道路など）にあるとみなされる場合における、斜線制限を適用するための前面道路反対側境界線の位置決定方法を定めた条文。"
+keywords: ["後退位置みなし", "2項道路", "前面道路反対側境界線", "道路斜線制限", "セットバック"]
 text_path: "../texts/article_133.txt"

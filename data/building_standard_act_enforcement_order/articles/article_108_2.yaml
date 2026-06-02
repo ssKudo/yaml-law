@@ -11,5 +11,6 @@ division: null
 article_num: "108_2"
 article_title: "第百八条の二"
 article_caption: "（不燃性能及びその技術的基準）"
-description: ""
+description: "建築材料に求められる「不燃性能」の技術的基準として、通常の火炎加熱（20分間）において燃焼せず、有害な変形・き裂等を生じず、避難上有害な煙・ガスを発生しない性能を定めた条文。"
+keywords: ["不燃性能", "不燃材料", "20分間加熱", "非燃焼", "有害ガス防止", "変形亀裂防止"]
 text_path: "../texts/article_108_2.txt"

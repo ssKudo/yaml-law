@@ -11,5 +11,6 @@ division: null
 article_num: "20_2"
 article_title: "第二十条の二"
 article_caption: "（換気設備の技術的基準）"
-description: ""
+description: "居室及び特殊建築物の居室に設置する換気設備（自然換気、機械換気、中央管理方式空気調和設備等）の必要換気量や給排気口の有効面積、中央制御等の技術的基準を定めた条文。"
+keywords: ["換気設備", "技術的基準", "有効換気量", "機械換気設備", "空気調和設備", "中央管理室"]
 text_path: "../texts/article_020_2.txt"

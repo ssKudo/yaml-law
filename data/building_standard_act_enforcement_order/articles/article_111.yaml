@@ -11,5 +11,6 @@ division: null
 article_num: "111"
 article_title: "第百十一条"
 article_caption: "（窓その他の開口部を有しない居室等）"
-description: ""
+description: "避難上の規定における「窓その他の開口部を有しない居室（無窓居室）」について、採光有効面積（1/20）や避難上有効な開口部の最小寸法などの判定基準を定めた条文。"
+keywords: ["無窓居室", "開口部基準", "採光面積", "避難開口部", "内接円寸法"]
 text_path: "../texts/article_111.txt"

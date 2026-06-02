@@ -11,5 +11,6 @@ division: null
 article_num: "126_5"
 article_title: "第百二十六条の五"
 article_caption: "（構造）"
-description: ""
+description: "非常用の照明装置の構造基準として、床面で1ルクス以上の照度確保、予備電源の設置、および耐熱性能（火災時の温度上昇に耐える構造）などを定めた条文。"
+keywords: ["照明装置の構造", "1ルクス以上", "予備電源", "耐熱照明"]
 text_path: "../texts/article_126_5.txt"

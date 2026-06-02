@@ -11,5 +11,6 @@ division: null
 article_num: "55"
 article_title: "第五十五条"
 article_caption: "（壁の厚さ）"
-description: ""
+description: "組積造の壁の最小厚さについて、建物の階数、壁の長さ、高さ等に応じて確保すべき基準寸法を詳細に定めた条文。"
+keywords: ["壁の厚さ", "組積造", "最小厚さ", "間仕切壁", "帳壁", "二重壁"]
 text_path: "../texts/article_055.txt"

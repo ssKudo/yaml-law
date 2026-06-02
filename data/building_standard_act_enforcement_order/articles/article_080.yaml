@@ -11,5 +11,6 @@ division: null
 article_num: "80"
 article_title: "第八十条"
 article_caption: "（無筋コンクリート造に対する第四節及び第六節の規定の準用）"
-description: ""
+description: "無筋コンクリート造の建築物等に対し、組積造の施工規定、RC造の材料・調合・養生規定等を準用することを定めた条文。"
+keywords: ["無筋コンクリート造", "準用規定", "施工規定準用", "養生規定準用"]
 text_path: "../texts/article_080.txt"

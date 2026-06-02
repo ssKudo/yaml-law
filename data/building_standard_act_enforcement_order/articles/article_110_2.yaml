@@ -11,5 +11,6 @@ division: null
 article_num: "110_2"
 article_title: "第百十条の二"
 article_caption: "（延焼するおそれがある外壁の開口部）"
-description: ""
+description: "法第27条第1項の特殊建築物において、遮炎性能を持つ防火設備を設けるべき対象となる、延焼のおそれのある外壁の開口部の範囲を規定した条文。"
+keywords: ["外壁開口部", "延焼のおそれのある部分", "特殊建築物", "火炎到達"]
 text_path: "../texts/article_110_2.txt"
