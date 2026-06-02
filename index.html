@@ -972,22 +972,25 @@ text_path: "../texts/article_001.txt"</code></pre>
               <button class="tab-btn active" id="btn-qs-agent" onclick="switchQuickStart('agent')">AIエージェントでの活用（推奨）</button>
               <button class="tab-btn" id="btn-qs-python" onclick="switchQuickStart('python')">Python RAGでのロード</button>
             </div>
-            <span id="qs-filename" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">Cursor / Claude Projects / NotebookLM</span>
+            <span id="qs-filename" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">CodexCLI / Claude Code / Antigravity IDE (2.0)</span>
           </div>
           <div class="code-body" style="max-height: 500px; overflow-y: auto;">
-            <pre><code id="qs-code-block" style="color: #38bdf8; font-family: var(--font-body); white-space: pre-wrap;">💡 **AIエージェント（Cursor, Windsurf, Claude Projects, NotebookLM など）への読み込ませ方**
+            <pre><code id="qs-code-block" style="color: #38bdf8; font-family: var(--font-body); white-space: pre-wrap;">💡 **AIエージェント（CodexCLI, Claude Code, Antigravity IDE など）への読み込ませ方**
 
-本データセットは「1条文＝1ペア（YAMLメタデータとTXT本文）」に綺麗に分割されているため、AIエージェントにフォルダごと読み込ませるだけで最高のパフォーマンスを発揮します。
+本データセットは「1条文＝1ペア（YAMLメタデータとTXT本文）」に分割され、条文参照リンクグラフも事前構築されているため、AIエージェントに読み込ませるだけで最高のパフォーマンスを発揮します。
 
-1. **リポジトリをクローンまたはダウンロード**
+1. **リポジトリをローカルにクローン**
    `git clone https://github.com/ssKudo/yaml-law.git`
    
-2. **AIエージェントのコンテキストに追加**
-   - **Cursor / Windsurf**: プロジェクトのワークスペースとして本フォルダを開くか、`.cursorrules` の参照ソースフォルダに指定します。
-   - **Claude Projects / Custom GPTs**: ナレッジ（知識ベース）として `data/building_standard_act/texts/` などのTXTフォルダ内のファイルをアップロードします。
-   - **NotebookLM**: 「ソース」の追加でTXTフォルダをそのまま選択します。
+2. **各エージェントでの活用方法**
+   - **CodexCLI / Claude Code**: 
+     クローンしたディレクトリを作業領域（Cwd）としてコマンドラインから指示を出します。AIエージェントは軽量なYAMLメタデータをスキャンして該当条文の `text_path` を即座に特定し、必要な本文TXTファイルのみをロードするため、トークン消費を最小限に抑えつつ高速に回答を生成します。
+   - **Antigravity IDE (2.0)**: 
+     プロジェクトフォルダとしてワークスペースを開くだけです。AIアシスタントがフォルダ構造および `data/links/article_links.yaml`（リンクグラフ）を自動認識し、複雑な法令のQAやコード生成を高精度に実行します。
+   - **NotebookLM**: 
+     （※ローカルのフォルダ一括ドラッグ＆ドロップには対応していませんが、Googleドライブ経由でフォルダを指定するか、ローカルからは `data/building_standard_act/texts/` などのTXTフォルダ内の複数テキストファイルを一括選択して「ソース」としてアップロードすることで利用可能です。）
 
-**効果**: 条文がコンパクトに分かれているため、AIが必要な条文だけをピンポイントで読み込むことができ、長文による混乱（コンテキスト破綻）やハルシネーションを防ぎます。</code></pre>
+**効果**: 1条文ごとに綺麗に分割されているため、AIが関係のない条文データまで過剰に読み込む（コンテキストを圧迫する）ことがなく、法解釈の混乱やハルシネーションを防ぎます。</code></pre>
           </div>
         </div>
       </div>
@@ -1154,19 +1157,22 @@ text_path: "../texts/article_001.txt"`,
     }
 
     const qsData = {
-      agent: `💡 **AIエージェント（Cursor, Windsurf, Claude Projects, NotebookLM など）への読み込ませ方**
+      agent: `💡 **AIエージェント（CodexCLI, Claude Code, Antigravity IDE など）への読み込ませ方**
 
-本データセットは「1条文＝1ペア（YAMLメタデータとTXT本文）」に綺麗に分割されているため、AIエージェントにフォルダごと読み込ませるだけで最高のパフォーマンスを発揮します。
+本データセットは「1条文＝1ペア（YAMLメタデータとTXT本文）」に分割され、条文参照リンクグラフも事前構築されているため、AIエージェントに読み込ませるだけで最高のパフォーマンスを発揮します。
 
-1. **リポジトリをクローンまたはダウンロード**
+1. **リポジトリをローカルにクローン**
    \`git clone https://github.com/ssKudo/yaml-law.git\`
    
-2. **AIエージェントのコンテキストに追加**
-   - **Cursor / Windsurf**: プロジェクトのワークスペースとして本フォルダを開くか、\`.cursorrules\` の参照ソースフォルダに指定します。
-   - **Claude Projects / Custom GPTs**: ナレッジ（知識ベース）として \`data/building_standard_act/texts/\` などのTXTフォルダ内のファイルをアップロードします。
-   - **NotebookLM**: 「ソース」の追加でTXTフォルダをそのまま選択します。
+2. **各エージェントでの活用方法**
+   - **CodexCLI / Claude Code**: 
+     クローンしたディレクトリを作業領域（Cwd）としてコマンドラインから指示を出します。AIエージェントは軽量なYAMLメタデータをスキャンして該当条文の \`text_path\` を即座に特定し、必要な本文TXTファイルのみをロードするため、トークン消費を最小限に抑えつつ高速に回答を生成します。
+   - **Antigravity IDE (2.0)**: 
+     プロジェクトフォルダとしてワークスペースを開くだけです。AIアシスタントがフォルダ構造および \`data/links/article_links.yaml\`（リンクグラフ）を自動認識し、複雑な法令のQAやコード生成を高精度に実行します。
+   - **NotebookLM**: 
+     （※ローカルのフォルダ一括ドラッグ＆ドロップには対応していませんが、Googleドライブ経由でフォルダを指定するか、ローカルからは \`data/building_standard_act/texts/\` などのTXTフォルダ内の複数テキストファイルを一括選択して「ソース」としてアップロードすることで利用可能です。）
 
-**効果**: 条文がコンパクトに分かれているため、AIが必要な条文だけをピンポイントで読み込むことができ、長文による混乱（コンテキスト破綻）やハルシネーションを防ぎます。`,
+**効果**: 1条文ごとに綺麗に分割されているため、AIが関係のない条文データまで過剰に読み込む（コンテキストを圧迫する）ことがなく、法解釈の混乱やハルシネーションを防ぎます。`,
       python: `import yaml
 from pathlib import Path
 
@@ -1200,7 +1206,7 @@ print("LLMへ送る統合コンテキストの準備が完了しました。")`
       if (type === 'agent') {
         btnAgent.classList.add('active');
         btnPython.classList.remove('active');
-        filename.textContent = 'Cursor / Claude Projects / NotebookLM';
+        filename.textContent = 'CodexCLI / Claude Code / Antigravity IDE (2.0)';
         block.textContent = qsData.agent;
         block.style.fontFamily = "var(--font-body)";
         block.style.color = '#38bdf8';
