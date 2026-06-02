@@ -11,6 +11,6 @@ division: null
 article_num: "1_2"
 article_title: "第一条の二"
 article_caption: "（公共施設）"
-description: ""
-keywords: []
+description: "都市計画法に基づき、下水道や緑地、広場、河川、運河、消防用の貯水施設など、政令で定める公共の用に供する施設の定義について規定した条文。"
+keywords: ["公共施設", "下水道", "緑地", "広場", "河川", "貯水施設"]
 text_path: "../texts/article_001_2.txt"

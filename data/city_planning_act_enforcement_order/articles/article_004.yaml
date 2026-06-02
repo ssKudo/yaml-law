@@ -11,6 +11,6 @@ division: null
 article_num: "4"
 article_title: "第四条"
 article_caption: "（地域地区について都市計画に定める事項）"
-description: ""
-keywords: []
+description: "地域地区の都市計画において定めるべき事項として、区域の面積、および特定街区や景観地区などの一部の地区についてはその名称を規定した条文。"
+keywords: ["地域地区", "都市計画", "特定街区", "景観地区", "名称"]
 text_path: "../texts/article_004.txt"

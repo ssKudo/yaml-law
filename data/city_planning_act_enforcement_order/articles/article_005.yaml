@@ -11,6 +11,6 @@ division: null
 article_num: "5"
 article_title: "第五条"
 article_caption: "（法第十一条第一項第十五号の政令で定める施設）"
-description: ""
-keywords: []
+description: "都市計画で定めることができる都市施設のうち、電気通信事業用施設や、防風、防火、防水、防雪、防砂、防潮などの施設を規定した条文。"
+keywords: ["都市施設", "電気通信施設", "防災施設", "防風林", "防潮堤"]
 text_path: "../texts/article_005.txt"

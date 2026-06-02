@@ -11,6 +11,6 @@ division: null
 article_num: "6"
 article_title: "第六条"
 article_caption: "（都市施設について都市計画に定める事項）"
-description: ""
-keywords: []
+description: "道路の車線数や駐車場の構造、官公庁施設等の建蔽率・容積率など、各都市施設に関して都市計画に定めるべき事項を分類して規定した条文。"
+keywords: ["都市施設", "都市計画", "道路車線", "駐車場面積", "建蔽率", "容積率"]
 text_path: "../texts/article_006.txt"
