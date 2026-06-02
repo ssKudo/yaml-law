@@ -11,5 +11,6 @@ division: null
 article_num: "68_6"
 article_title: "第六十八条の六"
 article_caption: "（道路の位置の指定に関する特例）"
-description: ""
+description: "地区計画等において道路の配置や規模、区域が定められている場合、建築基準法に基づく道路の位置の指定は、その地区計画等の定めに即して行わなければならないとする特例を規定した条文。"
+keywords: ["道路位置指定", "地区計画に即した指定", "道の配置", "道路指定特例"]
 text_path: "../texts/article_068_6.txt"

@@ -11,5 +11,6 @@ division: null
 article_num: "97_5"
 article_title: "第九十七条の五"
 article_caption: "（事務の区分）"
-description: ""
+description: "建築基準法に基づき都道府県や市町村が処理する各種事務（報告処理、建築協定関連等）について、地方自治法上の「第一号法定受託事務」または「第二号法定受託事務」とする区分を定めた条文。"
+keywords: ["法定受託事務", "第一号法定受託事務", "第二号法定受託事務", "地方自治法区分"]
 text_path: "../texts/article_097_5.txt"

@@ -11,5 +11,6 @@ division: null
 article_num: "11"
 article_title: "第十一条"
 article_caption: "（第三章の規定に適合しない建築物に対する措置）"
-description: ""
+description: "都市計画制限などに適合しない既存不適格建築物が公益上著しく支障があると認める場合、特定行政庁が議会の同意を得て是正命令（除却、移転等）を出す手続き、および通常生ずべき損害の時価補償について定めた条文。"
+keywords: ["既存不適格", "是正命令", "損害補償", "市町村議会の同意", "時価補償"]
 text_path: "../texts/article_011.txt"

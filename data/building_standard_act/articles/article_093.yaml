@@ -11,5 +11,6 @@ division: null
 article_num: "93"
 article_title: "第九十三条"
 article_caption: "（許可又は確認に関する消防長等の同意等）"
-description: ""
+description: "特定行政庁や建築主事等が建築の許可や確認を行う際、管轄の消防長または消防署長の「消防同意」を得なければならないとする同意義務、回答期限（3日〜7日）、および保健所長への通知等を定めた条文。"
+keywords: ["消防同意", "消防長・消防署長", "回答期限", "保健所長への通知", "確認・許可手続き"]
 text_path: "../texts/article_093.txt"

@@ -11,5 +11,6 @@ division: null
 article_num: "48"
 article_title: "第四十八条"
 article_caption: "（用途地域等）"
-description: ""
+description: "都市計画における各用途地域（住居専用地域、住居地域、商業地域、工業地域など13地域）内において建築できる建築物の種類・用途を制限する規定（用途制限）、および特定行政庁が良好な環境を害さないと認めて行う例外許可の手続きを定めた条文。"
+keywords: ["用途地域", "用途制限", "例外許可", "住居地域", "商業地域", "工業地域", "建築審査会の同意"]
 text_path: "../texts/article_048.txt"

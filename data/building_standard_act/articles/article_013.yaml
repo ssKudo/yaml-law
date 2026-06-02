@@ -11,5 +11,6 @@ division: null
 article_num: "13"
 article_title: "第十三条"
 article_caption: "（身分証明書の携帯）"
-description: ""
+description: "建築主事、建築監視員、または委任を受けた職員が、検査や命令などの執行のために立ち入りや質問等を行う際、身分証明書を携帯し関係者に提示する義務、および捜査目的の立ち入り禁止を定めた条文。"
+keywords: ["身分証明書", "立入検査", "犯罪捜査の禁止", "携帯義務"]
 text_path: "../texts/article_013.txt"

@@ -11,5 +11,6 @@ division: null
 article_num: "30"
 article_title: "第三十条"
 article_caption: "（長屋又は共同住宅の各戸の界壁）"
-description: ""
+description: "長屋や共同住宅における隣接する住戸間の遮音性能を確保するため、戸境壁（界壁）の遮音構造基準、および界壁を小屋裏・天井裏まで到達させて防火・遮音を図る義務を定めた条文。"
+keywords: ["界壁の遮音", "戸境壁", "共同住宅", "長屋", "天井裏の界壁", "遮音性能"]
 text_path: "../texts/article_030.txt"

@@ -11,5 +11,6 @@ division: null
 article_num: "2"
 article_title: "第二条"
 article_caption: "（用語の定義）"
-description: ""
+description: "建築基準法において使用される重要用語（建築物、特殊建築物、建築設備、居室、主要構造部、延焼のおそれのある部分、耐火構造、準耐火構造、不燃材料、設計、建築、特定行政庁など）の定義を定めた条文。"
+keywords: ["用語の定義", "建築物", "特殊建築物", "主要構造部", "延焼のおそれのある部分", "耐火構造", "建築", "特定行政庁"]
 text_path: "../texts/article_002.txt"

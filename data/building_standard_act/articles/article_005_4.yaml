@@ -11,5 +11,6 @@ division: null
 article_num: "5_4"
 article_title: "第五条の四"
 article_caption: "（構造計算適合判定資格者検定）"
-description: ""
+description: "建築物の計画が構造計算適合性判定を要する場合に判定を行うための構造計算適合判定資格者の検定制度、受検資格（一級建築士合格者かつ5年以上の実務経験）、検定委員について定めた条文。"
+keywords: ["構造計算適合判定資格者", "検定", "実務経験", "一級建築士", "構造計算適合性判定"]
 text_path: "../texts/article_005_4.txt"

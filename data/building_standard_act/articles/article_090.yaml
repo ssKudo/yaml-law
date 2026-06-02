@@ -11,5 +11,6 @@ division: null
 article_num: "90"
 article_title: "第九十条"
 article_caption: "（工事現場の危害の防止）"
-description: ""
+description: "建築、修繕、除却等の工事の施工者に対し、地盤の崩落や倒壊による危害防止措置を講ずる義務、その技術的基準、および違反者への特定行政庁による措置命令の準用を定めた条文。"
+keywords: ["工事現場の危害防止", "地盤崩落防止", "安全対策", "施工者の義務", "措置命令の準用"]
 text_path: "../texts/article_090.txt"

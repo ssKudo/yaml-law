@@ -11,5 +11,6 @@ division: null
 article_num: "35_3"
 article_title: "第三十五条の三"
 article_caption: "（無窓の居室等の主要構造部）"
-description: ""
+description: "採光や通風に必要な窓等の開口部を持たない「無窓の居室」について、火災時の安全確保のために、居室を区画する主要構造部を耐火構造にするか、不燃材料で造ることを義務付けた条文。"
+keywords: ["無窓 of 居室", "主要構造部", "耐火構造", "不燃材料", "区画壁"]
 text_path: "../texts/article_035_3.txt"

@@ -11,5 +11,6 @@ division: null
 article_num: "64"
 article_title: "第六十四条"
 article_caption: "（看板等の防火措置）"
-description: ""
+description: "防火地域または準防火地域内にある建築物の外壁の開口部で、隣地からの延焼のおそれがある部分に、防火戸などの適切な防火設備を設ける義務を定めた条文。"
+keywords: ["開口部の防火設備", "防火戸", "延焼のおそれのある部分", "防火地域", "準防火地域"]
 text_path: "../texts/article_064.txt"

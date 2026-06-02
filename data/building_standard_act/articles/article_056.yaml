@@ -11,5 +11,6 @@ division: null
 article_num: "56"
 article_title: "第五十六条"
 article_caption: "（建築物の各部分の高さ）"
-description: ""
+description: "道路幅員や隣地境界線、真北方向などに基づき、周辺の採光や通風を確保するための斜線制限（道路斜線、隣地斜線、北側斜線制限）および天空率等を用いた代替基準を定めた条文。"
+keywords: ["道路斜線制限", "隣地斜線制限", "北側斜線制限", "斜線制限", "天空率", "採光・通風確保", "後退距離"]
 text_path: "../texts/article_056.txt"

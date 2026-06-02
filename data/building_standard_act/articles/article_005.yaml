@@ -11,5 +11,6 @@ division: null
 article_num: "5"
 article_title: "第五条"
 article_caption: "（建築基準適合判定資格者検定）"
-description: ""
+description: "建築物が建築基準関係規定に適合するかどうかを判定する建築基準適合判定資格者（一級・二級）を検定するための、国土交通大臣による検定の実施、受検資格、および委員について定めた条文。"
+keywords: ["適合判定資格者検定", "建築基準適合判定資格者", "一級建築基準適合判定資格者", "受検資格", "検定委員"]
 text_path: "../texts/article_005.txt"

@@ -11,5 +11,6 @@ division: null
 article_num: "23"
 article_title: "第二十三条"
 article_caption: "（外壁）"
-description: ""
+description: "第二十二条第一項 of 指定区域内にある木造建築物等について、外壁のうち延焼のおそれのある部分を準防火構造（土塗壁など）にすることを義務付けた条文。"
+keywords: ["外壁の防火", "22条区域", "木造建築物等", "準防火性能", "延焼のおそれのある部分"]
 text_path: "../texts/article_023.txt"

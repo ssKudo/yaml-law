@@ -11,5 +11,6 @@ division: null
 article_num: "28_2"
 article_title: "第二十八条の二"
 article_caption: "（石綿その他の物質の飛散又は発散に対する衛生上の措置）"
-description: ""
+description: "建築物の居室内におけるシックハウス症候群や健康被害を防ぐため、アスベスト（石綿）の添加・使用禁止、およびホルムアルデヒド等の有害物質の発散抑制に関する換気設備・建築材料の基準を定めた条文。"
+keywords: ["アスベスト禁止", "シックハウス対策", "ホルムアルデヒド", "クロルピリホス", "換気設備"]
 text_path: "../texts/article_028_2.txt"

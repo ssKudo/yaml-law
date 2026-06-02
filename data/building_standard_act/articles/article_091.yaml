@@ -11,5 +11,6 @@ division: null
 article_num: "91"
 article_title: "第九十一条"
 article_caption: "（建築物の敷地が区域、地域又は地区の内外にわたる場合の措置）"
-description: ""
+description: "建築物の敷地が用途地域や地区（防火地域、高度地区、容積・建蔽率制限等を除く）の内外にわたる場合において、敷地全体の過半が属する側の地域等の制限を敷地・建物全体に適用する原則を定めた条文。"
+keywords: ["敷地がわたる場合", "過半の原則", "用途地域の適用", "敷地境界線の処理"]
 text_path: "../texts/article_091.txt"

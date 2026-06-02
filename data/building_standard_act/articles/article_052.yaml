@@ -11,5 +11,6 @@ division: null
 article_num: "52"
 article_title: "第五十二条"
 article_caption: "（容積率）"
-description: ""
+description: "建築物の敷地面積に対する延べ面積の割合（容積率）の最高限度について、用途地域や前面道路の幅員に応じた制限基準、および敷地が複数地域にまたがる場合の計算方法等を定めた条文。"
+keywords: ["容積率", "最高限度", "延べ面積", "敷地面積", "前面道路幅員", "地下緩和", "高層住居誘導地区"]
 text_path: "../texts/article_052.txt"

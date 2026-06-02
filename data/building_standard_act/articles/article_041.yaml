@@ -11,5 +11,6 @@ division: null
 article_num: "41"
 article_title: "第四十一条"
 article_caption: "（市町村の条例による制限の緩和）"
-description: ""
+description: "都市計画区域等以外の農山漁村などの区域において、土地の状況に応じて、市町村が国土交通大臣の承認を得て条例を定め、敷地の衛生や採光・換気等の制限を緩和または不適用にできる特例を定めた条文。"
+keywords: ["制限の緩和", "市町村条例", "農山漁村", "単体規定の緩和", "都市計画区域外"]
 text_path: "../texts/article_041.txt"

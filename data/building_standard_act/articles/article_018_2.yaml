@@ -11,5 +11,6 @@ division: null
 article_num: "18_2"
 article_title: "第十八条の二"
 article_caption: "（指定構造計算適合性判定機関による構造計算適合性判定の実施）"
-description: ""
+description: "都道府県知事が構造計算適合性判定（適判）の業務を、国土交通大臣または都道府県知事が指定した民間機関（指定構造計算適合性判定機関）に委託できることを定めた条文。"
+keywords: ["指定構造計算適合性判定機関", "適判委託", "判定業務", "都道府県知事"]
 text_path: "../texts/article_018_2.txt"

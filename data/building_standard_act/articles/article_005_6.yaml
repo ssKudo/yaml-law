@@ -11,5 +11,6 @@ division: null
 article_num: "5_6"
 article_title: "第五条の六"
 article_caption: "（建築物の設計及び工事監理）"
-description: ""
+description: "建築士法の規定に基づく建築物の工事について、資格を持つ建築士による設計・工事監理の義務付け、および構造設計一級建築士・設備設計一級建築士による関与の義務を定めた条文。"
+keywords: ["設計", "工事監理", "工事監理者", "建築士法", "構造設計一級建築士", "設備設計一級建築士"]
 text_path: "../texts/article_005_6.txt"
