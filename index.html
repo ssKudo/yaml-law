@@ -708,9 +708,9 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
-      <div class="badge">BUILDING REGULATION DATASET FOR RAG</div>
-      <h1>RAGに最適化された<br>建築基準法・施行令データセット</h1>
-      <p class="lead">e-Gov法令APIの複雑なXMLを、AIが扱いやすい「軽量メタデータYAML」「本文TXT」「条文参照リンクグラフ」に再構築。ハルシネーションを防ぐ正確なコンテキスト展開を可能にします。</p>
+      <div class="badge">BUILDING REGULATION DATASET FOR RAG & AI AGENTS</div>
+      <h1>クローンするだけで、<br>最強の建築基準法RAGナレッジ</h1>
+      <p class="lead">面倒なデータベース構築やXMLのパースは不要。リポジトリを `git clone` してそのままAIエージェントやRAGに読み込ませるだけで、極めて高精度な建築法規AI検索が実現します。</p>
       
       <div class="hero-buttons">
         <a href="#quickstart" class="btn-primary">
@@ -736,25 +736,25 @@
   <section id="about">
     <div class="container">
       <div class="section-title">
-        <h2>RAG開発における3つの強み</h2>
-        <p>単なるテキスト抽出ではない、LLM検索エンジンのための高度な設計。</p>
+        <h2>RAG・AIエージェントで即戦力になる理由</h2>
+        <p>クローンするだけで簡単に導入でき、かつ高精度なLLM対話を実現するための設計。</p>
       </div>
 
       <div class="features-grid">
         <div class="feature-card">
           <div class="feature-icon">📁</div>
-          <h3>条文単位のクリアな分割</h3>
-          <p>巨大な法律テキストを1条文ごとにYAMLとTXTのペアに分解。不要な文脈ノイズを排除し、精緻な埋め込みベクトルを生成できます。</p>
+          <h3>クローンするだけの超速導入</h3>
+          <p>複雑なセットアップやDB構築は不要。ローカルにクローンしてフォルダごと知識ソースに登録するだけで、今すぐRAG環境が立ち上がります。</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">⚡</div>
-          <h3>高速な二段階スキャン</h3>
-          <p>本文を含まない軽量なYAMLメタデータを走査。対象外の条文を事前に除外し、LLMのトークン消費と検索コストを抑えます。</p>
+          <div class="feature-icon">🤖</div>
+          <h3>AIエージェントに最適</h3>
+          <p>Cursor、Windsurf、Claude Projects、NotebookLM等にそのまま読み込ませるだけで、AIが不要なノイズに混乱せず的確な条文を検索します。</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🔗</div>
-          <h3>リンクグラフの事前構築</h3>
-          <p>「前条」「法第〇条」といった条文間の参照関係を解決済み。ユーザーの質問に関連する周辺条文を自動的に芋づる式に展開可能です。</p>
+          <h3>リンク関係の事前計算</h3>
+          <p>「前条」「法第〇条」などの複雑な参照リンクを解決済み。AIが周辺の関連条文を自動で芋づる式にロードし、ハルシネーションを防ぎます。</p>
         </div>
       </div>
     </div>
@@ -917,55 +917,77 @@ text_path: "../texts/article_001.txt"</code></pre>
     </div>
   </section>
 
+  <!-- Future Desktop App Section -->
+  <section id="desktop-teaser" style="background: linear-gradient(180deg, rgba(12, 18, 38, 0) 0%, rgba(127, 0, 255, 0.08) 50%, rgba(12, 18, 38, 0) 100%);">
+    <div class="container">
+      <div class="section-title">
+        <h2>🚀 将来の展望：ローカルAI内蔵アプリの提供</h2>
+        <p>インターネット不要、完全オフラインで動作する次世代の建築基準法AI検索デスクトップアプリも計画中です。</p>
+      </div>
+
+      <div style="background: var(--bg-card); border: 1px solid rgba(127, 0, 255, 0.3); border-radius: 16px; padding: 3rem; display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; align-items: center; box-shadow: 0 10px 40px rgba(127, 0, 255, 0.15);">
+        <div>
+          <span style="background: rgba(127, 0, 255, 0.15); border: 1px solid rgba(127, 0, 255, 0.4); color: #d8b4fe; padding: 0.3rem 0.8rem; border-radius: 9999px; font-size: 0.8rem; font-weight: bold; margin-bottom: 1.5rem; display: inline-block;">DEVELOPMENT ROADMAP</span>
+          <h3 style="font-size: 1.8rem; font-weight: bold; margin-bottom: 1rem; font-family: var(--font-heading);">完全ローカルで動くAI法規アシスタント</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem;">OllamaやLlama.cppの技術を内蔵し、外部への通信を一切行わないデスクトップアプリケーション（EXE/ZIP形式）を計画しています。機密性の高い建築設計データや案件情報を扱う実務でも、安心してご利用いただけます。</p>
+          <ul style="list-style: none;">
+            <li style="margin-bottom: 0.8rem; color: var(--text-main); font-size: 0.9rem; padding-left: 1.5rem; position: relative;">
+              <span style="color: #c084fc; position: absolute; left: 0;">✔</span>
+              <strong>PC1台で完結</strong>：クラウド不要、インストール後すぐにオフライン実行
+            </li>
+            <li style="margin-bottom: 0.8rem; color: var(--text-main); font-size: 0.9rem; padding-left: 1.5rem; position: relative;">
+              <span style="color: #c084fc; position: absolute; left: 0;">✔</span>
+              <strong>自動法令アップデート</strong>：リポジトリを更新するだけでアプリのデータが無料自動更新される仕組み
+            </li>
+          </ul>
+        </div>
+        <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; font-family: var(--font-mono); font-size: 0.85rem; box-shadow: inset 0 2px 8px rgba(0,0,0,0.5);">
+          <div style="color: #c084fc; margin-bottom: 0.8rem;">// 将来提供予定のアプリイメージ</div>
+          <div style="color: #94a3b8; line-height: 1.8;">
+            $ ./yaml-law-app --run-local-llm<br>
+            <span style="color: #10b981;">[Success]</span> Local AI Engine (Llama-3-JP-8B) initialized.<br>
+            <span style="color: #10b981;">[Success]</span> Synced latest building standard act datasets.<br>
+            <br>
+            <span style="color: #00f2fe;">User:</span> 延べ面積が500㎡の木造倉庫の確認申請は必要？<br>
+            <span style="color: #a5b4fc;">AI Assistant:</span> 建築基準法第6条第1項第3号に基づき、木造の建築物で2階建て以上、または延べ面積が500㎡を超えるものは確認申請が必要です。本件は延べ面積が500㎡ちょうどですが、他の条件（階数や都市計画区域内か等）により判断が分かれます...<br>
+            <span style="color: #38bdf8;">[Source]</span> 法第6条1項3号, 施行令第146条 (自動拡張ロード)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Quick Start Section -->
   <section id="quickstart">
     <div class="container">
       <div class="section-title">
-        <h2>RAGシステムでの利用方法</h2>
-        <p>本データセットを活用して、メタデータから本文を動的にロードし、関係条文を展開するPythonの実装例です。</p>
+        <h2>AIツール・開発への導入方法</h2>
+        <p>AIエージェントにそのまま読ませることも、ご自身のPython RAGプログラムに統合することも非常に簡単です。</p>
       </div>
 
       <div class="quick-start-code">
         <div class="showcase-container">
           <div class="showcase-header">
-            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">rag_agent.py</span>
-            <button class="btn-copy" onclick="copyPythonCode(this)" title="コピー">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-              </svg>
-            </button>
+            <div class="showcase-tabs">
+              <button class="tab-btn active" id="btn-qs-agent" onclick="switchQuickStart('agent')">AIエージェントでの活用（推奨）</button>
+              <button class="tab-btn" id="btn-qs-python" onclick="switchQuickStart('python')">Python RAGでのロード</button>
+            </div>
+            <span id="qs-filename" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">Cursor / Claude Projects / NotebookLM</span>
           </div>
-          <div class="code-body" style="max-height: 500px;">
-            <pre><code class="python" style="color: #a5b4fc;">import yaml
-from pathlib import Path
+          <div class="code-body" style="max-height: 500px; overflow-y: auto;">
+            <pre><code id="qs-code-block" style="color: #38bdf8; font-family: var(--font-body); white-space: pre-wrap;">💡 **AIエージェント（Cursor, Windsurf, Claude Projects, NotebookLM など）への読み込ませ方**
 
-# 1. 指定した条文メタデータ(YAML)をロード
-article_path = Path("data/building_standard_act/articles/article_006.yaml")
-with open(article_path, "r", encoding="utf-8") as f:
-    meta = yaml.safe_load(f)
+本データセットは「1条文＝1ペア（YAMLメタデータとTXT本文）」に綺麗に分割されているため、AIエージェントにフォルダごと読み込ませるだけで最高のパフォーマンスを発揮します。
 
-print(f"スキャン対象: {meta['law_title']} - {meta['article_title']} ({meta['article_caption']})")
+1. **リポジトリをクローンまたはダウンロード**
+   `git clone https://github.com/ssKudo/yaml-law.git`
+   
+2. **AIエージェントのコンテキストに追加**
+   - **Cursor / Windsurf**: プロジェクトのワークスペースとして本フォルダを開くか、`.cursorrules` の参照ソースフォルダに指定します。
+   - **Claude Projects / Custom GPTs**: ナレッジ（知識ベース）として `data/building_standard_act/texts/` などのTXTフォルダ内のファイルをアップロードします。
+   - **NotebookLM**: 「ソース」の追加でTXTフォルダをそのまま選択します。
 
-# 2. メタデータのパスから、本文テキスト(TXT)を動的に読み込む
-text_file = article_path.parent / meta["text_path"]
-with open(text_file, "r", encoding="utf-8") as f:
-    body_text = f.read()
-
-# 3. リンクグラフから被参照・参照条文を取得
-# (例: data/links/article_links.yaml から該当IDのエッジを検索)
-linked_articles = [
-    "data/building_standard_act/articles/article_006_2.yaml",
-    "data/building_standard_act_enforcement_order/articles/article_146.yaml"
-]
-
-# 4. 周辺情報をロードしてLLMのプロンプトに統合
-context = [body_text]
-for link in linked_articles:
-    with open(Path(link).parent / meta["text_path"], "r", encoding="utf-8") as f:
-        context.append(f.read())
-
-print("LLMへ送る統合コンテキストの準備が完了しました。")</code></pre>
+**効果**: 条文がコンパクトに分かれているため、AIが必要な条文だけをピンポイントで読み込むことができ、長文による混乱（コンテキスト破綻）やハルシネーションを防ぎます。</code></pre>
           </div>
         </div>
       </div>
@@ -1131,8 +1153,21 @@ text_path: "../texts/article_001.txt"`,
       }, 2000);
     }
 
-    function copyPythonCode(btn) {
-      const code = `import yaml
+    const qsData = {
+      agent: `💡 **AIエージェント（Cursor, Windsurf, Claude Projects, NotebookLM など）への読み込ませ方**
+
+本データセットは「1条文＝1ペア（YAMLメタデータとTXT本文）」に綺麗に分割されているため、AIエージェントにフォルダごと読み込ませるだけで最高のパフォーマンスを発揮します。
+
+1. **リポジトリをクローンまたはダウンロード**
+   \`git clone https://github.com/ssKudo/yaml-law.git\`
+   
+2. **AIエージェントのコンテキストに追加**
+   - **Cursor / Windsurf**: プロジェクトのワークスペースとして本フォルダを開くか、\`.cursorrules\` の参照ソースフォルダに指定します。
+   - **Claude Projects / Custom GPTs**: ナレッジ（知識ベース）として \`data/building_standard_act/texts/\` などのTXTフォルダ内のファイルをアップロードします。
+   - **NotebookLM**: 「ソース」の追加でTXTフォルダをそのまま選択します。
+
+**効果**: 条文がコンパクトに分かれているため、AIが必要な条文だけをピンポイントで読み込むことができ、長文による混乱（コンテキスト破綻）やハルシネーションを防ぎます。`,
+      python: `import yaml
 from pathlib import Path
 
 # 1. 指定した条文メタデータ(YAML)をロード
@@ -1148,26 +1183,35 @@ with open(text_file, "r", encoding="utf-8") as f:
     body_text = f.read()
 
 # 3. リンクグラフから被参照・参照条文を取得
-# (例: data/links/article_links.yaml から該当IDのエッジを検索)
 linked_articles = [
     "data/building_standard_act/articles/article_006_2.yaml",
     "data/building_standard_act_enforcement_order/articles/article_146.yaml"
 ]
 
-# 4. 周辺情報をロードしてLLMのプロンプトに統合
-context = [body_text]
-for link in linked_articles:
-    with open(Path(link).parent / meta["text_path"], "r", encoding="utf-8") as f:
-        context.append(f.read())
+print("LLMへ送る統合コンテキストの準備が完了しました。")`
+    };
 
-print("LLMへ送る統合コンテキストの準備が完了しました。")`;
-      
-      navigator.clipboard.writeText(code);
-      const originalSvg = btn.innerHTML;
-      btn.innerHTML = `<span style="font-family: var(--font-body); font-size: 0.8rem; color: var(--primary); font-weight: 500;">Copied!</span>`;
-      setTimeout(() => {
-        btn.innerHTML = originalSvg;
-      }, 2000);
+    function switchQuickStart(type) {
+      const btnAgent = document.getElementById('btn-qs-agent');
+      const btnPython = document.getElementById('btn-qs-python');
+      const filename = document.getElementById('qs-filename');
+      const block = document.getElementById('qs-code-block');
+
+      if (type === 'agent') {
+        btnAgent.classList.add('active');
+        btnPython.classList.remove('active');
+        filename.textContent = 'Cursor / Claude Projects / NotebookLM';
+        block.textContent = qsData.agent;
+        block.style.fontFamily = "var(--font-body)";
+        block.style.color = '#38bdf8';
+      } else {
+        btnAgent.classList.remove('active');
+        btnPython.classList.add('active');
+        filename.textContent = 'rag_agent.py';
+        block.textContent = qsData.python;
+        block.style.fontFamily = "var(--font-mono)";
+        block.style.color = '#a5b4fc';
+      }
     }
 
     // Default select
