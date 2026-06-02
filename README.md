@@ -29,17 +29,17 @@ e-Gov法令APIから取得した現行法令XMLをパースし、「軽量なメ
 
 | 法令名 | 法令番号 | 条文数 | メタデータ整備（概要/KW） |
 | :--- | :--- | ---: | :--- |
-| [建築基準法](data/building_standard_act) | 昭和25年法律第201号 | 291 | 完了 |
-| [建築基準法施行令](data/building_standard_act_enforcement_order) | 昭和25年政令第338号 | 371 | 完了 |
-| [建築基準法施行規則](data/building_standard_act_enforcement_regulation) | 昭和25年建設省令第40号 | 189 | 完了 |
-| [都市計画法](data/city_planning_act) | 昭和43年法律第100号 | 164 | 完了 |
-| [都市計画法施行令](data/city_planning_act_enforcement_order) | 昭和44年政令第158号 | 102 | 完了 |
-| [消防法](data/fire_service_act) | 昭和23年法律第186号 | 263 | 完了 |
-| [消防法施行令](data/fire_service_act_enforcement_order) | 昭和36年政令第37号 | 92 | 未対応（順次整備中） |
-| [バリアフリー法<br><small>（高齢者、障害者等の移動等の円滑化の促進に関する法律）</small>](data/barrier_free_act) | 平成18年法律第91号 | 88 | 未対応（順次整備中） |
-| [民法](data/civil_code) | 明治29年法律第89号 | 1173 | 未対応 |
-| [住宅品確法<br><small>（住宅の品質確保の促進等に関する法律）</small>](data/housing_quality_assurance_act) | 平成11年法律第81号 | 113 | 未対応 |
-| [宅地建物取引業法](data/real_estate_brokerage_act) | 昭和27年法律第176号 | 201 | 未対応 |
+| [建築基準法](data/building_standard_act) | <nobr>昭和25年法律第201号</nobr> | 291 | 完了 |
+| [建築基準法施行令](data/building_standard_act_enforcement_order) | <nobr>昭和25年政令第338号</nobr> | 371 | 完了 |
+| [建築基準法施行規則](data/building_standard_act_enforcement_regulation) | <nobr>昭和25年建設省令第40号</nobr> | 189 | 完了 |
+| [都市計画法](data/city_planning_act) | <nobr>昭和43年法律第100号</nobr> | 164 | 完了 |
+| [都市計画法施行令](data/city_planning_act_enforcement_order) | <nobr>昭和44年政令第158号</nobr> | 102 | 完了 |
+| [消防法](data/fire_service_act) | <nobr>昭和23年法律第186号</nobr> | 263 | 完了 |
+| [消防法施行令](data/fire_service_act_enforcement_order) | <nobr>昭和36年政令第37号</nobr> | 92 | 未対応（順次整備中） |
+| [バリアフリー法<br><small>（高齢者、障害者等の移動等の円滑化の促進に関する法律）</small>](data/barrier_free_act) | <nobr>平成18年法律第91号</nobr> | 88 | 未対応（順次整備中） |
+| [民法](data/civil_code) | <nobr>明治29年法律第89号</nobr> | 1173 | 未対応 |
+| [住宅品確法<br><small>（住宅の品質確保の促進等に関する法律）</small>](data/housing_quality_assurance_act) | <nobr>平成11年法律第81号</nobr> | 113 | 未対応 |
+| [宅地建物取引業法](data/real_estate_brokerage_act) | <nobr>昭和27年法律第176号</nobr> | 201 | 未対応 |
 
 ---
 
