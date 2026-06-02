@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>yaml-law | RAG向け建築基準法・施行令構造化データセット</title>
+  <title>yaml-law | RAG向け日本法令（建築・都市計画・消防・不動産・民法等）構造化データセット</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
@@ -691,8 +691,10 @@
       <nav>
         <ul class="nav-links">
           <li><a href="#about">特徴</a></li>
+          <li><a href="#datasets">対応法令</a></li>
           <li><a href="#playground">データ比較</a></li>
           <li><a href="#graph-simulator">リンクグラフ</a></li>
+          <li><a href="#limitations">制約と運用</a></li>
           <li><a href="#quickstart">使い方</a></li>
         </ul>
       </nav>
@@ -708,9 +710,9 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
-      <div class="badge">BUILDING REGULATION DATASET FOR RAG & AI AGENTS</div>
-      <h1>クローンするだけで、<br>最強の建築基準法RAGナレッジ</h1>
-      <p class="lead">面倒なデータベース構築やXMLのパースは不要。リポジトリを `git clone` してそのままAIエージェントやRAGに読み込ませるだけで、極めて高精度な建築法規AI検索が実現します。</p>
+      <div class="badge">MULTIPLE JAPANESE LAWS DATASET FOR RAG & AI AGENTS</div>
+      <h1>クローンするだけで、<br>最強の日本法令RAGナレッジ</h1>
+      <p class="lead">面倒なデータベース構築やXML of パースは不要。リポジトリを `git clone` してそのままAIエージェントやRAGに読み込ませるだけで、建築・都市計画・消防・不動産取引・民法などの極めて高精度な法規AI検索が実現します。</p>
       
       <div class="hero-buttons">
         <a href="#quickstart" class="btn-primary">
@@ -755,6 +757,56 @@
           <div class="feature-icon">🔗</div>
           <h3>リンク関係の事前計算</h3>
           <p>「前条」「法第〇条」などの複雑な参照リンクを解決済み。AIが周辺の関連条文を自動で芋づる式にロードし、ハルシネーションを防ぎます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Datasets List Section -->
+  <section id="datasets">
+    <div class="container">
+      <div class="section-title">
+        <h2>収録データセット（対応法令）</h2>
+        <p>日本の主要な建築・都市計画・消防・不動産取引・民事関連法令を幅広く網羅しています。</p>
+      </div>
+
+      <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+        <div class="feature-card" style="text-align: left; padding: 2.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px;">
+          <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+            <span style="font-size: 2rem;">🏢</span>
+            <h3 style="margin-bottom: 0; font-family: var(--font-heading); font-size: 1.3rem;">建築基準関連法</h3>
+          </div>
+          <ul style="list-style: none; color: var(--text-muted); font-size: 0.95rem; line-height: 1.8;">
+            <li style="margin-bottom: 0.6rem;">• <strong>建築基準法</strong> <span style="font-size: 0.75rem; color: var(--primary); background: rgba(0,242,254,0.1); padding: 0.1rem 0.5rem; border-radius: 4px; border: 1px solid rgba(0,242,254,0.2);">メタデータ整備済</span></li>
+            <li style="margin-bottom: 0.6rem;">• <strong>建築基準法施行令</strong> <span style="font-size: 0.75rem; color: var(--primary); background: rgba(0,242,254,0.1); padding: 0.1rem 0.5rem; border-radius: 4px; border: 1px solid rgba(0,242,254,0.2);">メタデータ整備済</span></li>
+            <li style="margin-bottom: 0.6rem;">• <strong>建築基準法施行規則</strong> <span style="font-size: 0.75rem; color: var(--primary); background: rgba(0,242,254,0.1); padding: 0.1rem 0.5rem; border-radius: 4px; border: 1px solid rgba(0,242,254,0.2);">メタデータ整備済</span></li>
+            <li style="margin-bottom: 0.6rem;">• <strong>住宅の品質確保の促進等に関する法律</strong> (住宅品確法)</li>
+          </ul>
+        </div>
+
+        <div class="feature-card" style="text-align: left; padding: 2.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px;">
+          <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+            <span style="font-size: 2rem;">🌳</span>
+            <h3 style="margin-bottom: 0; font-family: var(--font-heading); font-size: 1.3rem;">都市計画・不動産取引法</h3>
+          </div>
+          <ul style="list-style: none; color: var(--text-muted); font-size: 0.95rem; line-height: 1.8;">
+            <li style="margin-bottom: 0.6rem;">• <strong>都市計画法</strong> <span style="font-size: 0.75rem; color: var(--primary); background: rgba(0,242,254,0.1); padding: 0.1rem 0.5rem; border-radius: 4px; border: 1px solid rgba(0,242,254,0.2);">メタデータ整備済</span></li>
+            <li style="margin-bottom: 0.6rem;">• <strong>都市計画法施行令</strong> <span style="font-size: 0.75rem; color: var(--primary); background: rgba(0,242,254,0.1); padding: 0.1rem 0.5rem; border-radius: 4px; border: 1px solid rgba(0,242,254,0.2);">メタデータ整備済</span></li>
+            <li style="margin-bottom: 0.6rem;">• <strong>宅地建物取引業法</strong> (宅建業法)</li>
+            <li style="margin-bottom: 0.6rem;">• <strong>バリアフリー法</strong> (移動等円滑化促進法)</li>
+          </ul>
+        </div>
+
+        <div class="feature-card" style="text-align: left; padding: 2.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px;">
+          <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+            <span style="font-size: 2rem;">🔥</span>
+            <h3 style="margin-bottom: 0; font-family: var(--font-heading); font-size: 1.3rem;">消防・民事法</h3>
+          </div>
+          <ul style="list-style: none; color: var(--text-muted); font-size: 0.95rem; line-height: 1.8;">
+            <li style="margin-bottom: 0.6rem;">• <strong>消防法</strong> <span style="font-size: 0.75rem; color: var(--primary); background: rgba(0,242,254,0.1); padding: 0.1rem 0.5rem; border-radius: 4px; border: 1px solid rgba(0,242,254,0.2);">メタデータ整備済</span></li>
+            <li style="margin-bottom: 0.6rem;">• <strong>消防法施行令</strong></li>
+            <li style="margin-bottom: 0.6rem;">• <strong>民法</strong></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -951,6 +1003,46 @@ text_path: "../texts/article_001.txt"</code></pre>
             <span style="color: #00f2fe;">User:</span> 延べ面積が500㎡の木造倉庫の確認申請は必要？<br>
             <span style="color: #a5b4fc;">AI Assistant:</span> 建築基準法第6条第1項第3号に基づき、木造の建築物で2階建て以上、または延べ面積が500㎡を超えるものは確認申請が必要です。本件は延べ面積が500㎡ちょうどですが、他の条件（階数や都市計画区域内か等）により判断が分かれます...<br>
             <span style="color: #38bdf8;">[Source]</span> 法第6条1項3号, 施行令第146条 (自動拡張ロード)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Limitations and Practical Tips Section -->
+  <section id="limitations" style="background: rgba(127, 0, 255, 0.03);">
+    <div class="container">
+      <div class="section-title">
+        <h2>⚠️ 設計上の制約（弱点）と実運用での解決策</h2>
+        <p>本データセットを実際のRAGシステムで効果的に運用するためのポイントと開発推奨アプローチです。</p>
+      </div>
+
+      <div class="compare-grid">
+        <div class="compare-card" style="border-color: rgba(239, 68, 68, 0.2); padding: 2.5rem; background: var(--bg-card); border-radius: 12px; transition: all 0.3s ease;">
+          <h3 style="color: #f87171; font-family: var(--font-heading); font-size: 1.35rem; margin-bottom: 1.2rem;">
+            <span style="color: #ef4444; font-size: 1.2rem; margin-right: 0.4rem;">■</span>
+            制約1：検索漏れ（表現の不一致）
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.7;">
+            本データセットは「メンテナンス性」と「取り回しの良さ」を最優先した結果、YAMLに概要・キーワードを持たせる構成にしています。しかし、ユーザーの質問文とYAML内のキーワードが完全一致しない場合、検索から漏れてしまう弱点があります。
+          </p>
+          <div style="background: rgba(239, 68, 68, 0.05); border: 1px solid rgba(239, 68, 68, 0.2); border-radius: 8px; padding: 1.2rem; font-size: 0.88rem; color: #fca5a5; line-height: 1.6;">
+            <strong>💡 推奨解決策：「クエリ拡張」の導入</strong><br>
+            ユーザーの自然言語での質問からRAG検索クエリを生成する際、事前に「クエリ拡張（類義語・同義語・定義語の展開）」の処理を検索エンジン側に組み込むことを強く推奨します。
+          </div>
+        </div>
+
+        <div class="compare-card" style="border-color: rgba(168, 85, 247, 0.2); padding: 2.5rem; background: var(--bg-card); border-radius: 12px; transition: all 0.3s ease;">
+          <h3 style="color: #c084fc; font-family: var(--font-heading); font-size: 1.35rem; margin-bottom: 1.2rem;">
+            <span style="color: #a855f7; font-size: 1.2rem; margin-right: 0.4rem;">■</span>
+            制約2：機械生成メタデータの網羅性
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.7;">
+            各条文の概要（description）およびキーワードは、LLM（Gemini 3.5 Flash）を用いて機械的に自動生成しています。そのため、要約が不十分であったり、一部の重要キーワードが抜け漏れている場合があります。
+          </p>
+          <div style="background: rgba(168, 85, 247, 0.05); border: 1px solid rgba(168, 85, 247, 0.2); border-radius: 8px; padding: 1.2rem; font-size: 0.88rem; color: #d8b4fe; line-height: 1.6;">
+            <strong>💡 推奨解決策：フィードバックループ型の運用</strong><br>
+            膨大な法令すべてを手動で整備するのは非現実的です。まずは本リポジトリで一括生成したデータをベースに運用を開始し、実際のチャット応答や検索ログから「ヒットしなかったキーワード」を特定してピンポイントで追加・更新していくサイクルを推奨します。
           </div>
         </div>
       </div>
