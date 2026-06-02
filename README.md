@@ -36,9 +36,9 @@ e-Gov法令APIから取得した現行法令XMLをパースし、「軽量なメ
 | [都市計画法施行令](data/city_planning_act_enforcement_order) | 昭和44年政令第158号 | 102 | 完了 |
 | [消防法](data/fire_service_act) | 昭和23年法律第186号 | 263 | 完了 |
 | [消防法施行令](data/fire_service_act_enforcement_order) | 昭和36年政令第37号 | 92 | 未対応（順次整備中） |
-| [高齢者、障害者等の移動等の円滑化の促進に関する法律](data/barrier_free_act) | 平成18年法律第91号 | 88 | 未対応（順次整備中） |
+| [バリアフリー法<br><small>（高齢者、障害者等の移動等の円滑化の促進に関する法律）</small>](data/barrier_free_act) | 平成18年法律第91号 | 88 | 未対応（順次整備中） |
 | [民法](data/civil_code) | 明治29年法律第89号 | 1173 | 未対応 |
-| [住宅の品質確保の促進等に関する法律](data/housing_quality_assurance_act) | 平成11年法律第81号 | 113 | 未対応 |
+| [住宅品確法<br><small>（住宅の品質確保の促進等に関する法律）</small>](data/housing_quality_assurance_act) | 平成11年法律第81号 | 113 | 未対応 |
 | [宅地建物取引業法](data/real_estate_brokerage_act) | 昭和27年法律第176号 | 201 | 未対応 |
 
 ---
