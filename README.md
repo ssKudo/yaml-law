@@ -62,7 +62,7 @@ data/
 
 ## 🔍 メタデータYAMLの構造例
 
-`data/building_standard_act/articles/article_001.yaml` の例：
+`data/building_standard_act/articles/article_002.yaml` の例：
 ```yaml
 law_id: "325AC0000000201"
 law_title: "建築基準法"
@@ -74,18 +74,21 @@ chapter: "第一章 総則"
 section: null
 subsection: null
 division: null
-article_num: "1"
-article_title: "第一条"
-article_caption: "（目的）"
+article_num: "2"
+article_title: "第二条"
+article_caption: "（用語の定義）"
 description: ""                             # RAG用の概要文（将来的な拡張用）
-text_path: "../texts/article_001.txt"       # 本文ファイルへの相対パス
+text_path: "../texts/article_002.txt"       # 本文ファイルへの相対パス
 ```
 
-対応する本文 `data/building_standard_act/texts/article_001.txt` の内容：
+対応する本文 `data/building_standard_act/texts/article_002.txt` の内容：
 ```text
-（目的）
-第一条
-この法律は、建築物の敷地、構造、設備及び用途に関する最低の基準を定めて、国民の生命、健康及び財産の保護を図り、もつて公共の福祉の増増に資することを目的とする。
+（用語の定義）
+第二条
+この法律において次の各号に掲げる用語の意義は、当該各号に定めるところによる。
+一　建築物　土地に定着する工作物のうち、屋根及び柱若しくは壁を有するもの...
+二　特殊建築物　学校（専修学校及び各種学校を含む。以下同様とする。）、体育館、病院...
+...
 ```
 
 ---
