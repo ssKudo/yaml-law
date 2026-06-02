@@ -11,6 +11,6 @@ division: null
 article_num: "2_2"
 article_title: "第二条の二"
 article_caption: "（建築設備に関する確認申請書及び確認済証の様式）"
-description: ""
-keywords: []
+description: "昇降機などの建築設備に関する確認申請書および添付図書の様式や、確認済証および不適合通知書の交付手続きについて規定している。"
+keywords: ["建築設備", "確認申請書", "確認済証", "昇降機", "不適合通知書", "添付図面"]
 text_path: "../texts/article_002_2.txt"

@@ -11,6 +11,6 @@ division: null
 article_num: "2"
 article_title: "第二条"
 article_caption: "（確認済証等の様式等）"
-description: ""
-keywords: []
+description: "建築確認の審査完了時に交付される確認済証や、審査期間の延長通知書、不適合通知書、決定不能通知書等の様式および交付手続きを定めている。"
+keywords: ["確認済証", "期間延長通知書", "不適合通知書", "決定不能通知書", "交付手続き", "建築確認"]
 text_path: "../texts/article_002.txt"

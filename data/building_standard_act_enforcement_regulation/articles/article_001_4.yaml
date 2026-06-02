@@ -11,6 +11,6 @@ division: null
 article_num: "1_4"
 article_title: "第一条の四"
 article_caption: "（建築主事等による留意事項の通知）"
-description: ""
-keywords: []
+description: "建築主事等が確認申請を受けた際、構造計算適合性判定を行う都道府県知事や指定判定機関へ通知すべき留意事項の手続きについて規定している。"
+keywords: ["建築主事", "構造計算適合性判定", "留意事項", "通知", "都道府県知事", "指定構造計算適合性判定機関"]
 text_path: "../texts/article_001_4.txt"

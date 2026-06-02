@@ -11,6 +11,6 @@ division: null
 article_num: "1_3"
 article_title: "第一条の三"
 article_caption: "（確認申請書の様式）"
-description: ""
-keywords: []
+description: "建築基準法に基づく建築確認の申請を行う際に必要な申請書、添付図面、構造計算書等の図書および書類の様式や要件について詳細に規定している。"
+keywords: ["確認申請書", "建築計画概要書", "添付図書", "構造計算書", "建築確認", "建築主事", "誓約書"]
 text_path: "../texts/article_001_3.txt"

@@ -11,6 +11,6 @@ division: null
 article_num: "3_4"
 article_title: "第三条の四"
 article_caption: "（指定確認検査機関が交付する確認済証等の様式等）"
-description: ""
-keywords: []
+description: "指定確認検査機関が確認申請に対して交付する確認済証、不適合通知書、決定不能通知書の様式や、交付の際の手続きについて規定している。"
+keywords: ["指定確認検査機関", "確認済証", "不適合通知書", "決定不能通知書", "交付手続き"]
 text_path: "../texts/article_003_4.txt"

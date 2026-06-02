@@ -11,6 +11,6 @@ division: null
 article_num: "10"
 article_title: "第十条"
 article_caption: "（指定道路等の公告及び通知）"
-description: ""
-keywords: []
+description: "特定行政庁が道路の指定（私道等の道路位置指定など）や水平距離の指定を行った際に、速やかに公告すべき事項（位置、延長、幅員など）および申請者への通知について規定しています。"
+keywords: ["道路指定", "公告", "通知", "特定行政庁", "水平距離指定", "幅員"]
 text_path: "../texts/article_010.txt"

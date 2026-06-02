@@ -11,6 +11,6 @@ division: null
 article_num: "10_17"
 article_title: "第十条の十七"
 article_caption: "（一定の一団の土地の区域内の現に存する建築物を前提として総合的見地からする設計の基準）"
-description: ""
-keywords: []
+description: "既存建築物が存する一団の土地において複数建築物の敷地緩和を行う際の設計基準として、道路へ通ずる通路の確保、防火・採光・通風上有効な空地の確保、日影による影響の抑制を規定しています。"
+keywords: ["設計基準", "敷地緩和", "避難通路", "防火措置", "採光通風", "日影制限"]
 text_path: "../texts/article_010_17.txt"

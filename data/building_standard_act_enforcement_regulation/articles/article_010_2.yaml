@@ -11,6 +11,6 @@ division: null
 article_num: "10_2"
 article_title: "第十条の二"
 article_caption: "（指定道路図及び指定道路調書）"
-description: ""
-keywords: []
+description: "特定行政庁が指定道路の情報を記録・保存するための「指定道路図」と「指定道路調書」の作成基準、記載事項、様式、および電磁的記録による保存方法について規定しています。"
+keywords: ["指定道路図", "指定道路調書", "平面図", "特定行政庁", "電磁的記録"]
 text_path: "../texts/article_010_2.txt"
