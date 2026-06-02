@@ -11,6 +11,6 @@ division: null
 article_num: "35"
 article_title: "第三十五条"
 article_caption: "（許可又は不許可の通知）"
-description: ""
-keywords: []
+description: "都道府県知事は開発許可の申請に対し、遅滞なく許可または不許可の処分を行い、その旨を文書で申請者に通知しなければならないと定めている。"
+keywords: ["処分期限", "許可通知", "不許可通知", "文書通知", "都道府県知事"]
 text_path: "../texts/article_035.txt"

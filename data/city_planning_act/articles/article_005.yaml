@@ -11,6 +11,6 @@ division: null
 article_num: "5"
 article_title: "第五条"
 article_caption: "（都市計画区域）"
-description: ""
-keywords: []
+description: "自然的・社会的条件や人口、土地利用などを勘案し、一体の都市として総合的に整備・開発・保全する必要がある区域を都道府県等が「都市計画区域」として指定する手続を定めている。"
+keywords: ["都市計画区域", "区域指定", "都道府県", "国土交通大臣", "市町村意見", "都市計画審議会"]
 text_path: "../texts/article_005.txt"

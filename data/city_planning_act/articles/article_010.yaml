@@ -11,6 +11,6 @@ division: null
 article_num: "10"
 article_title: "第十条"
 article_caption: null
-description: ""
-keywords: []
+description: "地域地区内における建築物や工作物に関する制限について、都市計画法に特別の定めがある場合を除き、建築基準法などの別の法律で定めることを規定している。"
+keywords: ["地域地区", "建築物制限", "工作物制限", "建築基準法", "法律の委任"]
 text_path: "../texts/article_010.txt"

@@ -11,6 +11,6 @@ division: null
 article_num: "2"
 article_title: "第二条"
 article_caption: "（都市計画の基本理念）"
-description: ""
-keywords: []
+description: "都市計画の基本理念として、農林漁業との健全な調和を図りながら、健康的で文化的な都市生活および機能的な都市活動を確保し、土地の適正な制限のもとでの合理的な利用を定めている。"
+keywords: ["基本理念", "農林漁業との調和", "都市生活", "都市活動", "土地利用の合理化", "適正な制限"]
 text_path: "../texts/article_002.txt"

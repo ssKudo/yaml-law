@@ -11,6 +11,6 @@ division: null
 article_num: "1"
 article_title: "第一条"
 article_caption: "（目的）"
-description: ""
-keywords: []
+description: "都市計画の内容や決定手続、制限、事業などの必要な事項を定めることで、都市の健全な発展と秩序ある整備を図り、国土の均衡ある発展と公共の福祉の増進に寄与することを目的としている。"
+keywords: ["目的", "都市計画法", "都市の健全な発展", "秩序ある整備", "公共の福祉", "国土の発展"]
 text_path: "../texts/article_001.txt"

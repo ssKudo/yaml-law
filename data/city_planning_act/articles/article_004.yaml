@@ -11,6 +11,6 @@ division: null
 article_num: "4"
 article_title: "第四条"
 article_caption: "（定義）"
-description: ""
-keywords: []
+description: "都市計画法で用いられる「都市計画」「都市計画区域」「開発行為」「地域地区」「都市施設」「市街地開発事業」などの重要用語の定義を規定している。"
+keywords: ["定義", "都市計画", "都市計画区域", "開発行為", "地域地区", "都市施設", "公共施設"]
 text_path: "../texts/article_004.txt"

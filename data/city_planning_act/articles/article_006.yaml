@@ -11,6 +11,6 @@ division: null
 article_num: "6"
 article_title: "第六条"
 article_caption: "（都市計画に関する基礎調査）"
-description: ""
-keywords: []
+description: "都道府県が都市計画区域や準都市計画区域について、人口や土地利用、交通量などの現況と将来見通しを把握するため、おおむね5年ごとに基礎調査を行うことを規定している。"
+keywords: ["基礎調査", "都道府県", "都市計画", "人口規模", "土地利用", "交通量", "5年ごと"]
 text_path: "../texts/article_006.txt"

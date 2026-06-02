@@ -11,6 +11,6 @@ division: null
 article_num: "11"
 article_title: "第十一条"
 article_caption: "（都市施設）"
-description: ""
-keywords: []
+description: "都市計画に定めることができる道路、公園、水道、学校、病院、下水道などの「都市施設」の種類や、立体的な範囲の指定、施行予定者に関する規定を定めている。"
+keywords: ["都市施設", "交通施設", "公共空地", "供給処理施設", "立体道路", "施行予定者"]
 text_path: "../texts/article_011.txt"
