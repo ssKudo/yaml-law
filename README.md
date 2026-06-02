@@ -77,7 +77,8 @@ division: null
 article_num: "2"
 article_title: "第二条"
 article_caption: "（用語の定義）"
-description: ""                             # RAG用の概要文（将来的な拡張用）
+description: "建築物、特殊建築物、建築設備、居室、主要構造部、延焼のおそれのある部分など、本法において使用される主要な用語の定義を定めた条文。"
+keywords: ["用語の定義", "建築物", "特殊建築物", "主要構造部", "延焼のおそれのある部分"]
 text_path: "../texts/article_002.txt"       # 本文ファイルへの相対パス
 ```
 
