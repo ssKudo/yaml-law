@@ -29,17 +29,17 @@ e-Gov法令APIから取得した現行法令XMLをパースし、「軽量なメ
 
 | 法令名 | 法令ID | 法令番号 | 条文数 | メタデータ整備（概要/KW） | ディレクトリ |
 | :--- | :--- | :--- | ---: | :--- | :--- |
-| 建築基準法 | `325AC0000000201` | 昭和25年法律第201号 | 291 | 完了 | [`data/building_standard_act`](data/building_standard_act) |
-| 建築基準法施行令 | `325CO0000000338` | 昭和25年政令第338号 | 371 | 完了 | [`data/building_standard_act_enforcement_order`](data/building_standard_act_enforcement_order) |
-| 建築基準法施行規則 | `325M50004000040` | 昭和25年建設省令第40号 | 189 | 完了 | [`data/building_standard_act_enforcement_regulation`](data/building_standard_act_enforcement_regulation) |
-| 都市計画法 | `343AC0000000100` | 昭和43年法律第100号 | 164 | 完了 | [`data/city_planning_act`](data/city_planning_act) |
-| 都市計画法施行令 | `344CO0000000158` | 昭和44年政令第158号 | 102 | 完了 | [`data/city_planning_act_enforcement_order`](data/city_planning_act_enforcement_order) |
-| 消防法 | `323AC1000000186` | 昭和23年法律第186号 | 263 | 完了 | [`data/fire_service_act`](data/fire_service_act) |
-| 消防法施行令 | `336CO0000000037` | 昭和36年政令第37号 | 92 | 未対応（順次整備中） | [`data/fire_service_act_enforcement_order`](data/fire_service_act_enforcement_order) |
-| 高齢者、障害者等の移動等の円滑化の促進に関する法律 | `418AC0000000091` | 平成18年法律第91号 | 88 | 未対応（順次整備中） | [`data/barrier_free_act`](data/barrier_free_act) |
-| 民法 | `129AC0000000089` | 明治29年法律第89号 | 1173 | 未対応 | [`data/civil_code`](data/civil_code) |
-| 住宅の品質確保の促進等に関する法律 | `411AC0000000081` | 平成11年法律第81号 | 113 | 未対応 | [`data/housing_quality_assurance_act`](data/housing_quality_assurance_act) |
-| 宅地建物取引業法 | `327AC1000000176` | 昭和27年法律第176号 | 201 | 未対応 | [`data/real_estate_brokerage_act`](data/real_estate_brokerage_act) |
+| 建築基準法 | 325AC0000000201 | 昭和25年法律第201号 | 291 | 完了 | [building_standard_act](data/building_standard_act) |
+| 建築基準法施行令 | 325CO0000000338 | 昭和25年政令第338号 | 371 | 完了 | [building_standard_act_enforcement_order](data/building_standard_act_enforcement_order) |
+| 建築基準法施行規則 | 325M50004000040 | 昭和25年建設省令第40号 | 189 | 完了 | [building_standard_act_enforcement_regulation](data/building_standard_act_enforcement_regulation) |
+| 都市計画法 | 343AC0000000100 | 昭和43年法律第100号 | 164 | 完了 | [city_planning_act](data/city_planning_act) |
+| 都市計画法施行令 | 344CO0000000158 | 昭和44年政令第158号 | 102 | 完了 | [city_planning_act_enforcement_order](data/city_planning_act_enforcement_order) |
+| 消防法 | 323AC1000000186 | 昭和23年法律第186号 | 263 | 完了 | [fire_service_act](data/fire_service_act) |
+| 消防法施行令 | 336CO0000000037 | 昭和36年政令第37号 | 92 | 未対応（順次整備中） | [fire_service_act_enforcement_order](data/fire_service_act_enforcement_order) |
+| 高齢者、障害者等の移動等の円滑化の促進に関する法律 | 418AC0000000091 | 平成18年法律第91号 | 88 | 未対応（順次整備中） | [barrier_free_act](data/barrier_free_act) |
+| 民法 | 129AC0000000089 | 明治29年法律第89号 | 1173 | 未対応 | [civil_code](data/civil_code) |
+| 住宅の品質確保の促進等に関する法律 | 411AC0000000081 | 平成11年法律第81号 | 113 | 未対応 | [housing_quality_assurance_act](data/housing_quality_assurance_act) |
+| 宅地建物取引業法 | 327AC1000000176 | 昭和27年法律第176号 | 201 | 未対応 | [real_estate_brokerage_act](data/real_estate_brokerage_act) |
 
 ---
 
