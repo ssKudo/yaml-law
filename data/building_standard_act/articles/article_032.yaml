@@ -11,6 +11,5 @@ division: null
 article_num: "32"
 article_title: "第三十二条"
 article_caption: "（電気設備）"
-description: "建築物に設ける電気設備について、感電や火災の発生を防ぎ安全を確保するため、電気事業法その他の法令に適合する工法によって設置することを定めた条文。"
-keywords: ["電気設備", "保安基準", "防火基準", "工法規定"]
+description: ""
 text_path: "../texts/article_032.txt"

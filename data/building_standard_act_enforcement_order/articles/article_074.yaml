@@ -11,6 +11,5 @@ division: null
 article_num: "74"
 article_title: "第七十四条"
 article_caption: "（コンクリートの強度）"
-description: "RC用コンクリートの設計基準強度・四週圧縮強度（12N/mm2以上等）、国土交通大臣指定の強度試験方法、および調合要件を定めた条文。"
-keywords: ["コンクリート強度", "圧縮強度", "設計基準強度", "強度試験", "調合"]
+description: ""
 text_path: "../texts/article_074.txt"

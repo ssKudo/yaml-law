@@ -11,6 +11,5 @@ division: null
 article_num: "91"
 article_title: "第九十一条"
 article_caption: "（コンクリート）"
-description: "コンクリートの設計基準強度に応じた長期及び短期の「許容応力度」（圧縮、引張、せん断、付着等）の数値、強度試験、および特定行政庁による上限設定を定めた条文。"
-keywords: ["コンクリートの許容応力度", "設計基準強度", "付着応力度", "強度試験"]
+description: ""
 text_path: "../texts/article_091.txt"

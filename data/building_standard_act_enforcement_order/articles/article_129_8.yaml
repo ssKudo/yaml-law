@@ -11,6 +11,5 @@ division: null
 article_num: "129_8"
 article_title: "第百二十九条の八"
 article_caption: "（エレベーターの駆動装置及び制御器）"
-description: "エレベーターの駆動装置及び制御器について、地震等での転倒・移動防止設置方法、並びに戸が全て閉じた後の走行制御、保守点検用制御機能、かご停止位置の移動制限などの制御器の技術的基準を定めた条文。"
-keywords: ["駆動装置", "制御器", "転倒移動防止", "戸閉め走行制御", "保守点検制御"]
+description: ""
 text_path: "../texts/article_129_8.txt"

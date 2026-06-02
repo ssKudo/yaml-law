@@ -11,6 +11,5 @@ division: null
 article_num: "83"
 article_title: "第八十三条"
 article_caption: "（荷重及び外力の種類）"
-description: "構造計算に導入すべき荷重及び外力の種類（固定、積載、積雪、風、地震）と、実況に応じて適用するべき土圧、水圧、振動、衝撃などの外力を定めた条文。"
-keywords: ["荷重の種類", "外力の種類", "固定荷重", "積載荷重", "積雪荷重", "風圧力", "地震力", "土圧水圧"]
+description: ""
 text_path: "../texts/article_083.txt"

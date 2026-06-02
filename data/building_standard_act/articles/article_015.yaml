@@ -11,6 +11,5 @@ division: null
 article_num: "15"
 article_title: "第十五条"
 article_caption: "（届出及び統計）"
-description: "建築物の新築・増改築、または除却（床面積が10平方メートルを超える場合）を行う際、建築主や除却施工者が都道府県知事へ届け出る義務、災害による建築物滅失の報告、および建築統計の作成を定めた条文。"
-keywords: ["建築届", "除却届", "災害報告", "建築統計", "床面積10平方メートル超"]
+description: ""
 text_path: "../texts/article_015.txt"

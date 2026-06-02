@@ -11,6 +11,5 @@ division: null
 article_num: "20"
 article_title: "第二十条"
 article_caption: "（構造耐力）"
-description: "建築物の自重、地震力、積雪、風圧等の荷重や外力に対する構造耐力の安全基準を、建物の規模や高さ（60m超、60m以下等）に応じて4つの区分に分類し、適合すべき構造計算の基準等を定めた条文。"
-keywords: ["構造耐力", "構造計算", "許容応力度計算", "時刻歴応答解析", "大臣認定プログラム", "安全性確認"]
+description: ""
 text_path: "../texts/article_020.txt"

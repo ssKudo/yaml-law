@@ -11,6 +11,5 @@ division: null
 article_num: "65"
 article_title: "第六十五条"
 article_caption: "（圧縮材の有効細長比）"
-description: "鉄骨造における鋼材圧縮部材について、座屈を防止するために制限される有効細長比の基準（柱は200以下、その他は250以下）を定めた条文。"
-keywords: ["有効細長比", "圧縮材", "座屈防止", "鉄骨柱"]
+description: ""
 text_path: "../texts/article_065.txt"

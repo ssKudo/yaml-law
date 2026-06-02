@@ -11,6 +11,5 @@ division: null
 article_num: "82"
 article_title: "第八十二条"
 article_caption: "（保有水平耐力計算）"
-description: "保有水平耐力計算の定義及び具体的な計算ステップ（長期・短期の応力度計算、各部材の許容応力度適合判定、部材変形振動の確認）を定めた条文。"
-keywords: ["保有水平耐力計算", "長期応力度", "短期応力度", "許容応力度適合", "使用上の支障"]
+description: ""
 text_path: "../texts/article_082.txt"

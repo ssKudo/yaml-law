@@ -11,6 +11,5 @@ division: null
 article_num: "1"
 article_title: "第一条"
 article_caption: "（用語の定義）"
-description: "建築基準法施行令で用いられる「敷地」「地階」「構造耐力上主要な部分」「耐水材料」「準不燃材料」「難燃材料」といった基本用語の定義について定めた条文。"
-keywords: ["用語の定義", "敷地", "地階", "構造耐力上主要な部分", "耐水材料", "準不燃材料", "難燃材料"]
+description: ""
 text_path: "../texts/article_001.txt"

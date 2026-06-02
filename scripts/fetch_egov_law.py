@@ -207,7 +207,8 @@ def article_text(article: ET.Element) -> str:
 
 
 def article_filename(article_num: str) -> str:
-    parts = article_num.split("_")
+    clean_num = article_num.replace(":", "_")
+    parts = clean_num.split("_")
     if parts and parts[0].isdigit():
         parts[0] = parts[0].zfill(3)
     safe = "_".join(parts)
@@ -343,7 +344,7 @@ def main() -> None:
                 "section": article.context.section,
                 "subsection": article.context.subsection,
                 "division": article.context.division,
-                "article_num": article.article_num,
+                "article_num": article.article_num.replace(":", "_"),
                 "article_title": article.article_title,
                 "article_caption": article.article_caption,
                 "description": "",

@@ -11,6 +11,5 @@ division: null
 article_num: "1"
 article_title: "第一条"
 article_caption: "（目的）"
-description: "建築物の敷地、構造、設備、用途に関する最低の基準を定めることで、国民の生命、健康、財産の保護を図り、公共の福祉の増進に資するという建築基準法の目的を定めた条文。"
-keywords: ["目的", "最低基準", "生命保護", "健康保護", "財産保護", "公共の福祉"]
+description: ""
 text_path: "../texts/article_001.txt"

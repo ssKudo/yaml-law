@@ -11,6 +11,5 @@ division: null
 article_num: "21"
 article_title: "第二十一条"
 article_caption: "（大規模の建築物の主要構造部等）"
-description: "木造などの可燃材料を用いた大規模な建築物（階数が4以上、高さ16m超、または3階建てで高さ13m超の特殊建築物）や延べ面積3000平方メートル超の建築物に対し、火災時の倒壊や延焼を防ぐ主要構造部の耐火・防火性能基準を定めた条文。"
-keywords: ["大規模木造", "主要構造部", "耐火性能", "通常火災終了時間", "延焼防止空地"]
+description: ""
 text_path: "../texts/article_021.txt"

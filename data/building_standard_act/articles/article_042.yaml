@@ -11,6 +11,5 @@ division: null
 article_num: "42"
 article_title: "第四十二条"
 article_caption: "（道路の定義）"
-description: "建築基準法上の「道路」の定義として、原則幅員4m（一部地域では6m）以上の公道や開発道路等の基準、および幅員4m未満であっても特定行政庁が指定することで道路とみなす「2項道路（みなし道路）」等の定義を定めた条文。"
-keywords: ["道路の定義", "2項道路", "みなし道路", "道路幅員", "位置指定道路", "セットバック"]
+description: ""
 text_path: "../texts/article_042.txt"
