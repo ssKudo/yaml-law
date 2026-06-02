@@ -1,0 +1,18 @@
+dataset: "building_standard_act_enforcement_regulation"
+law_id: "325M50004000040"
+law_title: "建築基準法施行規則"
+law_num: "昭和二十五年建設省令第四十号"
+source: "e-Gov法令検索"
+source_url: "https://laws.e-gov.go.jp/api/1/lawdata/325M50004000040"
+api_version: "1"
+fetched_at: "2026-06-02T03:40:55+00:00"
+effective_scope: "e-Gov法令APIで取得した取得日時点の現在施行中の現行法令"
+included_parts:
+  - "本則"
+excluded_parts:
+  - "附則"
+unit: "Article"
+article_count: "189"
+article_metadata_dir: "data/building_standard_act_enforcement_regulation/articles"
+article_text_dir: "data/building_standard_act_enforcement_regulation/texts"
+raw_xml: "data/building_standard_act_enforcement_regulation/raw/325M50004000040.xml"

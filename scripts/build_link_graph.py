@@ -23,13 +23,65 @@ DATASETS = {
             "法": "325AC0000000201",
         },
     },
+    "building_standard_act_enforcement_regulation": {
+        "law_id": "325M50004000040",
+        "law_title": "建築基準法施行規則",
+        "short_law_aliases": {
+            "法": "325AC0000000201",
+            "令": "325CO0000000338",
+        },
+    },
+    "city_planning_act": {
+        "law_id": "343AC0000000100",
+        "law_title": "都市計画法",
+        "short_law_aliases": {},
+    },
+    "city_planning_act_enforcement_order": {
+        "law_id": "344CO0000000158",
+        "law_title": "都市計画法施行令",
+        "short_law_aliases": {
+            "法": "343AC0000000100",
+        },
+    },
+    "fire_service_act": {
+        "law_id": "323AC1000000186",
+        "law_title": "消防法",
+        "short_law_aliases": {},
+    },
+    "fire_service_act_enforcement_order": {
+        "law_id": "336CO0000000037",
+        "law_title": "消防法施行令",
+        "short_law_aliases": {
+            "法": "323AC1000000186",
+        },
+    },
+    "barrier_free_act": {
+        "law_id": "418AC0000000091",
+        "law_title": "高齢者、障害者等の移動等の円滑化の促進に関する法律",
+        "short_law_aliases": {},
+    },
+    "civil_code": {
+        "law_id": "129AC0000000089",
+        "law_title": "民法",
+        "short_law_aliases": {},
+    },
+    "housing_quality_assurance_act": {
+        "law_id": "411AC0000000081",
+        "law_title": "住宅の品質確保の促進等に関する法律",
+        "short_law_aliases": {},
+    },
+    "real_estate_brokerage_act": {
+        "law_id": "327AC1000000176",
+        "law_title": "宅地建物取引業法",
+        "short_law_aliases": {},
+    },
 }
 
 LAW_ID_TO_SLUG = {value["law_id"]: key for key, value in DATASETS.items()}
 
 KANJI_NUM = "〇零一二三四五六七八九十百千万壱弐参拾"
 ARTICLE_REF = rf"第([{KANJI_NUM}]+)(?:条の([{KANJI_NUM}]+)|条)"
-SHORT_ALIAS_REF = re.compile(rf"(?<![一-龥ぁ-んァ-ヶ])(?P<alias>法){ARTICLE_REF}")
+SHORT_ALIAS_REF = re.compile(rf"(?<![一-龥ぁ-んァ-ヶ])(?P<alias>法|令){ARTICLE_REF}")
 BARE_ARTICLE_REF = re.compile(ARTICLE_REF)
 ARTICLE_RANGE_REF = re.compile(rf"{ARTICLE_REF}から{ARTICLE_REF}まで")
 RELATIVE_ARTICLE_REF = re.compile(r"(?P<label>前条|次条)")

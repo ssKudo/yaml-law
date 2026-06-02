@@ -1,0 +1,18 @@
+dataset: "civil_code"
+law_id: "129AC0000000089"
+law_title: "民法"
+law_num: "明治二十九年法律第八十九号"
+source: "e-Gov法令検索"
+source_url: "https://laws.e-gov.go.jp/api/1/lawdata/129AC0000000089"
+api_version: "1"
+fetched_at: "2026-06-02T03:49:26+00:00"
+effective_scope: "e-Gov法令APIで取得した取得日時点の現在施行中の現行法令"
+included_parts:
+  - "本則"
+excluded_parts:
+  - "附則"
+unit: "Article"
+article_count: "1173"
+article_metadata_dir: "data/civil_code/articles"
+article_text_dir: "data/civil_code/texts"
+raw_xml: "data/civil_code/raw/129AC0000000089.xml"

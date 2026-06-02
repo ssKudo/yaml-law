@@ -1,0 +1,18 @@
+dataset: "city_planning_act_enforcement_order"
+law_id: "344CO0000000158"
+law_title: "都市計画法施行令"
+law_num: "昭和四十四年政令第百五十八号"
+source: "e-Gov法令検索"
+source_url: "https://laws.e-gov.go.jp/api/1/lawdata/344CO0000000158"
+api_version: "1"
+fetched_at: "2026-06-02T03:44:31+00:00"
+effective_scope: "e-Gov法令APIで取得した取得日時点の現在施行中の現行法令"
+included_parts:
+  - "本則"
+excluded_parts:
+  - "附則"
+unit: "Article"
+article_count: "102"
+article_metadata_dir: "data/city_planning_act_enforcement_order/articles"
+article_text_dir: "data/city_planning_act_enforcement_order/texts"
+raw_xml: "data/city_planning_act_enforcement_order/raw/344CO0000000158.xml"

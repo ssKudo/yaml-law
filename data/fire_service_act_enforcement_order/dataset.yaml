@@ -1,0 +1,18 @@
+dataset: "fire_service_act_enforcement_order"
+law_id: "336CO0000000037"
+law_title: "消防法施行令"
+law_num: "昭和三十六年政令第三十七号"
+source: "e-Gov法令検索"
+source_url: "https://laws.e-gov.go.jp/api/1/lawdata/336CO0000000037"
+api_version: "1"
+fetched_at: "2026-06-02T03:47:55+00:00"
+effective_scope: "e-Gov法令APIで取得した取得日時点の現在施行中の現行法令"
+included_parts:
+  - "本則"
+excluded_parts:
+  - "附則"
+unit: "Article"
+article_count: "92"
+article_metadata_dir: "data/fire_service_act_enforcement_order/articles"
+article_text_dir: "data/fire_service_act_enforcement_order/texts"
+raw_xml: "data/fire_service_act_enforcement_order/raw/336CO0000000037.xml"

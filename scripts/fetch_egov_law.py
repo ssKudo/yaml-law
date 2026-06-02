@@ -79,6 +79,9 @@ def write_yaml(path: Path, data: dict[str, object]) -> None:
             for child_key, child_value in value.items():
                 lines.append(f"  {child_key}: {yaml_quote(child_value)}")
         elif isinstance(value, list):
+            if not value:
+                lines.append(f"{key}: []")
+                continue
             lines.append(f"{key}:")
             for item in value:
                 if isinstance(item, dict):
@@ -348,6 +351,7 @@ def main() -> None:
                 "article_title": article.article_title,
                 "article_caption": article.article_caption,
                 "description": "",
+                "keywords": [],
                 "text_path": f"../texts/{text_name}",
             },
         )
