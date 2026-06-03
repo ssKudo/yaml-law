@@ -421,10 +421,18 @@
         padding: 0.5rem 0.6rem !important;
         font-size: 0.75rem !important;
         text-align: center;
+        white-space: normal;
+        word-break: keep-all;
       }
       #qs-filename {
         align-self: flex-end;
         font-size: 0.7rem !important;
+      }
+      .pc-text {
+        display: none !important;
+      }
+      .sp-text {
+        display: inline !important;
       }
       .code-body {
         padding: 1rem;
@@ -528,6 +536,8 @@
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid var(--border-color);
+      flex-wrap: wrap;
+      gap: 1rem;
     }
 
     .showcase-dots {
@@ -549,6 +559,7 @@
     .showcase-tabs {
       display: flex;
       gap: 0.5rem;
+      flex-shrink: 0;
     }
 
     .tab-btn {
@@ -562,6 +573,19 @@
       border-radius: 6px;
       transition: all 0.2s ease;
       font-family: var(--font-mono);
+      white-space: nowrap;
+    }
+
+    .sp-text {
+      display: none;
+    }
+
+    #qs-filename {
+      white-space: nowrap;
+    }
+
+    .nowrap {
+      white-space: nowrap;
     }
 
     .tab-btn:hover {
@@ -1015,9 +1039,9 @@
           <div class="showcase-container">
             <div class="showcase-header">
               <div class="showcase-tabs">
-                <button class="tab-btn active" onclick="switchTab('yaml')">Metadata (YAML)</button>
-                <button class="tab-btn" onclick="switchTab('text')">Body (TXT)</button>
-                <button class="tab-btn" onclick="switchTab('links')">Link Graph (YAML)</button>
+                <button class="tab-btn active" onclick="switchTab('yaml')"><span class="nowrap">Metadata</span> <span class="nowrap">(YAML)</span></button>
+                <button class="tab-btn" onclick="switchTab('text')"><span class="nowrap">Body</span> <span class="nowrap">(TXT)</span></button>
+                <button class="tab-btn" onclick="switchTab('links')"><span class="nowrap">Link Graph</span> <span class="nowrap">(YAML)</span></button>
               </div>
             </div>
             <div class="code-body">
@@ -1205,8 +1229,14 @@ text_path: "../texts/article_001.txt"</code></pre>
         <div class="showcase-container">
           <div class="showcase-header">
             <div class="showcase-tabs">
-              <button class="tab-btn active" id="btn-qs-agent" onclick="switchQuickStart('agent')">AIエージェントでの活用（推奨）</button>
-              <button class="tab-btn" id="btn-qs-python" onclick="switchQuickStart('python')">Python RAGでのロード</button>
+              <button class="tab-btn active" id="btn-qs-agent" onclick="switchQuickStart('agent')">
+                <span class="pc-text">AIエージェントでの活用（推奨）</span>
+                <span class="sp-text"><span class="nowrap">AIエージェント</span> <span class="nowrap">(推奨)</span></span>
+              </button>
+              <button class="tab-btn" id="btn-qs-python" onclick="switchQuickStart('python')">
+                <span class="pc-text">Python RAGでのロード</span>
+                <span class="sp-text"><span class="nowrap">Python</span> <span class="nowrap">RAG</span></span>
+              </button>
             </div>
             <span id="qs-filename" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">CodexCLI / Claude Code / Antigravity IDE (2.0)</span>
           </div>
