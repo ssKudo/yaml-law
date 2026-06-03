@@ -406,9 +406,6 @@
         padding: 1.5rem !important;
       }
       .showcase-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.8rem;
         padding: 1rem !important;
       }
       .showcase-tabs {
@@ -425,7 +422,6 @@
         word-break: keep-all;
       }
       #qs-filename {
-        align-self: flex-end;
         font-size: 0.7rem !important;
       }
       .pc-text {
@@ -533,11 +529,10 @@
       background: rgba(30, 41, 59, 0.5);
       padding: 1rem 1.5rem;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.8rem;
       border-bottom: 1px solid var(--border-color);
-      flex-wrap: wrap;
-      gap: 1rem;
     }
 
     .showcase-dots {
