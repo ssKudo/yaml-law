@@ -30,6 +30,14 @@
       --font-mono: 'Fira Code', monospace;
     }
 
+    h1, h2, h3 {
+      word-break: keep-all;
+      overflow-wrap: break-word;
+    }
+    h1 span, h2 span, h3 span {
+      display: inline-block;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -323,6 +331,12 @@
     .compare-card-purple {
       border-color: rgba(168, 85, 247, 0.2);
     }
+    .teaser-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      font-family: var(--font-heading);
+    }
 
     /* Responsive Adjustments */
     @media (max-width: 900px) {
@@ -377,6 +391,9 @@
       }
       .section-title h2 {
         font-size: 1.8rem;
+      }
+      .teaser-title {
+        font-size: 1.3rem;
       }
       .compare-grid {
         grid-template-columns: 1fr;
@@ -847,7 +864,7 @@
   <section id="about">
     <div class="container">
       <div class="section-title">
-        <h2>RAG・AIエージェントで即戦力になる理由</h2>
+        <h2><span>RAG・AIエージェントで</span><span>即戦力になる理由</span></h2>
         <p>クローンするだけで簡単に導入でき、かつ高精度なLLM対話を実現するための設計。</p>
       </div>
 
@@ -875,7 +892,7 @@
   <section id="datasets">
     <div class="container">
       <div class="section-title">
-        <h2>収録データセット（対応法令）</h2>
+        <h2><span>収録データセット</span><span>（対応法令）</span></h2>
         <p>日本の主要な建築・都市計画・消防・不動産取引・民事関連法令を幅広く網羅しています。</p>
       </div>
 
@@ -925,7 +942,7 @@
   <section id="playground">
     <div class="container">
       <div class="section-title">
-        <h2>法令データのパースと構造化</h2>
+        <h2><span>法令データの</span><span>パースと構造化</span></h2>
         <p>e-Gov Law APIから取得したオリジナルのXMLから、RAGフレンドリーな構造への変換例です。</p>
       </div>
 
@@ -1012,7 +1029,7 @@ text_path: "../texts/article_001.txt"</code></pre>
   <section id="graph-simulator">
     <div class="container">
       <div class="section-title">
-        <h2>リンクグラフ動作シミュレーター</h2>
+        <h2><span>リンクグラフ</span><span>動作シミュレーター</span></h2>
         <p>RAGシステムがユーザーの質問文から関係性の高い法令を「芋づる式（グラフ接続）」に展開して、LLMの回答精度を向上させるプロセスを体験できます。</p>
       </div>
 
@@ -1082,14 +1099,14 @@ text_path: "../texts/article_001.txt"</code></pre>
   <section id="desktop-teaser" style="background: linear-gradient(180deg, rgba(12, 18, 38, 0) 0%, rgba(127, 0, 255, 0.08) 50%, rgba(12, 18, 38, 0) 100%);">
     <div class="container">
       <div class="section-title">
-        <h2>🚀 将来の展望：ローカルAI内蔵アプリの提供</h2>
+        <h2><span>🚀 将来の展望：</span><span>ローカルAI内蔵アプリの提供</span></h2>
         <p>インターネット不要、完全オフラインで動作する次世代の建築基準法AI検索デスクトップアプリも計画中です。</p>
       </div>
 
       <div class="teaser-grid">
         <div>
           <span style="background: rgba(127, 0, 255, 0.15); border: 1px solid rgba(127, 0, 255, 0.4); color: #d8b4fe; padding: 0.3rem 0.8rem; border-radius: 9999px; font-size: 0.8rem; font-weight: bold; margin-bottom: 1.5rem; display: inline-block;">DEVELOPMENT ROADMAP</span>
-          <h3 style="font-size: 1.8rem; font-weight: bold; margin-bottom: 1rem; font-family: var(--font-heading);">完全ローカルで動くAI法規アシスタント</h3>
+          <h3 class="teaser-title"><span>完全ローカルで動く</span><span>AI法規アシスタント</span></h3>
           <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem;">OllamaやLlama.cppの技術を内蔵し、外部への通信を一切行わないデスクトップアプリケーション（EXE/ZIP形式）を計画しています。機密性の高い建築設計データや案件情報を扱う実務でも、安心してご利用いただけます。</p>
           <ul style="list-style: none;">
             <li style="margin-bottom: 0.8rem; color: var(--text-main); font-size: 0.9rem; padding-left: 1.5rem; position: relative;">
@@ -1122,7 +1139,7 @@ text_path: "../texts/article_001.txt"</code></pre>
   <section id="limitations" style="background: rgba(127, 0, 255, 0.03);">
     <div class="container">
       <div class="section-title">
-        <h2>⚠️ 設計上の制約（弱点）と実運用での解決策</h2>
+        <h2><span>⚠️ 設計上の制約（弱点）と</span><span>実運用での解決策</span></h2>
         <p>本データセットを実際のRAGシステムで効果的に運用するためのポイントと開発推奨アプローチです。</p>
       </div>
 
@@ -1162,7 +1179,7 @@ text_path: "../texts/article_001.txt"</code></pre>
   <section id="quickstart">
     <div class="container">
       <div class="section-title">
-        <h2>AIツール・開発への導入方法</h2>
+        <h2><span>AIツール・開発への</span><span>導入方法</span></h2>
         <p>AIエージェントにそのまま読ませることも、ご自身のPython RAGプログラムに統合することも非常に簡単です。</p>
       </div>
 
