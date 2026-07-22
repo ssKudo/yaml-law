@@ -11,6 +11,6 @@ division: null
 article_num: "5"
 article_title: "第五条"
 article_caption: "（未成年者の法律行為）"
-description: ""
-keywords: []
+description: "民法の第五条は「未成年者の法律行為」を定める。 本文冒頭: 未成年者が法律行為をするには、その法定代理人の同意を得なければならない。"
+keywords: ["民法", "未成年者の法律行為"]
 text_path: "../texts/article_005.txt"

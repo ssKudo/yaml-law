@@ -11,6 +11,6 @@ division: null
 article_num: "200"
 article_title: "第二百条"
 article_caption: "（占有回収の訴え）"
-description: ""
-keywords: []
+description: "民法の第二百条は「占有回収の訴え」を定める。 本文冒頭: 占有者がその占有を奪われたときは、占有回収の訴えにより、その物の返還及び損害の賠償を請求することができる。"
+keywords: ["民法", "占有回収の訴え"]
 text_path: "../texts/article_200.txt"

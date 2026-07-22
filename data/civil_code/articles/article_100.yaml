@@ -11,6 +11,6 @@ division: null
 article_num: "100"
 article_title: "第百条"
 article_caption: "（本人のためにすることを示さない意思表示）"
-description: ""
-keywords: []
+description: "民法の第百条は「本人のためにすることを示さない意思表示」を定める。 本文冒頭: 代理人が本人のためにすることを示さないでした意思表示は、自己のためにしたものとみなす。"
+keywords: ["民法", "本人のためにすることを示さない意思表示"]
 text_path: "../texts/article_100.txt"

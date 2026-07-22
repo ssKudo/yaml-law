@@ -11,6 +11,6 @@ division: null
 article_num: "101"
 article_title: "第百一条"
 article_caption: "（代理行為の瑕疵かし）"
-description: ""
-keywords: []
+description: "民法の第百一条は「代理行為の瑕疵かし」を定める。 本文冒頭: 代理人が相手方に対してした意思表示の効力が意思の不存在、錯誤、詐欺、強迫又はある事情を知っていたこと若しくは知らなかったことにつき過失があったことによって影響を受けるべき場合には、その事実の有無は、代理人について決するものとする。"
+keywords: ["民法", "代理行為の瑕疵かし"]
 text_path: "../texts/article_101.txt"

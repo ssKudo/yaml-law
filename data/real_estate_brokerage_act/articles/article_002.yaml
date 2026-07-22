@@ -11,6 +11,6 @@ division: null
 article_num: "2"
 article_title: "第二条"
 article_caption: "（用語の定義）"
-description: ""
-keywords: []
+description: "宅地建物取引業法の第二条は「用語の定義」を定める。 本文冒頭: この法律において次の各号に掲げる用語の意義は、それぞれ当該各号の定めるところによる。"
+keywords: ["宅地建物取引業法", "用語の定義", "用途"]
 text_path: "../texts/article_002.txt"

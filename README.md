@@ -37,16 +37,18 @@ e-Gov法令APIから取得した現行法令XMLをパースし、「軽量なメ
 | 法令名 | 法令番号 | 収録されている最新施行日 | 条文数 | 整備状況 |
 | :--- | :--- | :--- | ---: | :--- |
 | [建築基準法](data/building_standard_act) | 昭和25年法律第201号 | R8.4.1 | 291 | 完了 |
-| [建築基準法施行令](data/building_standard_act_enforcement_order) | 昭和25年政令第338号 | R7.12.1 | 371 | 完了 |
+| [建築基準法施行令](data/building_standard_act_enforcement_order) | 昭和25年政令第338号 | R7.12.1 | 371 | ベースライン整備済み（要精査） |
 | [建築基準法施行規則](data/building_standard_act_enforcement_regulation) | 昭和25年建設省令第40号 | R8.4.1 | 189 | 完了 |
 | [都市計画法](data/city_planning_act) | 昭和43年法律第100号 | R8.4.1 | 164 | 完了 |
 | [都市計画法施行令](data/city_planning_act_enforcement_order) | 昭和44年政令第158号 | R8.4.1 | 102 | 完了 |
-| [消防法](data/fire_service_act) | 昭和23年法律第186号 | R5.6.16 | 263 | 完了 |
-| [消防法施行令](data/fire_service_act_enforcement_order) | 昭和36年政令第37号 | R7.10.1 | 92 | 整備中 |
-| [バリアフリー法](data/barrier_free_act) | 平成18年法律第91号 | R7.4.1 | 88 | 整備中 |
-| [民法](data/civil_code) | 明治29年法律第89号 | R8.4.1 | 1173 | 未対応 |
-| [住宅品確法](data/housing_quality_assurance_act) | 平成11年法律第81号 | R6.4.1 | 113 | 未対応 |
-| [宅地建物取引業法](data/real_estate_brokerage_act) | 昭和27年法律第176号 | R8.4.1 | 201 | 未対応 |
+| [消防法](data/fire_service_act) | 昭和23年法律第186号 | R5.6.16 | 263 | ベースライン整備済み（要精査） |
+| [消防法施行令](data/fire_service_act_enforcement_order) | 昭和36年政令第37号 | R7.10.1 | 92 | ベースライン整備済み（要精査） |
+| [バリアフリー法](data/barrier_free_act) | 平成18年法律第91号 | R7.4.1 | 88 | ベースライン整備済み（要精査） |
+| [民法](data/civil_code) | 明治29年法律第89号 | R8.4.1 | 1173 | ベースライン整備済み（要精査） |
+| [住宅品確法](data/housing_quality_assurance_act) | 平成11年法律第81号 | R6.4.1 | 113 | ベースライン整備済み（要精査） |
+| [宅地建物取引業法](data/real_estate_brokerage_act) | 昭和27年法律第176号 | R8.4.1 | 201 | ベースライン整備済み（要精査） |
+
+整備状況は、条文メタデータの `description` と `keywords` の入力状況を示します。本文・条文YAML・raw XMLが存在していても、この2項目が空の場合は「本文収録・メタデータ未整備」とします。件数は [`scripts/validate_dataset.py`](scripts/validate_dataset.py) で確認できます。
 
 ---
 
@@ -74,6 +76,8 @@ scripts/
   fetch_egov_law.py
   build_link_graph.py
 ```
+
+エージェントAI/RAG向けの配布に必要な中心部分は `data/`、`scripts/`、`README.md`、`LICENSE` です。ルートの `index.html` は紹介用の任意ページであり、データセット利用に必須ではありません。
 
 ---
 
@@ -169,7 +173,13 @@ python3 scripts/fetch_egov_law.py --law-id 327AC1000000176 --slug real_estate_br
 python3 scripts/build_link_graph.py
 ```
 
-注意: `fetch_egov_law.py` は対象データセットの `articles/*.yaml` と `texts/*.txt` を再生成します。手動編集した `description` や `keywords` は上書きされるため、再取得前に退避してください。
+再生成・編集後の整合性確認:
+
+```bash
+python3 scripts/validate_dataset.py
+```
+
+注意: `fetch_egov_law.py` は対象データセットの `articles/*.yaml` と `texts/*.txt` を再生成します。同じ条文番号の既存 `description` と `keywords` は保持されますが、新規条文のメタデータは空で生成されるため、再生成後に [`scripts/validate_dataset.py`](scripts/validate_dataset.py) を実行してください。
 
 ---
 
@@ -182,7 +192,7 @@ python3 scripts/build_link_graph.py
 - **推奨アプローチ**: ユーザーの質問から検索クエリを生成する際、検索システム側で**「クエリ拡張（Query Expansion）」**（質問文から類義語、同義語、関連する法定義語を展開する処理）を挟むことを強く推奨します。これにより、検索漏れを大幅に低減できます。
 
 ### 2. LLMによる自動生成メタデータの精度とフィードバックループ
-- **制約**: 各条文の `description` および `keywords` は、LLM（Gemini 3.5 Flash）を用いて機械的に自動生成しています。そのため、一部の条文において、重要キーワードの抜け漏れや、要約の不十分さによってヒットしないケースが起こり得ます。
+- **制約**: 整備済み条文の `description` および `keywords` には、LLM（Gemini 3.5 Flash）による生成分と、[`scripts/enrich_metadata.py`](scripts/enrich_metadata.py) による見出し・本文冒頭ベースの生成分が含まれます。そのため、重要キーワードの抜け漏れや、要約の不十分さによってヒットしないケースが起こり得ます。後者は検索用のベースラインであり、法的判断のための要約ではありません。
 - **推奨アプローチ**: 広大な法令範囲を考慮すると、初期段階ですべての条文を手動でつぶさに校正・整備するのはコスト的に非現実的です。
   そのため、まずはLLMで一括して自動生成したデータセットをベースとし、**「実際のRAGシステムの回答状況や検索のログを監視しながら、ヒットしなかったキーワードをピンポイントで肉付け・更新していく」**というフィードバックループ型の運用を行うことを推奨します。
 

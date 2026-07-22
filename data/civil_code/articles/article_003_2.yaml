@@ -11,6 +11,6 @@ division: null
 article_num: "3_2"
 article_title: "第三条の二"
 article_caption: null
-description: ""
-keywords: []
+description: "民法の第三条の二の規定。 本文冒頭: 第三条の二 法律行為の当事者が意思表示をした時に意思能力を有しなかったときは、その法律行為は、無効とする。"
+keywords: ["民法"]
 text_path: "../texts/article_003_2.txt"

@@ -11,6 +11,6 @@ division: null
 article_num: "2"
 article_title: "第二条"
 article_caption: "（解釈の基準）"
-description: ""
-keywords: []
+description: "民法の第二条は「解釈の基準」を定める。 本文冒頭: この法律は、個人の尊厳と両性の本質的平等を旨として、解釈しなければならない。"
+keywords: ["民法", "解釈の基準"]
 text_path: "../texts/article_002.txt"

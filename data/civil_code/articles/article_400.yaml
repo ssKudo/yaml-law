@@ -11,6 +11,6 @@ division: null
 article_num: "400"
 article_title: "第四百条"
 article_caption: "（特定物の引渡しの場合の注意義務）"
-description: ""
-keywords: []
+description: "民法の第四百条は「特定物の引渡しの場合の注意義務」を定める。 本文冒頭: 債権の目的が特定物の引渡しであるときは、債務者は、その引渡しをするまで、契約その他の債権の発生原因及び取引上の社会通念に照らして定まる善良な管理者の注意をもって、その物を保存しなければならない。"
+keywords: ["民法", "特定物の引渡しの場合の注意義務", "管理"]
 text_path: "../texts/article_400.txt"

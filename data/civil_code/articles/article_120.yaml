@@ -11,6 +11,6 @@ division: null
 article_num: "120"
 article_title: "第百二十条"
 article_caption: "（取消権者）"
-description: ""
-keywords: []
+description: "民法の第百二十条は「取消権者」を定める。 本文冒頭: 行為能力の制限によって取り消すことができる行為は、制限行為能力者（他の制限行為能力者の法定代理人としてした行為にあっては、当該他の制限行為能力者を含む。）又はその代理人、承継人若しくは同意をすることができる者に限り、取り消すことができる。"
+keywords: ["民法", "取消権者"]
 text_path: "../texts/article_120.txt"

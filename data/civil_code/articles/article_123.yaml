@@ -11,6 +11,6 @@ division: null
 article_num: "123"
 article_title: "第百二十三条"
 article_caption: "（取消し及び追認の方法）"
-description: ""
-keywords: []
+description: "民法の第百二十三条は「取消し及び追認の方法」を定める。 本文冒頭: 取り消すことができる行為の相手方が確定している場合には、その取消し又は追認は、相手方に対する意思表示によってする。"
+keywords: ["民法", "取消し及び追認の方法"]
 text_path: "../texts/article_123.txt"

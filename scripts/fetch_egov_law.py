@@ -128,6 +128,36 @@ def parse_simple_yaml_value(value: str) -> str:
     return value
 
 
+def parse_simple_yaml_list(value: str) -> list[str]:
+    """Parse the inline quoted-list format emitted by this script."""
+    return [
+        item.replace('\\"', '"').replace("\\\\", "\\")
+        for item in re.findall(r'"((?:\\.|[^"\\])*)"', value)
+    ]
+
+
+def read_existing_article_metadata(path: Path) -> dict[str, dict[str, object]]:
+    """Read enrichment fields before generated article files are replaced."""
+    result: dict[str, dict[str, object]] = {}
+    if not path.exists():
+        return result
+    for article_path in path.glob("*.yaml"):
+        article_num = ""
+        description = ""
+        keywords: list[str] = []
+        for raw_line in article_path.read_text(encoding="utf-8").splitlines():
+            line = raw_line.strip()
+            if line.startswith("article_num:"):
+                article_num = parse_simple_yaml_value(line.split(":", 1)[1])
+            elif line.startswith("description:"):
+                description = parse_simple_yaml_value(line.split(":", 1)[1])
+            elif line.startswith("keywords:"):
+                keywords = parse_simple_yaml_list(line.split(":", 1)[1].strip())
+        if article_num:
+            result[article_num] = {"description": description, "keywords": keywords}
+    return result
+
+
 def paragraph_lines(paragraph: ET.Element) -> list[str]:
     lines: list[str] = []
     paragraph_num = element_text(paragraph.find("ParagraphNum"))
@@ -321,6 +351,8 @@ def main() -> None:
     raw_dir = output_root / "raw"
     raw_dir.mkdir(parents=True, exist_ok=True)
 
+    existing_metadata = read_existing_article_metadata(article_dir)
+
     xml_bytes = fetch_xml(args.law_id)
     raw_xml_path = raw_dir / f"{args.law_id}.xml"
     raw_xml_path.write_bytes(xml_bytes)
@@ -334,6 +366,8 @@ def main() -> None:
         yaml_name = article_filename(article.article_num)
         text_name = yaml_name.replace(".yaml", ".txt")
         (text_dir / text_name).write_text(article.text + "\n", encoding="utf-8")
+        article_key = article.article_num.replace(":", "_")
+        preserved = existing_metadata.get(article_key, {})
         write_yaml(
             article_dir / yaml_name,
             {
@@ -350,8 +384,8 @@ def main() -> None:
                 "article_num": article.article_num.replace(":", "_"),
                 "article_title": article.article_title,
                 "article_caption": article.article_caption,
-                "description": "",
-                "keywords": [],
+                "description": preserved.get("description", ""),
+                "keywords": preserved.get("keywords", []),
                 "text_path": f"../texts/{text_name}",
             },
         )

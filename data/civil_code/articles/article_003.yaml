@@ -11,6 +11,6 @@ division: null
 article_num: "3"
 article_title: "第三条"
 article_caption: null
-description: ""
-keywords: []
+description: "民法の第三条の規定。 本文冒頭: ２外国人は、法令又は条約の規定により禁止される場合を除き、私権を享有する。"
+keywords: ["民法"]
 text_path: "../texts/article_003.txt"
